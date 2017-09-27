@@ -321,3 +321,5 @@ C:\Users\Ender\Desktop\Harasara_T2\BMS_harasara\BMS_harasara\obj\Debug\BMS_haras
 C:\Users\viraj\Desktop\project\BMS_harasara\BMS_harasara\bin\Debug\Harasara.exe
 C:\Users\viraj\Desktop\project\BMS_harasara\BMS_harasara\bin\Debug\Harasara.pdb
 >>>>>>> 3891dd3381e746438fd83d9124c1065790ba7913
+C:\Users\Ender\Desktop\Harasara_T2\BMS_harasara\BMS_harasara\bin\Debug\Harasara.exe
+C:\Users\Ender\Desktop\Harasara_T2\BMS_harasara\BMS_harasara\bin\Debug\Harasara.pdb

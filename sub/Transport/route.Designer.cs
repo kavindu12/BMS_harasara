@@ -225,6 +225,7 @@
             this.bunifuThinButton4.Name = "bunifuThinButton4";
             this.bunifuThinButton4.Size = new System.Drawing.Size(118, 35);
             this.bunifuThinButton4.TabIndex = 11;
+            this.bunifuThinButton4.Click += new System.EventHandler(this.bunifuThinButton4_Click);
             // 
             // bunifuTextbox1
             // 
@@ -255,7 +256,7 @@
             dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
             this.bunifuCustomDataGrid1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.bunifuCustomDataGrid1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-          //  this.bunifuCustomDataGrid1.DoubleBuffered = true;
+            this.bunifuCustomDataGrid1.DoubleBuffered = true;
             this.bunifuCustomDataGrid1.EnableHeadersVisualStyles = false;
             this.bunifuCustomDataGrid1.Location = new System.Drawing.Point(180, 90);
             this.bunifuCustomDataGrid1.Name = "bunifuCustomDataGrid1";
@@ -451,6 +452,7 @@
             this.bunifuImageButton3.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.bunifuImageButton3.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton3.BackgroundImage")));
             this.bunifuImageButton3.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuImageButton3.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton3.Image")));
             this.bunifuImageButton3.ImageActive = null;
             this.bunifuImageButton3.Location = new System.Drawing.Point(667, 33);
             this.bunifuImageButton3.Name = "bunifuImageButton3";

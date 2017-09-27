@@ -115,5 +115,13 @@ namespace Transport
             v1.ShowDialog();
             this.Close();
         }
+
+        private void bunifuFlatButton5_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            SMS v1 = new SMS();
+            v1.ShowDialog();
+            this.Close();
+        }
     }
 }
