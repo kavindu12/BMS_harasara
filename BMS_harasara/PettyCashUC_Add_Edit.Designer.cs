@@ -255,6 +255,7 @@
             this.bunifuCustomTextbox1.Name = "bunifuCustomTextbox1";
             this.bunifuCustomTextbox1.Size = new System.Drawing.Size(121, 20);
             this.bunifuCustomTextbox1.TabIndex = 21;
+            this.bunifuCustomTextbox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.bunifuCustomTextbox1_KeyPress);
             // 
             // dateTimePicker1
             // 
