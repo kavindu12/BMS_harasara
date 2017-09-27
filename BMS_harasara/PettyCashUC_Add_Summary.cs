@@ -57,6 +57,7 @@ namespace BMS_harasara
             {
                 try
                 {
+                    label1.Visible = false;
                     string query = "SELECT SUM(Sales) FROM pettycash WHERE date <='" + this.dateTimePicker2.Text + "' AND date>='" + this.dateTimePicker1.Text + "'";
                     MySqlCommand cmnd = new MySqlCommand(query, con);
                     con.Open();
@@ -79,6 +80,7 @@ namespace BMS_harasara
             {
                 try
                 {
+                    label1.Visible = true;
                     string query = "SELECT (SUM(Sales)+SUM(Other)+SUM(Income)+SUM(Capital))-(SUM(Salary)+SUM(Utility)+SUM(Rent)) FROM pettycash WHERE date <='" + this.dateTimePicker2.Text + "' AND date>='" + this.dateTimePicker1.Text + "'";
                     MySqlCommand cmnd = new MySqlCommand(query, con);
                     con.Open();
@@ -111,6 +113,7 @@ namespace BMS_harasara
             {
                 try
                 {
+                    label1.Visible = false;
                     string query = "SELECT SUM(Salary) FROM pettycash WHERE date <='" + this.dateTimePicker2.Text + "' AND date>='" + this.dateTimePicker1.Text + "'";
                     MySqlCommand cmnd = new MySqlCommand(query, con);
                     con.Open();
@@ -132,6 +135,7 @@ namespace BMS_harasara
             {
                 try
                 {
+                    label1.Visible = false;
                     string query = "SELECT SUM(Utility) FROM pettycash WHERE date <='" + this.dateTimePicker2.Text + "' AND date>='" + this.dateTimePicker1.Text + "'";
                     MySqlCommand cmnd = new MySqlCommand(query, con);
                     con.Open();
@@ -153,6 +157,7 @@ namespace BMS_harasara
             {
                 try
                 {
+                    label1.Visible = false;
                     string query = "SELECT SUM(Rent) FROM pettycash WHERE date <='" + this.dateTimePicker2.Text + "' AND date>='" + this.dateTimePicker1.Text + "'";
                     MySqlCommand cmnd = new MySqlCommand(query, con);
                     con.Open();
@@ -174,6 +179,7 @@ namespace BMS_harasara
             {
                 try
                 {
+                    label1.Visible = false;
                     string query = "SELECT SUM(Income) FROM pettycash WHERE date <='" + this.dateTimePicker2.Text + "' AND date>='" + this.dateTimePicker1.Text + "'";
                     MySqlCommand cmnd = new MySqlCommand(query, con);
                     con.Open();
@@ -195,6 +201,7 @@ namespace BMS_harasara
             {
                 try
                 {
+                    label1.Visible = false;
                     string query = "SELECT SUM(Capital) FROM pettycash WHERE date <='" + this.dateTimePicker2.Text + "' AND date>='" + this.dateTimePicker1.Text + "'";
                     MySqlCommand cmnd = new MySqlCommand(query, con);
                     con.Open();
@@ -216,6 +223,7 @@ namespace BMS_harasara
             {
                 try
                 {
+                    label1.Visible = false;
                     string query = "SELECT SUM(Other) FROM pettycash WHERE date <='" + this.dateTimePicker2.Text + "' AND date>='" + this.dateTimePicker1.Text + "'";
                     MySqlCommand cmnd = new MySqlCommand(query, con);
                     con.Open();
