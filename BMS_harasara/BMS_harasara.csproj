@@ -1,0 +1,300 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{D4834A5A-ADD2-4508-91F5-DB5FE955E8AD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>BMS_harasara</RootNamespace>
+    <AssemblyName>BMS_harasara</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Bunifu_UI_v1.4">
+      <HintPath>F:\New folder (2)\Bunifu_UI_v1.4\Bunifu_UI_v1.4.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data, Version=6.9.9.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccountHistory.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AccountHistory.Designer.cs">
+      <DependentUpon>AccountHistory.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccountHistoryUC_a.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AccountHistoryUC_a.Designer.cs">
+      <DependentUpon>AccountHistoryUC_a.cs</DependentUpon>
+    </Compile>
+    <Compile Include="AccountsUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AccountsUC.Designer.cs">
+      <DependentUpon>AccountsUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="BMS_Finance.cs" />
+    <Compile Include="Database.cs" />
+    <Compile Include="ExpenditureManager.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ExpenditureManager.Designer.cs">
+      <DependentUpon>ExpenditureManager.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inv_AddNewItem.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="inv_AddNewItem.Designer.cs">
+      <DependentUpon>inv_AddNewItem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="dbconnect.cs" />
+    <Compile Include="Employee_sub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Employee_sub.Designer.cs">
+      <DependentUpon>Employee_sub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ExpenditureManagerUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ExpenditureManagerUC.Designer.cs">
+      <DependentUpon>ExpenditureManagerUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinanceSub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FinanceSub.Designer.cs">
+      <DependentUpon>FinanceSub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FinancialForecastUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="FinancialForecastUC.Designer.cs">
+      <DependentUpon>FinancialForecastUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Financial_sub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Financial_sub.Designer.cs">
+      <DependentUpon>Financial_sub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Inventory_sub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Inventory_sub.Designer.cs">
+      <DependentUpon>Inventory_sub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inv_AddStock.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="inv_AddStock.Designer.cs">
+      <DependentUpon>inv_AddStock.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Machine_sub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Machine_sub.Designer.cs">
+      <DependentUpon>Machine_sub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main_menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main_menu.Designer.cs">
+      <DependentUpon>Main_menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.Designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PettyCashUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PettyCashUC.Designer.cs">
+      <DependentUpon>PettyCashUC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PettyCashUC_Add.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PettyCashUC_Add.Designer.cs">
+      <DependentUpon>PettyCashUC_Add.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PettyCashUC_Add_Edit.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PettyCashUC_Add_Edit.Designer.cs">
+      <DependentUpon>PettyCashUC_Add_Edit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="PettyCashUC_Add_Summary.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="PettyCashUC_Add_Summary.Designer.cs">
+      <DependentUpon>PettyCashUC_Add_Summary.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Production_Sub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Production_Sub.Designer.cs">
+      <DependentUpon>Production_Sub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProfitLossUC_Main.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProfitLossUC_Main.Designer.cs">
+      <DependentUpon>ProfitLossUC_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sales_sub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sales_sub.Designer.cs">
+      <DependentUpon>Sales_sub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Settings.cs" />
+    <Compile Include="System_sub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="System_sub.Designer.cs">
+      <DependentUpon>System_sub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Transport_sub.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Transport_sub.Designer.cs">
+      <DependentUpon>Transport_sub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ViaNettSMS.cs" />
+    <Compile Include="weekCashFlowUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="weekCashFlowUC.Designer.cs">
+      <DependentUpon>weekCashFlowUC.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="AccountHistory.resx">
+      <DependentUpon>AccountHistory.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountHistoryUC_a.resx">
+      <DependentUpon>AccountHistoryUC_a.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AccountsUC.resx">
+      <DependentUpon>AccountsUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExpenditureManager.resx">
+      <DependentUpon>ExpenditureManager.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inv_AddNewItem.resx">
+      <DependentUpon>inv_AddNewItem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Employee_sub.resx">
+      <DependentUpon>Employee_sub.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ExpenditureManagerUC.resx">
+      <DependentUpon>ExpenditureManagerUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinanceSub.resx">
+      <DependentUpon>FinanceSub.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FinancialForecastUC.resx">
+      <DependentUpon>FinancialForecastUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Financial_sub.resx">
+      <DependentUpon>Financial_sub.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Inventory_sub.resx">
+      <DependentUpon>Inventory_sub.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inv_AddStock.resx">
+      <DependentUpon>inv_AddStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main_menu.resx">
+      <DependentUpon>Main_menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PettyCashUC.resx">
+      <DependentUpon>PettyCashUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PettyCashUC_Add.resx">
+      <DependentUpon>PettyCashUC_Add.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PettyCashUC_Add_Edit.resx">
+      <DependentUpon>PettyCashUC_Add_Edit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="PettyCashUC_Add_Summary.resx">
+      <DependentUpon>PettyCashUC_Add_Summary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfitLossUC_Main.resx">
+      <DependentUpon>ProfitLossUC_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="weekCashFlowUC.resx">
+      <DependentUpon>weekCashFlowUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
