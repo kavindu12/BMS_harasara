@@ -73,7 +73,7 @@ namespace BMS_harasara
             }
             else if (x == "tra")
             {
-                Transport_sub trafrm = new Transport_sub();
+                Transport.Main trafrm = new Transport.Main();
                 this.Hide();
                 trafrm.Show();
             }else
