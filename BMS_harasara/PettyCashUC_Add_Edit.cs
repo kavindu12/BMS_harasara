@@ -28,6 +28,7 @@ namespace BMS_harasara
         public PettyCashUC_Add_Edit()
         {
             InitializeComponent();
+            LoadLabelValues();
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
@@ -250,6 +251,28 @@ namespace BMS_harasara
             else
             {
                 e.Handled = false;
+            }
+        }
+        public void LoadLabelValues()
+        {
+            string query = "SELECT Balance FROM account WHERE accountnumber=123456789112456";
+            MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=harasaraindustries");
+            MySqlCommand cmnd = new MySqlCommand(query, con);
+            MySqlDataReader myreader;
+            try
+            {
+                con.Open();
+                myreader = cmnd.ExecuteReader();
+                while (myreader.Read())
+                {
+                    string bal = myreader.GetString("Balance");
+                    label2.Text = bal;
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
             }
         }
     }
