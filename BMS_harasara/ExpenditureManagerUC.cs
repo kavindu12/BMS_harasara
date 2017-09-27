@@ -31,6 +31,7 @@ namespace BMS_harasara
             LoadLabels();
             LoadExpenditure();
             LoadBalance();
+            LoadPercentage();
         }
 
         private void ExpenditureManagerUC_Load(object sender, EventArgs e)
@@ -114,6 +115,15 @@ namespace BMS_harasara
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+        public void LoadPercentage()
+        {
+            double income = Convert.ToDouble(bunifuCustomLabel5.Text);
+            double expenditure = Convert.ToDouble(bunifuCustomLabel8.Text);
+            double pProfit = ((income - expenditure) / expenditure) * 100;
+            int p_profit = Convert.ToInt32(pProfit);
+            bunifuCustomLabel14.Text = Convert.ToString(p_profit) + "%";
+
         }
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
