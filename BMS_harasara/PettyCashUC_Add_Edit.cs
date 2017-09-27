@@ -154,6 +154,97 @@ namespace BMS_harasara
             char ch = e.KeyChar;
             if (!char.IsDigit(ch) && ch != 8 && ch != 46)
             {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = false;
+            }
+        }
+
+        private void bunifuCustomTextbox2_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+            if (!char.IsDigit(ch) && ch != 8 && ch != 46)
+            {
+                e.Handled = true;
+            }
+            else
+            {
+                e.Handled = false;
+            }
+        }
+
+        private void bunifuCustomTextbox3_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+            if (!char.IsDigit(ch) && ch != 8 && ch != 46)
+            {
+                e.Handled = true;
+            }
+            else
+            {
+                e.Handled = false;
+            }
+        }
+
+        private void bunifuCustomTextbox4_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+            if (!char.IsDigit(ch) && ch != 8 && ch != 46)
+            {
+                e.Handled = true;
+            }
+            else
+            {
+                e.Handled = false;
+            }
+        }
+
+        private void bunifuCustomTextbox7_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+            if (!char.IsDigit(ch) && ch != 8 && ch != 46)
+            {
+                e.Handled = true;
+            }
+            else
+            {
+                e.Handled = false;
+            }
+        }
+
+        private void bunifuCustomTextbox6_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+            if (!char.IsDigit(ch) && ch != 8 && ch != 46)
+            {
+                e.Handled = true;
+            }
+            else
+            {
+                e.Handled = false;
+            }
+        }
+
+        private void bunifuCustomTextbox5_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+            if (!char.IsDigit(ch) && ch != 8 && ch != 46)
+            {
+                e.Handled = true;
+            }
+            else
+            {
+                e.Handled = false;
+            }
+        }
+
+        private void bunifuCustomTextbox8_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+            if (!char.IsDigit(ch) && ch != 8 && ch != 46)
+            {
                 e.Handled = true;
             }
             else
