@@ -51,7 +51,7 @@ namespace BMS_harasara
         {
             //Employees
             string x = "emp";
-            login logfrm=new login(x);
+            login logfrm = new login(x);
             this.Hide();
             logfrm.Show();
             
@@ -109,6 +109,12 @@ namespace BMS_harasara
             login logfrm = new login(x);
             this.Hide();
             logfrm.Show();
+        }
+
+        private void bunifuFlatButton9_Click(object sender, EventArgs e)
+        {
+            Harasara.Leave_Request lvreq = new Harasara.Leave_Request();
+            lvreq.Show();
         }
     
     }

@@ -286,6 +286,7 @@ C:\Users\kavindu\Desktop\Git Everything\BMS_harasara\BMS_harasara\obj\Debug\BMS_
 C:\Users\kavindu\Desktop\Git Everything\BMS_harasara\BMS_harasara\obj\Debug\BMS_harasara.Properties.Resources.resources
 C:\Users\kavindu\Desktop\Git Everything\BMS_harasara\BMS_harasara\obj\Debug\BMS_harasara.weekCashFlowUC.resources
 C:\Users\kavindu\Desktop\Git Everything\BMS_harasara\BMS_harasara\obj\Debug\BMS_harasara.csproj.GenerateResource.Cache
+<<<<<<< HEAD
 C:\Users\Ender\Desktop\Harasara_T2\BMS_harasara\BMS_harasara\bin\Debug\BMS_harasara.exe.config
 C:\Users\Ender\Desktop\Harasara_T2\BMS_harasara\BMS_harasara\obj\Debug\BMS_harasara.exe
 C:\Users\Ender\Desktop\Harasara_T2\BMS_harasara\BMS_harasara\obj\Debug\BMS_harasara.pdb
@@ -316,3 +317,7 @@ C:\Users\Ender\Desktop\Harasara_T2\BMS_harasara\BMS_harasara\obj\Debug\BMS_haras
 C:\Users\Ender\Desktop\Harasara_T2\BMS_harasara\BMS_harasara\obj\Debug\BMS_harasara.Properties.Resources.resources
 C:\Users\Ender\Desktop\Harasara_T2\BMS_harasara\BMS_harasara\obj\Debug\BMS_harasara.weekCashFlowUC.resources
 C:\Users\Ender\Desktop\Harasara_T2\BMS_harasara\BMS_harasara\obj\Debug\BMS_harasara.csproj.GenerateResource.Cache
+=======
+C:\Users\viraj\Desktop\project\BMS_harasara\BMS_harasara\bin\Debug\Harasara.exe
+C:\Users\viraj\Desktop\project\BMS_harasara\BMS_harasara\bin\Debug\Harasara.pdb
+>>>>>>> 3891dd3381e746438fd83d9124c1065790ba7913

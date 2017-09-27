@@ -37,7 +37,7 @@ namespace BMS_harasara
                 invfrm.Show();
             }else if(x=="emp")
             {
-                emp_sub empfrm = new emp_sub();
+                Harasara.main empfrm = new Harasara.main();
                 this.Hide();
                 empfrm.Show();
             }
