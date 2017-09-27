@@ -240,5 +240,32 @@ namespace Transport
             dt = db.ReadValue("Select * From driverdetails");
             dataGridView1.DataSource = dt;
         }
+
+        private void bunifuCustomTextbox5_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+
+            if (!char.IsDigit(ch) && ch != 8 && ch != 46)
+            {
+                e.Handled = true;
+
+            }
+        }
+
+        private void bunifuCustomTextbox4_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+
+            if (!char.IsLetter(ch) && ch != 8 && ch != 46)
+            {
+                e.Handled = true;
+
+            }
+        }
+
+        private void bunifuCustomTextbox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }
