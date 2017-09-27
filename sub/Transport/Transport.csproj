@@ -105,6 +105,12 @@
     <Compile Include="route.Designer.cs">
       <DependentUpon>route.cs</DependentUpon>
     </Compile>
+    <Compile Include="SMS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SMS.Designer.cs">
+      <DependentUpon>SMS.cs</DependentUpon>
+    </Compile>
     <Compile Include="vehicle.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,6 +143,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="route.resx">
       <DependentUpon>route.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SMS.resx">
+      <DependentUpon>SMS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="vehicle.resx">
       <DependentUpon>vehicle.cs</DependentUpon>

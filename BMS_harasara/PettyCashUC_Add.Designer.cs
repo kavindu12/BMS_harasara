@@ -382,6 +382,7 @@
             this.label2.Size = new System.Drawing.Size(64, 16);
             this.label2.TabIndex = 6;
             this.label2.Text = "1000000";
+            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 

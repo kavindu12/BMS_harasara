@@ -263,7 +263,7 @@
             // 
             this.bunifuCustomTextbox4.BorderColor = System.Drawing.Color.SeaGreen;
             this.bunifuCustomTextbox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomTextbox4.Location = new System.Drawing.Point(344, 394);
+            this.bunifuCustomTextbox4.Location = new System.Drawing.Point(344, 397);
             this.bunifuCustomTextbox4.Name = "bunifuCustomTextbox4";
             this.bunifuCustomTextbox4.Size = new System.Drawing.Size(160, 22);
             this.bunifuCustomTextbox4.TabIndex = 54;
@@ -335,7 +335,7 @@
             this.bunifuCustomLabel4.AutoSize = true;
             this.bunifuCustomLabel4.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel4.ForeColor = System.Drawing.Color.Transparent;
-            this.bunifuCustomLabel4.Location = new System.Drawing.Point(214, 431);
+            this.bunifuCustomLabel4.Location = new System.Drawing.Point(214, 437);
             this.bunifuCustomLabel4.Name = "bunifuCustomLabel4";
             this.bunifuCustomLabel4.Size = new System.Drawing.Size(119, 19);
             this.bunifuCustomLabel4.TabIndex = 47;
@@ -346,7 +346,7 @@
             this.bunifuCustomLabel2.AutoSize = true;
             this.bunifuCustomLabel2.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel2.ForeColor = System.Drawing.Color.Transparent;
-            this.bunifuCustomLabel2.Location = new System.Drawing.Point(217, 395);
+            this.bunifuCustomLabel2.Location = new System.Drawing.Point(217, 399);
             this.bunifuCustomLabel2.Name = "bunifuCustomLabel2";
             this.bunifuCustomLabel2.Size = new System.Drawing.Size(97, 19);
             this.bunifuCustomLabel2.TabIndex = 45;
@@ -357,7 +357,7 @@
             // 
             this.bunifuCustomTextbox5.BorderColor = System.Drawing.Color.SeaGreen;
             this.bunifuCustomTextbox5.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomTextbox5.Location = new System.Drawing.Point(346, 429);
+            this.bunifuCustomTextbox5.Location = new System.Drawing.Point(345, 435);
             this.bunifuCustomTextbox5.Name = "bunifuCustomTextbox5";
             this.bunifuCustomTextbox5.Size = new System.Drawing.Size(121, 22);
             this.bunifuCustomTextbox5.TabIndex = 55;
@@ -365,7 +365,7 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.Location = new System.Drawing.Point(346, 479);
+            this.dateTimePicker1.Location = new System.Drawing.Point(344, 479);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 60;

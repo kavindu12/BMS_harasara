@@ -162,20 +162,23 @@ namespace Transport
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            DataTable dt = new DataTable();
-            dbconnect db = new dbconnect();
+            if (dataGridView1.Rows.Count > -1)
+            {
+                bunifuCustomTextbox1.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
+                bunifuCustomTextbox4.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+                dateTimePicker1.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+                bunifuCustomTextbox2.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
+                bunifuCustomTextbox5.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
+                
 
-            String id;
-            id = bunifuTextbox1.text;
+                //comboBox1.Text = DataGridView01.Rows[e.RowIndex].Cells[1].Value.ToString();
+                //Txt_FirstName.Text = DataGridView01.Rows[e.RowIndex].Cells[2].Value.ToString();
+                //mIDDLENAMETextBox.Text = DataGridView01.Rows[e.RowIndex].Cells[3].Value.ToString();
+                //sURNAMETextBox.Text = DataGridView01.Rows[e.RowIndex].Cells[4].Value.ToString();
+                //cITYTextBox.Text = DataGridView01.Rows[e.RowIndex].Cells[5].Value.ToString();
+                //eMAILTextBox.Text = DataGridView01.Rows[e.RowIndex].Cells[6].Value.ToString();
 
-            dt = db.ReadValue("Select * From driverdetails where '" + id + "' = DriverID");
-            dataGridView1.DataSource = dt;
-            
-            String selectquery = "SELECT * FROM driverdetails";
-            DataTable table = new DataTable();
-            MySqlDataAdapter adapter = new MySqlDataAdapter(selectquery, connnection);
-            adapter.Fill(table);
-            dataGridView1.DataSource = table;
+            }
 
 
             

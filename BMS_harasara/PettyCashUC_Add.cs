@@ -284,5 +284,10 @@ namespace BMS_harasara
                 PettyCashUC_Add_Edit._Instance_pc_add.Visible = true;
             }
         }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
