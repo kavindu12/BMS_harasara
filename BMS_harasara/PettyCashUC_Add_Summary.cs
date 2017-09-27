@@ -254,13 +254,16 @@ namespace BMS_harasara
             {
                 try
                 {
+                    //this.chart2.ChartAreas.Clear();
+                    chart2.Series.Clear();
+                    this.chart2.Series.Add("bar1");
                     string query = "SELECT Sales,Date FROM pettycash WHERE date <='" + this.dateTimePicker2.Text + "' AND date>='" + this.dateTimePicker1.Text + "'";
                     MySqlCommand cmnd = new MySqlCommand(query, con);
                     con.Open();
                     myreader = cmnd.ExecuteReader();
                     while (myreader.Read())
                     {
-                        this.chart1.Series["bar1"].Points.AddXY(myreader.GetString("date"), myreader.GetDouble("sales"));
+                        this.chart2.Series["bar1"].Points.AddXY(myreader.GetString("date"), myreader.GetDouble("sales"));
                     }
                     con.Close();
                 }
@@ -273,6 +276,8 @@ namespace BMS_harasara
             {
                 try
                 {
+                    chart2.Series.Clear();
+                    this.chart2.Series.Add("bar1");
                     string query = "SELECT Income,Date FROM pettycash WHERE date <='" + this.dateTimePicker2.Text + "' AND date>='" + this.dateTimePicker1.Text + "'";
                     MySqlCommand cmnd = new MySqlCommand(query, con);
                     con.Open();
@@ -280,7 +285,117 @@ namespace BMS_harasara
                     while (myreader.Read())
                     {
                         //string inc = myreader.GetString(0);
-                        this.chart1.Series["bar1"].Points.AddXY(myreader.GetString("date"), myreader.GetDouble("income"));
+                        this.chart2.Series["bar1"].Points.AddXY(myreader.GetString("date"), myreader.GetDouble("income"));
+                    }
+                    con.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            else if (string.Compare(comboBox1.SelectedItem.ToString(), "Salary") == 0)
+            {
+                try
+                {
+                    chart2.Series.Clear();
+                    this.chart2.Series.Add("bar1");
+                    string query = "SELECT Salary,Date FROM pettycash WHERE date <='" + this.dateTimePicker2.Text + "' AND date>='" + this.dateTimePicker1.Text + "'";
+                    MySqlCommand cmnd = new MySqlCommand(query, con);
+                    con.Open();
+                    myreader = cmnd.ExecuteReader();
+                    while (myreader.Read())
+                    {
+                        //string inc = myreader.GetString(0);
+                        this.chart2.Series["bar1"].Points.AddXY(myreader.GetString("date"), myreader.GetDouble("salary"));
+                    }
+                    con.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            else if (string.Compare(comboBox1.SelectedItem.ToString(), "Other") == 0)
+            {
+                try
+                {
+                    chart2.Series.Clear();
+                    this.chart2.Series.Add("bar1");
+                    string query = "SELECT Other,Date FROM pettycash WHERE date <='" + this.dateTimePicker2.Text + "' AND date>='" + this.dateTimePicker1.Text + "'";
+                    MySqlCommand cmnd = new MySqlCommand(query, con);
+                    con.Open();
+                    myreader = cmnd.ExecuteReader();
+                    while (myreader.Read())
+                    {
+                        //string inc = myreader.GetString(0);
+                        this.chart2.Series["bar1"].Points.AddXY(myreader.GetString("date"), myreader.GetDouble("other"));
+                    }
+                    con.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            else if (string.Compare(comboBox1.SelectedItem.ToString(), "Rent") == 0)
+            {
+                try
+                {
+                    chart2.Series.Clear();
+                    this.chart2.Series.Add("bar1");
+                    string query = "SELECT Rent,Date FROM pettycash WHERE date <='" + this.dateTimePicker2.Text + "' AND date>='" + this.dateTimePicker1.Text + "'";
+                    MySqlCommand cmnd = new MySqlCommand(query, con);
+                    con.Open();
+                    myreader = cmnd.ExecuteReader();
+                    while (myreader.Read())
+                    {
+                        //string inc = myreader.GetString(0);
+                        this.chart2.Series["bar1"].Points.AddXY(myreader.GetString("date"), myreader.GetDouble("rent"));
+                    }
+                    con.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            else if (string.Compare(comboBox1.SelectedItem.ToString(), "Utility") == 0)
+            {
+                try
+                {
+                    chart2.Series.Clear();
+                    this.chart2.Series.Add("bar1");
+                    string query = "SELECT Utility,Date FROM pettycash WHERE date <='" + this.dateTimePicker2.Text + "' AND date>='" + this.dateTimePicker1.Text + "'";
+                    MySqlCommand cmnd = new MySqlCommand(query, con);
+                    con.Open();
+                    myreader = cmnd.ExecuteReader();
+                    while (myreader.Read())
+                    {
+                        //string inc = myreader.GetString(0);
+                        this.chart2.Series["bar1"].Points.AddXY(myreader.GetString("date"), myreader.GetDouble("utility"));
+                    }
+                    con.Close();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show(ex.Message);
+                }
+            }
+            else if (string.Compare(comboBox1.SelectedItem.ToString(), "Capital") == 0)
+            {
+                try
+                {
+                    chart2.Series.Clear();
+                    this.chart2.Series.Add("bar1");
+                    string query = "SELECT Capital,Date FROM pettycash WHERE date <='" + this.dateTimePicker2.Text + "' AND date>='" + this.dateTimePicker1.Text + "'";
+                    MySqlCommand cmnd = new MySqlCommand(query, con);
+                    con.Open();
+                    myreader = cmnd.ExecuteReader();
+                    while (myreader.Read())
+                    {
+                        //string inc = myreader.GetString(0);
+                        this.chart2.Series["bar1"].Points.AddXY(myreader.GetString("date"), myreader.GetDouble("capital"));
                     }
                     con.Close();
                 }
@@ -295,7 +410,6 @@ namespace BMS_harasara
             }
 
         }
-
         private void label2_Click(object sender, EventArgs e)
         {
             CalculateTotal();
