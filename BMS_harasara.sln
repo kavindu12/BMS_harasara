@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BMS_harasara", "BMS_harasar
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Transport", "sub\Transport\Transport.csproj", "{B511D748-7FEB-49DC-9823-33B8731FDAF8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Harasara", "sub\Harasara\Harasara.csproj", "{99D60CF6-BC00-4BDF-A175-E6F1D2F699F0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{B511D748-7FEB-49DC-9823-33B8731FDAF8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B511D748-7FEB-49DC-9823-33B8731FDAF8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B511D748-7FEB-49DC-9823-33B8731FDAF8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{99D60CF6-BC00-4BDF-A175-E6F1D2F699F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{99D60CF6-BC00-4BDF-A175-E6F1D2F699F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{99D60CF6-BC00-4BDF-A175-E6F1D2F699F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{99D60CF6-BC00-4BDF-A175-E6F1D2F699F0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

@@ -286,3 +286,5 @@ C:\Users\kavindu\Desktop\Git Everything\BMS_harasara\BMS_harasara\obj\Debug\BMS_
 C:\Users\kavindu\Desktop\Git Everything\BMS_harasara\BMS_harasara\obj\Debug\BMS_harasara.Properties.Resources.resources
 C:\Users\kavindu\Desktop\Git Everything\BMS_harasara\BMS_harasara\obj\Debug\BMS_harasara.weekCashFlowUC.resources
 C:\Users\kavindu\Desktop\Git Everything\BMS_harasara\BMS_harasara\obj\Debug\BMS_harasara.csproj.GenerateResource.Cache
+C:\Users\viraj\Desktop\project\BMS_harasara\BMS_harasara\bin\Debug\Harasara.exe
+C:\Users\viraj\Desktop\project\BMS_harasara\BMS_harasara\bin\Debug\Harasara.pdb
