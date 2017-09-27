@@ -107,8 +107,9 @@ namespace Transport
             }
 
             catch (Exception ex)
-            { 
-            
+            {
+
+                MessageBox.Show(ex.Message,"Error");
             
             
             

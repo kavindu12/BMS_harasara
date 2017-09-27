@@ -194,8 +194,9 @@ namespace Transport
         {
             char ch = e.KeyChar;
 
-            if(!char.IsLetter(ch) && !char.IsSymbol(ch) && ch != 8 && ch != 46 )
+            if(!char.IsDigit(ch) && ch != 8 && ch != 46 )
             {
+
             e.Handled = true;
             
             }
@@ -226,6 +227,62 @@ namespace Transport
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void bunifuCustomTextbox4_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuCustomTextbox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuCustomTextbox3_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+
+            if (!char.IsLetter(ch) && ch != 8 && ch != 46)
+            {
+                e.Handled = true;
+
+            }
+        }
+
+        private void bunifuCustomTextbox6_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+
+            if (!char.IsDigit(ch) && ch != 8 && ch != 46)
+            {
+
+                e.Handled = true;
+
+            }
+        }
+
+        private void bunifuCustomTextbox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+
+            if (!char.IsLetter(ch) && ch != 8 && ch != 46)
+            {
+
+                e.Handled = true;
+
+            }
+        }
+
+        private void bunifuCustomTextbox1_TextChanged(object sender, EventArgs e)
+        {
+            bunifuCustomTextbox1.MaxLength = 3;
+        }
+
+        private void bunifuCustomTextbox6_TextChanged(object sender, EventArgs e)
+        {
+            bunifuCustomTextbox6.MaxLength = 3;
+            
         }
     }
 }
