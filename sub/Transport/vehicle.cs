@@ -200,5 +200,26 @@ namespace Transport
             
             }
         }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dataGridView1.Rows.Count > -1)
+            {
+                bunifuCustomTextbox7.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
+                bunifuCustomTextbox4.Text = dataGridView1.Rows[e.RowIndex].Cells[1].Value.ToString();
+                bunifuCustomTextbox3.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+                bunifuCustomTextbox6.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
+                bunifuCustomTextbox1.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
+                bunifuCustomTextbox2.Text = dataGridView1.Rows[e.RowIndex].Cells[5].Value.ToString();
+                
+                //comboBox1.Text = DataGridView01.Rows[e.RowIndex].Cells[1].Value.ToString();
+                //Txt_FirstName.Text = DataGridView01.Rows[e.RowIndex].Cells[2].Value.ToString();
+                //mIDDLENAMETextBox.Text = DataGridView01.Rows[e.RowIndex].Cells[3].Value.ToString();
+                //sURNAMETextBox.Text = DataGridView01.Rows[e.RowIndex].Cells[4].Value.ToString();
+                //cITYTextBox.Text = DataGridView01.Rows[e.RowIndex].Cells[5].Value.ToString();
+                //eMAILTextBox.Text = DataGridView01.Rows[e.RowIndex].Cells[6].Value.ToString();
+
+            }
+        }
     }
 }
