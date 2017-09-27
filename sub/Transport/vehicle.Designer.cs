@@ -278,6 +278,7 @@
             this.bunifuCustomTextbox5.Name = "bunifuCustomTextbox5";
             this.bunifuCustomTextbox5.Size = new System.Drawing.Size(121, 22);
             this.bunifuCustomTextbox5.TabIndex = 73;
+            this.bunifuCustomTextbox5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.bunifuCustomTextbox5_KeyPress);
             // 
             // bunifuCustomTextbox4
             // 
