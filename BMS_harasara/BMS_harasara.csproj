@@ -173,6 +173,12 @@
     <Compile Include="Production_Sub.Designer.cs">
       <DependentUpon>Production_Sub.cs</DependentUpon>
     </Compile>
+    <Compile Include="ProfitEarnedUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProfitEarnedUC.Designer.cs">
+      <DependentUpon>ProfitEarnedUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="ProfitLossUC_Main.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -260,6 +266,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="PettyCashUC_Add_Summary.resx">
       <DependentUpon>PettyCashUC_Add_Summary.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProfitEarnedUC.resx">
+      <DependentUpon>ProfitEarnedUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProfitLossUC_Main.resx">
       <DependentUpon>ProfitLossUC_Main.cs</DependentUpon>

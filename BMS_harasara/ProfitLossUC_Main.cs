@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 namespace BMS_harasara
 {
@@ -32,6 +33,48 @@ namespace BMS_harasara
         private void ProfitLossUC_Main_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+        public void LoadChart()
+        {
+            try
+            {
+                chart1.Series.Clear();
+                this.chart1.Series.Add("profit");
+                this.chart1.Series.Add("loss");
+                MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=harasaraindustries");
+                string query = "SELECT Date,Profit,Loss FROM profit_loss WHERE date <='" + this.dateTimePicker2.Text + "' AND date>='" + this.dateTimePicker1.Text + "'";
+                MySqlCommand cmnd = new MySqlCommand(query, con);
+                MySqlDataReader myreader;
+                con.Open();
+                myreader = cmnd.ExecuteReader();
+                while (myreader.Read())
+                {
+                    //string inc = myreader.GetString(0);
+                    this.chart1.Series["profit"].Points.AddXY(myreader.GetString("date"), myreader.GetDouble("profit"));
+                    this.chart1.Series["loss"].Points.AddXY(myreader.GetString("date"), myreader.GetDouble("loss"));
+
+                }
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+            LoadChart();
+        }
+
+        private void dateTimePicker2_ValueChanged(object sender, EventArgs e)
+        {
+            LoadChart();
         }
     }
 }
