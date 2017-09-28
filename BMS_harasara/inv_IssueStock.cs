@@ -57,7 +57,7 @@ namespace BMS_harasara
             }
             catch(Exception ex)
             {
-                MessageBox.Show("Database error");
+                MessageBox.Show(ex.Message,"Database error");
             }
         }
 
@@ -92,8 +92,13 @@ namespace BMS_harasara
                 reader = cmd1.ExecuteReader();
                 while (reader.Read())
                 {
+<<<<<<< HEAD
                     Int32 countt = reader.GetInt32("count");
                     //float pricet = reader.GetFloat("price");
+=======
+                    MessageBox.Show(ex.Message,"Check database connection");
+                }
+>>>>>>> 529a36e7906ff8fcb22c192db6d4d223f7522313
 
                     Int32 countf = count-countt;
                     //float pricef = (pricet + price) / 2;
@@ -153,7 +158,7 @@ namespace BMS_harasara
             }
             catch (Exception ex)
             {
-                MessageBox.Show("database error");
+                MessageBox.Show(ex.Message,"database error");
             }
             textBox1.AutoCompleteCustomSource = coll1;
             textBox2.AutoCompleteCustomSource = coll2;
@@ -201,7 +206,7 @@ namespace BMS_harasara
             }
             catch (Exception ex)
             {
-                MessageBox.Show("database error");
+                MessageBox.Show(ex.Message,"database error");
             }
         }
 
@@ -230,7 +235,7 @@ namespace BMS_harasara
             }
             catch (Exception ex)
             {
-                MessageBox.Show("database error");
+                MessageBox.Show(ex.Message,"database error");
             }
         }
     }
