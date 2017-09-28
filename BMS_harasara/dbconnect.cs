@@ -53,5 +53,37 @@ namespace BMS_harasara
 
             return dt;
         }
+
+        public int retval(string qry,string coln)
+        {
+            string y = qry;
+            string cn=coln;
+            //MySqlDataAdapter da = new MySqlDataAdapter(y, conn);
+            //da.Update(Val);
+            //return Val;
+            //try
+            //{
+            openconn();
+
+                MySqlCommand cmd1 = new MySqlCommand(y, conn);
+
+                MySqlDataReader usernameRdr = null;
+
+                usernameRdr = cmd1.ExecuteReader();
+
+                //while (usernameRdr.Read())
+                //{
+                    int username11 = (int)usernameRdr[coln];
+                    return username11;
+                //}
+           // }
+            //catch (Exception ex)
+            //{
+               // MessageBox.Show("Database Error");
+               // return 0;
+            //}
+
+            //return 0;
+        }
     }
 }
