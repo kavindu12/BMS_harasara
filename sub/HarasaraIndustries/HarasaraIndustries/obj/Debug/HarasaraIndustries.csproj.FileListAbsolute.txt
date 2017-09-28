@@ -88,3 +88,8 @@ C:\Users\viraj\Desktop\project\BMS_harasara\sub\HarasaraIndustries\HarasaraIndus
 C:\Users\viraj\Desktop\project\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\bin\Debug\BMS_harasara.pdb
 C:\Users\viraj\Desktop\project\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\bin\Debug\Transport.pdb
 >>>>>>> 51f2e74ec6e9fde4be7c0782167c43e63604a896
+C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\bin\Debug\BMS_harasara.exe
+C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\bin\Debug\BMS_harasara.pdb
+C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\obj\Debug\HarasaraIndustries.AdminMain.resources
+C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\obj\Debug\Harasara.login.resources
+C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\obj\Debug\HarasaraIndustries.promotions.resources

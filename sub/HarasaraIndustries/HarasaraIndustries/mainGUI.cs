@@ -158,55 +158,55 @@ namespace HarasaraIndustries
 
         private void Sales_Click(object sender, EventArgs e)
         {
-           Harasara.login s = new Harasara.login();
-           s.Show();
-           this.Hide();
+          // Harasara.login s = new Harasara.login();
+          // s.Show();
+          // this.Hide();
 
         }
 
         private void bunifuFlatButton6_Click(object sender, EventArgs e)
         {
-            Harasara.login s = new Harasara.login();
-            s.Show();
+           // Harasara.login s = new Harasara.login();
+           // s.Show();
 
         }
 
         private void Inventory_Click(object sender, EventArgs e)
         {
-            Harasara.login l1 = new Harasara.login();
+           // Harasara.login l1 = new Harasara.login();
 
-            l1.Show();
-            this.Hide();
+          //  l1.Show();
+           // this.Hide();
 
         }
 
         private void Employees_Click(object sender, EventArgs e)
         {
-            Harasara.login l1 = new Harasara.login();
-            l1.Show();
-            this.Hide();
+          //  Harasara.login l1 = new Harasara.login();
+           // l1.Show();
+          //  this.Hide();
         }
 
         private void bunifuFlatButton7_Click(object sender, EventArgs e)
         {
-            Harasara.login l1 = new Harasara.login();
-            l1.Show();
-            this.Hide();
+           // Harasara.login l1 = new Harasara.login();
+           // l1.Show();
+           // this.Hide();
 
         }
 
         private void Financial_Click(object sender, EventArgs e)
         {
-            Harasara.login l1 = new Harasara.login();
-            l1.Show();
-            this.Hide();
+            //Harasara.login l1 = new Harasara.login();
+           // l1.Show();
+           // this.Hide();
         }
 
         private void Production_Click(object sender, EventArgs e)
         {
-            Harasara.login l1 = new Harasara.login();
-            l1.Show();
-            this.Hide();
+           // Harasara.login l1 = new Harasara.login();
+            //l1.Show();
+            //this.Hide();
 
 
         }

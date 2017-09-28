@@ -159,7 +159,7 @@
             this.Machines.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.Machines.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Machines.BorderRadius = 8;
-            this.Machines.ButtonText = "Machines";
+            this.Machines.ButtonText = "Leave Request";
             this.Machines.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Machines.Iconcolor = System.Drawing.Color.Transparent;
             this.Machines.Iconimage = ((System.Drawing.Image)(resources.GetObject("Machines.Iconimage")));
