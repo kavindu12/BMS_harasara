@@ -61,9 +61,9 @@ namespace BMS_harasara
             }
             else if (x == "sal")
             {
-                Sales_sub salfrm = new Sales_sub();
+                HarasaraIndustries.Form1 salfr = new HarasaraIndustries.Form1();
                 this.Hide();
-                salfrm.Show();
+                salfr.Show();
             }
             else if (x == "sys")
             {

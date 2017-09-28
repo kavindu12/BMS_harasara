@@ -1,0 +1,41 @@
+D:\SLIIT EDU\Year2 Semester 2\ITP\C# My Practicle\HarasaraIndustries\HarasaraIndustries\obj\Debug\HarasaraIndustries.Form1.resources
+D:\SLIIT EDU\Year2 Semester 2\ITP\C# My Practicle\HarasaraIndustries\HarasaraIndustries\obj\Debug\HarasaraIndustries.mainGUI.resources
+D:\SLIIT EDU\Year2 Semester 2\ITP\C# My Practicle\HarasaraIndustries\HarasaraIndustries\obj\Debug\HarasaraIndustries.payments.resources
+D:\SLIIT EDU\Year2 Semester 2\ITP\C# My Practicle\HarasaraIndustries\HarasaraIndustries\obj\Debug\HarasaraIndustries.Properties.Resources.resources
+D:\SLIIT EDU\Year2 Semester 2\ITP\C# My Practicle\HarasaraIndustries\HarasaraIndustries\obj\Debug\HarasaraIndustries.PurchasingOrders.resources
+D:\SLIIT EDU\Year2 Semester 2\ITP\C# My Practicle\HarasaraIndustries\HarasaraIndustries\obj\Debug\HarasaraIndustries.Reports.resources
+D:\SLIIT EDU\Year2 Semester 2\ITP\C# My Practicle\HarasaraIndustries\HarasaraIndustries\obj\Debug\HarasaraIndustries.SalesOrders.resources
+D:\SLIIT EDU\Year2 Semester 2\ITP\C# My Practicle\HarasaraIndustries\HarasaraIndustries\obj\Debug\HarasaraIndustries.csproj.GenerateResource.Cache
+D:\SLIIT EDU\Year2 Semester 2\ITP\C# My Practicle\HarasaraIndustries\HarasaraIndustries\bin\Debug\HarasaraIndustries.exe.config
+D:\SLIIT EDU\Year2 Semester 2\ITP\C# My Practicle\HarasaraIndustries\HarasaraIndustries\bin\Debug\HarasaraIndustries.exe
+D:\SLIIT EDU\Year2 Semester 2\ITP\C# My Practicle\HarasaraIndustries\HarasaraIndustries\bin\Debug\HarasaraIndustries.pdb
+D:\SLIIT EDU\Year2 Semester 2\ITP\C# My Practicle\HarasaraIndustries\HarasaraIndustries\bin\Debug\Bunifu_UI_v1.4.dll
+D:\SLIIT EDU\Year2 Semester 2\ITP\C# My Practicle\HarasaraIndustries\HarasaraIndustries\bin\Debug\MetroFramework.dll
+D:\SLIIT EDU\Year2 Semester 2\ITP\C# My Practicle\HarasaraIndustries\HarasaraIndustries\obj\Debug\HarasaraIndustries.exe
+D:\SLIIT EDU\Year2 Semester 2\ITP\C# My Practicle\HarasaraIndustries\HarasaraIndustries\obj\Debug\HarasaraIndustries.pdb
+D:\SLIIT EDU\Year2 Semester 2\ITP\C# My Practicle\HarasaraIndustries\HarasaraIndustries\obj\Debug\HarasaraIndustries.setting.resources
+D:\SLIIT EDU\Year2 Semester 2\ITP\C# My Practicle\HarasaraIndustries\HarasaraIndustries\obj\Debug\HarasaraIndustries.CustomMsgBox.resources
+D:\SLIIT EDU\Year2 Semester 2\ITP\C# My Practicle\HarasaraIndustries\HarasaraIndustries\obj\Debug\HarasaraIndustries.Bill.resources
+D:\SLIIT EDU\Year2 Semester 2\ITP\C# My Practicle\HarasaraIndustries\HarasaraIndustries\bin\Debug\itextsharp.dll
+D:\SLIIT EDU\Year2 Semester 2\ITP\C# My Practicle\HarasaraIndustries\HarasaraIndustries\obj\Debug\HarasaraIndustries.PurchaseBill.resources
+D:\SLIIT EDU\Year2 Semester 2\ITP\C# My Practicle\HarasaraIndustries\HarasaraIndustries\obj\Debug\Harasara.login.resources
+C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\bin\Debug\HarasaraIndustries.exe.config
+C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\bin\Debug\HarasaraIndustries.exe
+C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\bin\Debug\HarasaraIndustries.pdb
+C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\bin\Debug\MetroFramework.dll
+C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\obj\Debug\HarasaraIndustries.csprojResolveAssemblyReference.cache
+C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\obj\Debug\HarasaraIndustries.Bill.resources
+C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\obj\Debug\HarasaraIndustries.CustomMsgBox.resources
+C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\obj\Debug\HarasaraIndustries.Form1.resources
+C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\obj\Debug\Harasara.login.resources
+C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\obj\Debug\HarasaraIndustries.mainGUI.resources
+C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\obj\Debug\HarasaraIndustries.payments.resources
+C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\obj\Debug\HarasaraIndustries.Properties.Resources.resources
+C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\obj\Debug\HarasaraIndustries.PurchaseBill.resources
+C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\obj\Debug\HarasaraIndustries.PurchasingOrders.resources
+C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\obj\Debug\HarasaraIndustries.Reports.resources
+C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\obj\Debug\HarasaraIndustries.SalesOrders.resources
+C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\obj\Debug\HarasaraIndustries.setting.resources
+C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\obj\Debug\HarasaraIndustries.csproj.GenerateResource.Cache
+C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\obj\Debug\HarasaraIndustries.exe
+C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\obj\Debug\HarasaraIndustries.pdb
