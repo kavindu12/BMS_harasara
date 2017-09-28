@@ -112,11 +112,11 @@ namespace Transport
             {
                 MessageBox.Show("Enter Address.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            else if (Int32.Parse(bunifuCustomTextbox5.Text) < 10)
+            /*else if (Int32.Parse(bunifuCustomTextbox5.Text) < 10)
             { 
                 MessageBox.Show("Enter a number with 10 digits.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            
+           */ 
             
             else
             {
@@ -125,14 +125,14 @@ namespace Transport
                 {
 
                     //insert into table
-                    String insert = "INSERT INTO driverdetails (DriverID, DriverName,DOB, Address, ContactNo) VALUES ('" + this.bunifuCustomTextbox5.Text.ToString() + "' '" + this.dateTimePicker1.Text + "' '" + this.bunifuCustomTextbox2.Text + "' '" + this.bunifuCustomTextbox5.Text + "')";
+                    String insert = "INSERT INTO driverdetails (DriverName,DOB,Address,ContactNo) VALUES ('" + this.bunifuCustomTextbox4.Text.ToString() + "','" + this.dateTimePicker1.Text.ToString() + "','" + this.bunifuCustomTextbox2.Text + "','" + this.bunifuCustomTextbox5.Text + "')";
                     MySqlCommand command = new MySqlCommand(insert, connnection);
                     MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=harasara");
                     MySqlCommand cmnd = new MySqlCommand(insert, con);
                     MySqlDataReader myreader;
                     con.Open();
                     myreader = cmnd.ExecuteReader();
-                    MessageBox.Show("Saved");
+                    MessageBox.Show("Inserted Sucessfully");
 
                 }
 
@@ -171,19 +171,9 @@ namespace Transport
                 bunifuCustomTextbox5.Text = dataGridView1.Rows[e.RowIndex].Cells[4].Value.ToString();
                 
 
-                //comboBox1.Text = DataGridView01.Rows[e.RowIndex].Cells[1].Value.ToString();
-                //Txt_FirstName.Text = DataGridView01.Rows[e.RowIndex].Cells[2].Value.ToString();
-                //mIDDLENAMETextBox.Text = DataGridView01.Rows[e.RowIndex].Cells[3].Value.ToString();
-                //sURNAMETextBox.Text = DataGridView01.Rows[e.RowIndex].Cells[4].Value.ToString();
-                //cITYTextBox.Text = DataGridView01.Rows[e.RowIndex].Cells[5].Value.ToString();
-                //eMAILTextBox.Text = DataGridView01.Rows[e.RowIndex].Cells[6].Value.ToString();
-
             }
-
-
             
-
-
+                        
         }
 
         private void bunifuThinButton7_Click(object sender, EventArgs e)
@@ -203,14 +193,15 @@ namespace Transport
                 if (this.dataGridView1.SelectedRows.Count > 0)
                 {
                     //insert into table
-                    String delete = "DELETE FROM driverdetails WHERE Driver ID = '" + this.dataGridView1.SelectedRows[0] + "'";
-                    MySqlCommand command = new MySqlCommand(delete, connnection);
+                    //String delete = "DELETE FROM driverdetails WHERE Driver ID = '" + this.dataGridView1.Rows[]"'";
+                    //dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
+                   // MySqlCommand command = new MySqlCommand(delete, connnection);
                   
-                    MySqlCommand cmnd = new MySqlCommand(delete, con);
-                    MySqlDataReader myreader;
-                    con.Open();
-                    myreader = cmnd.ExecuteReader();
-                    MessageBox.Show("Deleted Successfully", "Success", MessageBoxButtons.OK);
+                    //MySqlCommand cmnd = new MySqlCommand(delete, con);
+                   // MySqlDataReader myreader;
+                   // con.Open();
+                    //myreader = cmnd.ExecuteReader();
+                    //MessageBox.Show("Deleted Successfully", "Success", MessageBoxButtons.OK);
                 }
 
                 else
@@ -231,6 +222,7 @@ namespace Transport
 
             }
         }
+
 
         private void bunifuThinButton10_Click(object sender, EventArgs e)
         {
@@ -274,17 +266,18 @@ namespace Transport
 
             try
             {
-                if (this.dataGridView1.SelectedRows.Count > 0)
+                if (Convert.ToInt32(this.bunifuCustomTextbox1.Text)>0)
                 {
-                    //insert into table
-                    String delete = "DELETE FROM driverdetails WHERE Driver ID = '" + this.dataGridView1.SelectedRows[0] + "'";
-                    MySqlCommand command = new MySqlCommand(delete, connnection);
+                    //update table
 
-                    MySqlCommand cmnd = new MySqlCommand(delete, con);
+                    String update = "UPDATE SET DriverName = '" + this.bunifuCustomTextbox4.Text.ToString() + "', DOB = '" + this.dateTimePicker1.Text.ToString() + "', Address = '" + this.bunifuCustomTextbox2.Text + "', ContactNo ='" + this.bunifuCustomTextbox5.Text + "' WHERE DriverID = '" + this.bunifuCustomTextbox1.Text + "'";
+                    MySqlCommand command = new MySqlCommand(update, connnection);
+
+                    MySqlCommand cmnd = new MySqlCommand(update, con);
                     MySqlDataReader myreader;
                     con.Open();
                     myreader = cmnd.ExecuteReader();
-                    MessageBox.Show("Deleted Successfully", "Success", MessageBoxButtons.OK);
+                    MessageBox.Show("Updated Successfully", "Success", MessageBoxButtons.OK);
                 }
 
                 else

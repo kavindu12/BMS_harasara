@@ -69,3 +69,4 @@ C:\Users\Ender\Desktop\Harasara_T2\BMS_harasara\BMS_harasara\obj\Debug\BMS_haras
 C:\Users\Ender\Desktop\Harasara_T2\BMS_harasara\BMS_harasara\obj\Debug\BMS_harasara.pdb
 >>>>>>> 07d59d070dcc0d8897c253f36eedb95cab00288b
 C:\Users\kavindu\Desktop\Gittttt\BMS_harasara\BMS_harasara\obj\Debug\BMS_harasara.ProfitEarnedUC.resources
+C:\Users\Ender\Desktop\Harasara_T2\BMS_harasara\BMS_harasara\obj\Debug\BMS_harasara.ProfitEarnedUC.resources

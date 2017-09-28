@@ -115,5 +115,14 @@ namespace Transport
             
             }
         }
+
+        private void bunifuThinButton8_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            Main m1 = new Main();
+            m1.ShowDialog();
+            this.Close();
+
+        }
     }
 }

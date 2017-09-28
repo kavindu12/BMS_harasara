@@ -7,6 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
+
 
 namespace Transport
 {
@@ -16,6 +18,8 @@ namespace Transport
         {
             InitializeComponent();
         }
+
+        MySqlConnection connnection = new MySqlConnection("server=localhost;user id=root;database=harasara");
 
         private void bunifuImageButton2_Click(object sender, EventArgs e)
         {
@@ -67,12 +71,62 @@ namespace Transport
 
         private void bunifuThinButton8_Click(object sender, EventArgs e)
         {
+            if (String.IsNullOrEmpty(bunifuCustomTextbox3.Text))
+            {
+                MessageBox.Show("Enter Distance.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else if (String.IsNullOrEmpty(bunifuCustomTextbox4.Text))
+            {
+                MessageBox.Show("Enter Route Name.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else if (String.IsNullOrEmpty(bunifuCustomTextbox2.Text))
+            {
+                MessageBox.Show("Enter Route Description", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
 
+            else
+            {
+
+
+
+                //Adding vehicle info
+                DataTable dt = new DataTable();
+                dbconnect db = new dbconnect();
+
+                MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=harasara");
+
+                String insert = "INSERT INTO route(RouteName,RouteDistance,RouteDescription) VALUES('" + this.bunifuCustomTextbox4.Text.ToString() + "','" + this.bunifuCustomTextbox3.Text.ToString() + "','" + this.bunifuCustomTextbox2.Text.ToString() + "')";
+                MySqlCommand command = new MySqlCommand(insert, con);
+
+                MySqlDataReader myreader;
+                try
+                {
+
+                    con.Open();
+                    myreader = command.ExecuteReader();
+                    MessageBox.Show("Saved Successfully");
+
+                }
+
+
+                catch (Exception ex)
+                {
+
+                    MessageBox.Show(ex.Message, "Error");
+
+                }
+            }
         }
-
         private void bunifuThinButton4_Click(object sender, EventArgs e)
         {
+            DataTable dt = new DataTable();
+            dbconnect db = new dbconnect();
 
+            String id;
+            id = bunifuTextbox1.text;
+
+            dt = db.ReadValue("Select * From route where '" + id + "' = RouteID");
+            dataGridView1.DataSource = dt;
         }
 
         private void bunifuCustomDataGrid1_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -82,18 +136,28 @@ namespace Transport
 
         private void bunifuCustomDataGrid1_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (bunifuCustomDataGrid1.Rows.Count > -1)
+            
+        }
+
+        private void bunifuCustomTextbox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (dataGridView1.Rows.Count > -1)
             {
-                bunifuCustomTextbox1.Text = bunifuCustomDataGrid1.Rows[e.RowIndex].Cells[0].Value.ToString();
-                bunifuCustomTextbox4.Text = bunifuCustomDataGrid1.Rows[e.RowIndex].Cells[0].Value.ToString();
-                bunifuCustomTextbox3.Text = bunifuCustomDataGrid1.Rows[e.RowIndex].Cells[2].Value.ToString();
-                bunifuCustomTextbox2.Text = bunifuCustomDataGrid1.Rows[e.RowIndex].Cells[3].Value.ToString();
-    
+                bunifuCustomTextbox1.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
+                bunifuCustomTextbox4.Text = dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
+                bunifuCustomTextbox3.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
+                bunifuCustomTextbox2.Text = dataGridView1.Rows[e.RowIndex].Cells[3].Value.ToString();
+
 
             }
         }
 
-        private void bunifuCustomTextbox1_TextChanged(object sender, EventArgs e)
+        private void bunifuThinButton6_Click(object sender, EventArgs e)
         {
 
         }
