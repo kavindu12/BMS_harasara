@@ -41,7 +41,7 @@ namespace BMS_harasara
         private void bunifuFlatButton3_Click(object sender, EventArgs e)
         {
             //Machines
-            string x = "mac";
+            string x = "Adminstration";
             login logfrm = new login(x);
             this.Hide();
             logfrm.Show();
@@ -50,7 +50,7 @@ namespace BMS_harasara
         private void bunifuFlatButton1_Click(object sender, EventArgs e)
         {
             //Employees
-            string x = "emp";
+            string x = "Employee";
             login logfrm = new login(x);
             this.Hide();
             logfrm.Show();
@@ -60,7 +60,7 @@ namespace BMS_harasara
         private void bunifuFlatButton2_Click(object sender, EventArgs e)
         {
             //Inventory
-            string x = "inv";
+            string x = "Inventory";
             login logfrm = new login(x);
             this.Hide();
             logfrm.Show();
@@ -69,7 +69,7 @@ namespace BMS_harasara
         private void bunifuFlatButton4_Click(object sender, EventArgs e)
         {
             //Production
-            string x = "pro";
+            string x = "Products";
             login logfrm = new login(x);
             this.Hide();
             logfrm.Show();
@@ -78,7 +78,7 @@ namespace BMS_harasara
         private void bunifuFlatButton5_Click(object sender, EventArgs e)
         {
             //Financial
-            string x = "fin";
+            string x = "Finance";
             login logfrm = new login(x);
             this.Hide();
             logfrm.Show();
@@ -87,7 +87,7 @@ namespace BMS_harasara
         private void bunifuFlatButton7_Click(object sender, EventArgs e)
         {
             //Transport
-            string x = "tra";
+            string x = "Transport";
             login logfrm = new login(x);
             this.Hide();
             logfrm.Show();
@@ -96,7 +96,7 @@ namespace BMS_harasara
         private void bunifuFlatButton6_Click(object sender, EventArgs e)
         {
             //Sales and purchases
-            string x = "sal";
+            string x = "Sales";
             login logfrm = new login(x);
             this.Hide();
             logfrm.Show();
@@ -105,7 +105,7 @@ namespace BMS_harasara
         private void bunifuFlatButton8_Click(object sender, EventArgs e)
         {
             //System Admin
-            string x = "sys";
+            string x = "Adminstration";
             login logfrm = new login(x);
             this.Hide();
             logfrm.Show();
