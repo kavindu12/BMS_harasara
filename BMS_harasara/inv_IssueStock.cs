@@ -39,7 +39,7 @@ namespace BMS_harasara
 
             string qry = "Select * from warehouse";
 
-            MySqlConnection connst = new MySqlConnection("server=localhost;user id=root;database=bms_harasaradb");
+            MySqlConnection connst = new MySqlConnection("server=localhost;user id=root;database=harasara");
             MySqlCommand cmd1 = new MySqlCommand(qry, connst);
             MySqlDataReader reader;
 
@@ -57,15 +57,18 @@ namespace BMS_harasara
             }
             catch(Exception ex)
             {
-                MessageBox.Show("Database error");
+                MessageBox.Show(ex.Message,"Database error");
             }
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
+            
+
+            
+            
             int itemId = int.Parse(textBox1.Text);
             int count = int.Parse(textBox3.Text);
-            //float price = float.Parse(textBox3.Text);
             string loc = (String)comboBox1.SelectedItem;
             string floc = (String)comboBox3.SelectedItem;
             String name = textBox1.Text;
@@ -75,7 +78,7 @@ namespace BMS_harasara
 
             string qry = "Select * from inventory where item_id='" + itemId + "';";
 
-            MySqlConnection connst = new MySqlConnection("server=localhost;user id=root;database=bms_harasaradb");
+            MySqlConnection connst = new MySqlConnection("server=localhost;user id=root;database=harasara");
             MySqlCommand cmd1 = new MySqlCommand(qry, connst);
             MySqlDataReader reader;
 
@@ -84,33 +87,42 @@ namespace BMS_harasara
             reader = cmd1.ExecuteReader();
             while (reader.Read())
             {
+                Int32 rolt=reader.GetInt32("rol");
+
                 Int32 countt = reader.GetInt32("count");
                 //float pricet = reader.GetFloat("price");
-
-                Int32 countf = count-countt;
-                //float pricef = (pricet + price) / 2;
-
-                try
+                if (countt >= rolt)
                 {
-                    String qry2 = "Insert into inv_trans(item_id,count,location,type,factory,date) values('" + itemId + "','" + count + "','" + loc + "','" + ttype + "','"+ floc +"','"+datenw+"')";
-                    String qry1 = "Update inventory set count='" + countf + "',last_update='"+datenw+"' where (item_id='" + itemId + "'or name='" + name + "')and location='" + loc + "'";
-                    dbconnect conn = new dbconnect();
+                    Int32 countf = countt - count;
+                    //float pricef = (pricet + price) / 2;
 
-                    conn.ExQuery(qry1);
-                    conn.ExQuery(qry2);
 
-                    MessageBox.Show("Entry Added Success");
-                    textBox1.Text = "";
-                    textBox2.Text = "";
-                    textBox3.Text = "";
-                    //textBox4.Text = "";
 
+                    try
+                    {
+                        String qry2 = "Insert into inv_trans(item_id,count,location,type,factory,date) values('" + itemId + "','" + count + "','" + loc + "','" + ttype + "','" + floc + "','" + datenw + "')";
+                        String qry1 = "Update inventory set count='" + countf + "',last_update='" + datenw + "' where (item_id='" + itemId + "'or name='" + name + "')and location='" + loc + "'";
+                        dbconnect conn = new dbconnect();
+
+                        conn.ExQuery(qry1);
+                        conn.ExQuery(qry2);
+
+                        MessageBox.Show("Entry Added Success");
+                        textBox1.Text = "";
+                        textBox2.Text = "";
+                        textBox3.Text = "";
+                        //textBox4.Text = "";
+
+                    }
+                    catch (Exception ex)
+                    {
+                        MessageBox.Show(ex.Message, "Check database connection");
+                    }
                 }
-                catch (Exception ex)
+                else
                 {
-                    MessageBox.Show("Check database connection");
+                    MessageBox.Show("Low Inventory Unable to Issue");
                 }
-
             }
         }
 
@@ -126,7 +138,7 @@ namespace BMS_harasara
 
             string qry = "Select * from inventory;";
 
-            MySqlConnection connst = new MySqlConnection("server=localhost;user id=root;database=bms_harasaradb");
+            MySqlConnection connst = new MySqlConnection("server=localhost;user id=root;database=harasara");
             MySqlCommand cmd1 = new MySqlCommand(qry, connst);
             MySqlDataReader reader;
 
@@ -145,7 +157,7 @@ namespace BMS_harasara
             }
             catch (Exception ex)
             {
-                MessageBox.Show("database error");
+                MessageBox.Show(ex.Message, "database error");
             }
             textBox1.AutoCompleteCustomSource = coll1;
             textBox2.AutoCompleteCustomSource = coll2;
@@ -175,7 +187,7 @@ namespace BMS_harasara
             String loc = (String)comboBox2.SelectedItem;
             string qry1 = "Select * from inventory where name = '" + theText + "'and location = '" + loc + "';";
 
-            MySqlConnection connst = new MySqlConnection("server=localhost;user id=root;database=bms_harasaradb");
+            MySqlConnection connst = new MySqlConnection("server=localhost;user id=root;database=harasara");
             MySqlCommand cmd1 = new MySqlCommand(qry1, connst);
             MySqlDataReader reader;
 
@@ -193,7 +205,7 @@ namespace BMS_harasara
             }
             catch (Exception ex)
             {
-                MessageBox.Show("database error");
+                MessageBox.Show(ex.Message, "database error");
             }
         }
 
@@ -204,7 +216,7 @@ namespace BMS_harasara
             String loc = (String)comboBox1.SelectedItem;
             string qry1 = "Select * from inventory where item_id = '" + theText + "' and location = '" + loc + "';";
 
-            MySqlConnection connst = new MySqlConnection("server=localhost;user id=root;database=bms_harasaradb");
+            MySqlConnection connst = new MySqlConnection("server=localhost;user id=root;database=harasara");
             MySqlCommand cmd1 = new MySqlCommand(qry1, connst);
             MySqlDataReader reader;
 
@@ -222,7 +234,7 @@ namespace BMS_harasara
             }
             catch (Exception ex)
             {
-                MessageBox.Show("database error");
+                MessageBox.Show(ex.Message, "database error");
             }
         }
     }

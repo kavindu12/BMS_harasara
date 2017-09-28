@@ -39,6 +39,12 @@ namespace BMS_harasara
             openconn();
             cmd.ExecuteNonQuery();
             closeconn();
+            /*MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=harasara");
+            MySqlCommand cmnd = new MySqlCommand(inqry, con);
+            MySqlDataReader myReader;
+            con.Open();
+            myReader = cmnd.ExecuteReader();
+            con.Close();*/
         }
         public DataTable ReadValue(string qry)
         {
