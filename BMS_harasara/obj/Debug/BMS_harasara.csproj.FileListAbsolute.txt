@@ -104,7 +104,6 @@ C:\Users\viraj\Desktop\project\BMS_harasara\BMS_harasara\obj\Debug\BMS_harasara.
 C:\Users\viraj\Desktop\project\BMS_harasara\BMS_harasara\obj\Debug\BMS_harasara.csproj.GenerateResource.Cache
 C:\Users\viraj\Desktop\project\BMS_harasara\BMS_harasara\obj\Debug\BMS_harasara.inv_IssueStock.resources
 >>>>>>> 35fe7fdc79439f7a97294d084f4ab887f6f028aa
-<<<<<<< HEAD
 C:\Users\Nimesha\Desktop\BMS\BMS_harasara\BMS_harasara\bin\Debug\BMS_harasara.exe.config
 C:\Users\Nimesha\Desktop\BMS\BMS_harasara\BMS_harasara\obj\Debug\BMS_harasara.exe
 C:\Users\Nimesha\Desktop\BMS\BMS_harasara\BMS_harasara\obj\Debug\BMS_harasara.pdb
@@ -141,6 +140,5 @@ C:\Users\Nimesha\Desktop\BMS\BMS_harasara\BMS_harasara\obj\Debug\BMS_harasara.we
 C:\Users\Nimesha\Desktop\BMS\BMS_harasara\BMS_harasara\obj\Debug\BMS_harasara.csproj.GenerateResource.Cache
 C:\Users\Nimesha\Desktop\BMS\BMS_harasara\BMS_harasara\bin\Debug\HarasaraIndustries.exe
 C:\Users\Nimesha\Desktop\BMS\BMS_harasara\BMS_harasara\bin\Debug\HarasaraIndustries.pdb
-=======
 C:\Users\Ender\Desktop\Harasara_T2\BMS_harasara\BMS_harasara\obj\Debug\BMS_harasara.inv_IssueStock.resources
 >>>>>>> 1c7750d4832ea8d5cfe0b53fd55063647c959d08

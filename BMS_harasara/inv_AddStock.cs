@@ -121,7 +121,7 @@ namespace BMS_harasara
                                     }
                                     catch (Exception ex)
                                     {
-                                        MessageBox.Show("Check database connection");
+                                        MessageBox.Show("Check database connection again");
                                     }
                     
                 }
