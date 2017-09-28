@@ -17,6 +17,9 @@ namespace BMS_harasara
         {
             InitializeComponent();
             fillCombo();
+            
+
+
         }
         public void fillCombo()
         {

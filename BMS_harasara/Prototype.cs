@@ -46,10 +46,11 @@ namespace BMS_harasara
                 pictureBox1.Image.Save(ms, pictureBox1.Image.RawFormat);
                 byte[] img = ms.ToArray();
 
-                command.CommandText = "INSERT INTO prototype(catagory,description,date,image,name) VALUES(?catagory,?description,?date,?img,?name)";
+                command.CommandText = "INSERT INTO prototype(catagory,description,date,image,name,material_list) VALUES(?catagory,?description,?date,?img,?name,?material)";
                 command.Parameters.Add("?name", MySqlDbType.VarChar).Value = textBox1.Text;
                 command.Parameters.Add("?description", MySqlDbType.VarChar).Value = textBox3.Text;
                 command.Parameters.Add("?catagory", MySqlDbType.VarChar).Value = textBox4.Text;
+                command.Parameters.Add("?material", MySqlDbType.VarChar).Value = textBox5.Text;
                 command.Parameters.Add("?img", MySqlDbType.MediumBlob).Value = img;
                 command.Parameters.Add("?date", MySqlDbType.DateTime).Value = DateTime.Now;
                 command.ExecuteNonQuery();
@@ -69,6 +70,11 @@ namespace BMS_harasara
         }
 
         private void textBox5_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void textBox2_TextChanged(object sender, EventArgs e)
         {
 
         }

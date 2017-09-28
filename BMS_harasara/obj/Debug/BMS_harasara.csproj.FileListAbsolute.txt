@@ -185,3 +185,7 @@ C:\Users\Rochana\Desktop\githarasara\BMS_harasara\BMS_harasara\obj\Debug\BMS_har
 C:\Users\Rochana\Desktop\githarasara\BMS_harasara\BMS_harasara\obj\Debug\BMS_harasara.ProductsUC.resources
 C:\Users\Rochana\Desktop\githarasara\BMS_harasara\BMS_harasara\obj\Debug\BMS_harasara.Progress.resources
 C:\Users\Rochana\Desktop\githarasara\BMS_harasara\BMS_harasara\obj\Debug\BMS_harasara.Prototype.resources
+C:\Users\Rochana\Desktop\githarasara\BMS_harasara\BMS_harasara\obj\Debug\BMS_harasara.ViewPrototype.resources
+C:\Users\Rochana\Desktop\Git\2017.09.28 10.39\BMS_harasara\BMS_harasara\bin\Debug\BMS_harasara.exe.config
+C:\Users\Rochana\Desktop\Git\2017.09.28 10.39\BMS_harasara\BMS_harasara\obj\Debug\BMS_harasara.exe
+C:\Users\Rochana\Desktop\Git\2017.09.28 10.39\BMS_harasara\BMS_harasara\obj\Debug\BMS_harasara.pdb

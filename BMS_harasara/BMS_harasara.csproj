@@ -68,12 +68,6 @@
     <Compile Include="AccountsUC.Designer.cs">
       <DependentUpon>AccountsUC.cs</DependentUpon>
     </Compile>
-    <Compile Include="AddProductUC.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="AddProductUC.Designer.cs">
-      <DependentUpon>AddProductUC.cs</DependentUpon>
-    </Compile>
     <Compile Include="BMS_Finance.cs" />
     <Compile Include="Database.cs" />
     <Compile Include="ExpenditureManager.cs">
@@ -256,6 +250,12 @@
       <DependentUpon>Transport_sub.cs</DependentUpon>
     </Compile>
     <Compile Include="ViaNettSMS.cs" />
+    <Compile Include="ViewPrototype.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ViewPrototype.Designer.cs">
+      <DependentUpon>ViewPrototype.cs</DependentUpon>
+    </Compile>
     <Compile Include="weekCashFlowUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -270,9 +270,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AccountsUC.resx">
       <DependentUpon>AccountsUC.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="AddProductUC.resx">
-      <DependentUpon>AddProductUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ExpenditureManager.resx">
       <DependentUpon>ExpenditureManager.cs</DependentUpon>
@@ -354,6 +351,9 @@
     </Compile>
     <EmbeddedResource Include="Prototype.resx">
       <DependentUpon>Prototype.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ViewPrototype.resx">
+      <DependentUpon>ViewPrototype.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="weekCashFlowUC.resx">
       <DependentUpon>weekCashFlowUC.cs</DependentUpon>
