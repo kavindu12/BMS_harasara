@@ -16,7 +16,9 @@ namespace BMS_harasara
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new inv_sub());
+            Application.Run(new HarasaraIndustries.mainGUI());
+         
+
         }
     }
 }

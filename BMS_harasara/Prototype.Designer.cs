@@ -93,6 +93,7 @@
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(100, 20);
             this.textBox2.TabIndex = 4;
+            this.textBox2.TextChanged += new System.EventHandler(this.textBox2_TextChanged);
             // 
             // label2
             // 
@@ -125,9 +126,9 @@
             this.label5.AutoSize = true;
             this.label5.Location = new System.Drawing.Point(280, 29);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(63, 13);
+            this.label5.Size = new System.Drawing.Size(88, 13);
             this.label5.TabIndex = 9;
-            this.label5.Text = "Material List";
+            this.label5.Text = "Materials needed";
             // 
             // pictureBox1
             // 
@@ -176,6 +177,7 @@
             // 
             this.textBox5.AcceptsReturn = true;
             this.textBox5.Location = new System.Drawing.Point(379, 29);
+            this.textBox5.Multiline = true;
             this.textBox5.Name = "textBox5";
             this.textBox5.Size = new System.Drawing.Size(100, 20);
             this.textBox5.TabIndex = 16;

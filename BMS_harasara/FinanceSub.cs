@@ -15,6 +15,9 @@ namespace BMS_harasara
         public FinanceSub()
         {
             InitializeComponent();
+            lblTime.Text = DateTime.Now.ToString("HH:mm:ss");
+            lblDate.Text = DateTime.Now.ToString("MMM dd yyyy");
+
         }
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
@@ -89,6 +92,13 @@ namespace BMS_harasara
             {
                 this.WindowState = FormWindowState.Normal;
             }*/
+        }
+
+        private void linkLabel1_MouseClick(object sender, MouseEventArgs e)
+        {
+            HarasaraIndustries.mainGUI m1 = new HarasaraIndustries.mainGUI();
+            m1.Show();
+            this.Hide();
         }
     }
 }

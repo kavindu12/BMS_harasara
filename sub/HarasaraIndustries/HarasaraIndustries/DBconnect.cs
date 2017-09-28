@@ -14,7 +14,7 @@ namespace HarasaraIndustries
         MySqlCommand cmd;
 
 
-        //me tyna funtion eken oyta onama query ekak excute krnn pluwn,Insert Update Delete
+      
 
         public void InsertDeleteUpdate(string query)
         {
@@ -38,7 +38,7 @@ namespace HarasaraIndustries
 
             con.Close();
         }
-        //meken oyta database eke tyne ewa interfaces wla datagried view wala pennane pluwn.habai query eka ghnne...
+       
         public void tableLoad(string query,DataGridView dw)
         {
             con.Open();
@@ -67,7 +67,34 @@ namespace HarasaraIndustries
             }
             con.Close();
         }
-             
 
+        public String getValue(String qw)
+        {
+            String txt;
+
+            if (con.State.ToString() == "Closed")
+            {
+                con.Open();
+            }
+
+            MySqlCommand cmd = con.CreateCommand();
+
+            try
+            {
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = qw;
+
+                object p = cmd.ExecuteScalar();
+                txt = p.ToString();
+                con.Close();
+
+                return txt;
+            }
+            catch (Exception e1)
+            {
+                con.Close();
+                return "";
+            }
+        }
     }
 }

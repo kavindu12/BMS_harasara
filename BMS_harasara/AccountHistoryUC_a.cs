@@ -72,7 +72,7 @@ namespace BMS_harasara
         void FillCombo()
         {
             string query="SELECT * FROM Account";
-            MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=harasaraindustries");
+            MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=harasara");
             MySqlCommand cmdDataBase=new MySqlCommand(query,con);
             MySqlDataReader myreader;
             try
@@ -94,6 +94,11 @@ namespace BMS_harasara
         private void comboBox1_SelectedIndexChanged(object sender, EventArgs e)
         {
             //FillCombo();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
 
     }

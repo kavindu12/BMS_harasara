@@ -1,0 +1,41 @@
+E:\SLIIT\2nd year\2nd semester\ITP\my_function\Harasara\Harasara\bin\Debug\Harasara.exe.config
+E:\SLIIT\2nd year\2nd semester\ITP\my_function\Harasara\Harasara\bin\Debug\Harasara.exe
+E:\SLIIT\2nd year\2nd semester\ITP\my_function\Harasara\Harasara\bin\Debug\Harasara.pdb
+E:\SLIIT\2nd year\2nd semester\ITP\my_function\Harasara\Harasara\bin\Debug\Bunifu_UI_v1.4.dll
+E:\SLIIT\2nd year\2nd semester\ITP\my_function\Harasara\Harasara\obj\Debug\Harasara.csprojResolveAssemblyReference.cache
+E:\SLIIT\2nd year\2nd semester\ITP\my_function\Harasara\Harasara\obj\Debug\Harasara.attendance.resources
+E:\SLIIT\2nd year\2nd semester\ITP\my_function\Harasara\Harasara\obj\Debug\Harasara.employee.resources
+E:\SLIIT\2nd year\2nd semester\ITP\my_function\Harasara\Harasara\obj\Debug\Harasara.emp_details.resources
+E:\SLIIT\2nd year\2nd semester\ITP\my_function\Harasara\Harasara\obj\Debug\Harasara.Form1.resources
+E:\SLIIT\2nd year\2nd semester\ITP\my_function\Harasara\Harasara\obj\Debug\Harasara.leaves.resources
+E:\SLIIT\2nd year\2nd semester\ITP\my_function\Harasara\Harasara\obj\Debug\Harasara.Leave_Request.resources
+E:\SLIIT\2nd year\2nd semester\ITP\my_function\Harasara\Harasara\obj\Debug\Harasara.login.resources
+E:\SLIIT\2nd year\2nd semester\ITP\my_function\Harasara\Harasara\obj\Debug\Harasara.main.resources
+E:\SLIIT\2nd year\2nd semester\ITP\my_function\Harasara\Harasara\obj\Debug\Harasara.notification.resources
+E:\SLIIT\2nd year\2nd semester\ITP\my_function\Harasara\Harasara\obj\Debug\Harasara.payrolls.resources
+E:\SLIIT\2nd year\2nd semester\ITP\my_function\Harasara\Harasara\obj\Debug\Harasara.Properties.Resources.resources
+E:\SLIIT\2nd year\2nd semester\ITP\my_function\Harasara\Harasara\obj\Debug\Harasara.search.resources
+E:\SLIIT\2nd year\2nd semester\ITP\my_function\Harasara\Harasara\obj\Debug\Harasara.welcome.resources
+E:\SLIIT\2nd year\2nd semester\ITP\my_function\Harasara\Harasara\obj\Debug\Harasara.csproj.GenerateResource.Cache
+E:\SLIIT\2nd year\2nd semester\ITP\my_function\Harasara\Harasara\obj\Debug\Harasara.exe
+E:\SLIIT\2nd year\2nd semester\ITP\my_function\Harasara\Harasara\obj\Debug\Harasara.pdb
+C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\Harasara\Harasara\bin\Debug\Harasara.exe.config
+C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\Harasara\Harasara\bin\Debug\Harasara.exe
+C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\Harasara\Harasara\bin\Debug\Harasara.pdb
+C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\Harasara\Harasara\obj\Debug\Harasara.attendance.resources
+C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\Harasara\Harasara\obj\Debug\Harasara.employee.resources
+C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\Harasara\Harasara\obj\Debug\Harasara.emp_details.resources
+C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\Harasara\Harasara\obj\Debug\Harasara.Form1.resources
+C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\Harasara\Harasara\obj\Debug\Harasara.leaves.resources
+C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\Harasara\Harasara\obj\Debug\Harasara.Leave_Request.resources
+C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\Harasara\Harasara\obj\Debug\Harasara.main.resources
+C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\Harasara\Harasara\obj\Debug\Harasara.notification.resources
+C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\Harasara\Harasara\obj\Debug\Harasara.payrolls.resources
+C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\Harasara\Harasara\obj\Debug\Harasara.Properties.Resources.resources
+C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\Harasara\Harasara\obj\Debug\Harasara.search.resources
+C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\Harasara\Harasara\obj\Debug\Harasara.welcome.resources
+C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\Harasara\Harasara\obj\Debug\Harasara.csproj.GenerateResource.Cache
+C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\Harasara\Harasara\obj\Debug\Harasara.exe
+C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\Harasara\Harasara\obj\Debug\Harasara.pdb
+C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\Harasara\Harasara\obj\Debug\Harasara.csprojResolveAssemblyReference.cache
+C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\Harasara\Harasara\obj\Debug\Harasara.login.resources

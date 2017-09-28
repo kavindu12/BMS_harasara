@@ -56,6 +56,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AdminMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AdminMain.designer.cs">
+      <DependentUpon>AdminMain.cs</DependentUpon>
+    </Compile>
     <Compile Include="Bill.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -76,6 +82,15 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
+=======
+    <Compile Include="machine.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Machines.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+>>>>>>> d3c4b4974704c5801354294ca041c6097e10e717
     <Compile Include="mainGUI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -89,6 +104,12 @@
       <DependentUpon>payments.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
+    <Compile Include="promotions.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="promotions.designer.cs">
+      <DependentUpon>promotions.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="PurchaseBill.cs">
       <SubType>Form</SubType>
@@ -120,8 +141,14 @@
     <Compile Include="setting.Designer.cs">
       <DependentUpon>setting.cs</DependentUpon>
     </Compile>
+    <Compile Include="SystemAdmins.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
     <Compile Include="textBoxValidations.cs" />
     <Compile Include="validation.cs" />
+    <EmbeddedResource Include="AdminMain.resx">
+      <DependentUpon>AdminMain.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Bill.resx">
       <DependentUpon>Bill.cs</DependentUpon>
     </EmbeddedResource>
@@ -136,6 +163,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="payments.resx">
       <DependentUpon>payments.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="promotions.resx">
+      <DependentUpon>promotions.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -173,20 +203,6 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\..\..\BMS_harasara\BMS_harasara.csproj">
-      <Project>{d4834a5a-add2-4508-91f5-db5fe955e8ad}</Project>
-      <Name>BMS_harasara</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Harasara\Harasara.csproj">
-      <Project>{99d60cf6-bc00-4bdf-a175-e6f1d2f699f0}</Project>
-      <Name>Harasara</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\..\Transport\Transport.csproj">
-      <Project>{b511d748-7feb-49dc-9823-33b8731fdaf8}</Project>
-      <Name>Transport</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

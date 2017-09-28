@@ -128,6 +128,11 @@ namespace HarasaraIndustries
             m1.ShowDialog();
 
         }
+
+        private void lblDate_Click(object sender, EventArgs e)
+        {
+
+        }
         }
     }
 

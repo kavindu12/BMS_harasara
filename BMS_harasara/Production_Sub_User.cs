@@ -26,5 +26,16 @@ namespace BMS_harasara
             puc.Dock = DockStyle.Fill;
             puc.BringToFront();
         }
+
+        private void bunifuFlatButton2_Click(object sender, EventArgs e)
+        {
+
+            ViewPrototype puc = new ViewPrototype();
+
+
+            panel1.Controls.Add(puc);
+            puc.Dock = DockStyle.Fill;
+            puc.BringToFront();
+        }
     }
 }

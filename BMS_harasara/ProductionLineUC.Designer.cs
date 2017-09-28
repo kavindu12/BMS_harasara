@@ -102,13 +102,11 @@
             // 
             // dateTimePicker1
             // 
-            this.dateTimePicker1.CustomFormat = "yyyy/mm/dd";
-            this.dateTimePicker1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.dateTimePicker1.Location = new System.Drawing.Point(0, 0);
+            this.dateTimePicker1.CustomFormat = "\"\'yyyy\'/\'mm\'/\'dd\'\"";
+            this.dateTimePicker1.Location = new System.Drawing.Point(19, 41);
             this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(627, 20);
+            this.dateTimePicker1.Size = new System.Drawing.Size(200, 20);
             this.dateTimePicker1.TabIndex = 6;
-            this.dateTimePicker1.ValueChanged += new System.EventHandler(this.dateTimePicker1_ValueChanged);
             // 
             // ProductionLineUC
             // 

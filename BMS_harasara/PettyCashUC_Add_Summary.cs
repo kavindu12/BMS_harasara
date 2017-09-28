@@ -51,7 +51,7 @@ namespace BMS_harasara
         }
         public void CalculateTotal()
         {
-            MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=harasaraindustries");
+            MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=harasara");
             MySqlDataReader myreader;
             if (string.Compare(comboBox1.SelectedItem.ToString(),"Sales")==0)
             {
@@ -248,7 +248,7 @@ namespace BMS_harasara
         }
         public void loadChart()
         {
-            MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=harasaraindustries");
+            MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=harasara");
             MySqlDataReader myreader;
             if (string.Compare(comboBox1.SelectedItem.ToString(), "Sales") == 0)
             {
