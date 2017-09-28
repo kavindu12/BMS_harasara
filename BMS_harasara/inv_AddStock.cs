@@ -34,8 +34,8 @@ namespace BMS_harasara
         void fillcombo()
         {
             string qry = "Select * from warehouse;";
-            
-            MySqlConnection connst = new MySqlConnection("server=localhost;user id=root;database=bms_harasaradb");
+
+            MySqlConnection connst = new MySqlConnection("server=localhost;user id=root;database=harasara");
             MySqlCommand cmd1 = new MySqlCommand(qry,connst);
             MySqlDataReader reader;
 
@@ -88,7 +88,7 @@ namespace BMS_harasara
 
             string qry = "Select * from inventory where item_id='"+itemId+"';";
 
-            MySqlConnection connst = new MySqlConnection("server=localhost;user id=root;database=bms_harasaradb");
+            MySqlConnection connst = new MySqlConnection("server=localhost;user id=root;database=harasara");
             MySqlCommand cmd1 = new MySqlCommand(qry, connst);
             MySqlDataReader reader;
 
@@ -149,7 +149,7 @@ namespace BMS_harasara
 
             string qry = "Select * from inventory;";
 
-            MySqlConnection connst = new MySqlConnection("server=localhost;user id=root;database=bms_harasaradb");
+            MySqlConnection connst = new MySqlConnection("server=localhost;user id=root;database=harasara");
             MySqlCommand cmd1 = new MySqlCommand(qry, connst);
             MySqlDataReader reader;
 
@@ -198,7 +198,7 @@ namespace BMS_harasara
             String loc = (String)comboBox1.SelectedItem;
             string qry1 = "Select * from inventory where name = '" + theText + "'and location = '" + loc + "';";
 
-            MySqlConnection connst = new MySqlConnection("server=localhost;user id=root;database=bms_harasaradb");
+            MySqlConnection connst = new MySqlConnection("server=localhost;user id=root;database=harasara");
             MySqlCommand cmd1 = new MySqlCommand(qry1, connst);
             MySqlDataReader reader;
 
@@ -230,7 +230,7 @@ namespace BMS_harasara
             String loc = (String)comboBox1.SelectedItem;
             string qry1 = "Select * from inventory where item_id = '" + theText + "' and location = '"+loc+"';";
 
-            MySqlConnection connst = new MySqlConnection("server=localhost;user id=root;database=bms_harasaradb");
+            MySqlConnection connst = new MySqlConnection("server=localhost;user id=root;database=harasara");
             MySqlCommand cmd1 = new MySqlCommand(qry1, connst);
             MySqlDataReader reader;
 
@@ -250,6 +250,11 @@ namespace BMS_harasara
             {
                 MessageBox.Show(ex.Message,"database error");
             }
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
         } 
     }
 }
