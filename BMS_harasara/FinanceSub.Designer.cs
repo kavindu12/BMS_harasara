@@ -36,8 +36,6 @@
             this.bunifuImageButton2 = new Bunifu.Framework.UI.BunifuImageButton();
             this.lblDate = new System.Windows.Forms.Label();
             this.lblTime = new System.Windows.Forms.Label();
-            this.closeWindow = new Bunifu.Framework.UI.BunifuImageButton();
-            this.minimizeWindow = new Bunifu.Framework.UI.BunifuImageButton();
             this.label1 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.doubleBitmapControl1 = new BunifuAnimatorNS.DoubleBitmapControl();
@@ -48,12 +46,12 @@
             this.bunifuFlatButton4 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton1 = new Bunifu.Framework.UI.BunifuFlatButton();
             this.bunifuFlatButton5 = new Bunifu.Framework.UI.BunifuFlatButton();
+            this.bunifuImageButton3 = new Bunifu.Framework.UI.BunifuImageButton();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.closeWindow)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.minimizeWindow)).BeginInit();
             this.panel3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).BeginInit();
             this.SuspendLayout();
             // 
             // bunifuElipse1
@@ -64,12 +62,11 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.panel1.Controls.Add(this.bunifuImageButton3);
             this.panel1.Controls.Add(this.bunifuImageButton1);
-            this.panel1.Controls.Add(this.bunifuImageButton2);
             this.panel1.Controls.Add(this.lblDate);
             this.panel1.Controls.Add(this.lblTime);
-            this.panel1.Controls.Add(this.closeWindow);
-            this.panel1.Controls.Add(this.minimizeWindow);
+            this.panel1.Controls.Add(this.bunifuImageButton2);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
@@ -83,7 +80,7 @@
             this.bunifuImageButton1.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
             this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(905, 3);
+            this.bunifuImageButton1.Location = new System.Drawing.Point(909, 3);
             this.bunifuImageButton1.Name = "bunifuImageButton1";
             this.bunifuImageButton1.Size = new System.Drawing.Size(26, 29);
             this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -98,7 +95,7 @@
             this.bunifuImageButton2.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.bunifuImageButton2.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton2.Image")));
             this.bunifuImageButton2.ImageActive = null;
-            this.bunifuImageButton2.Location = new System.Drawing.Point(874, 1);
+            this.bunifuImageButton2.Location = new System.Drawing.Point(878, 2);
             this.bunifuImageButton2.Name = "bunifuImageButton2";
             this.bunifuImageButton2.Size = new System.Drawing.Size(25, 31);
             this.bunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -106,6 +103,7 @@
             this.bunifuImageButton2.TabStop = false;
             this.bunifuImageButton2.WaitOnLoad = true;
             this.bunifuImageButton2.Zoom = 10;
+            this.bunifuImageButton2.Click += new System.EventHandler(this.bunifuImageButton2_Click);
             // 
             // lblDate
             // 
@@ -130,34 +128,6 @@
             this.lblTime.TabIndex = 2;
             this.lblTime.Text = "22:22:22";
             this.lblTime.UseWaitCursor = true;
-            // 
-            // closeWindow
-            // 
-            this.closeWindow.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.closeWindow.Image = ((System.Drawing.Image)(resources.GetObject("closeWindow.Image")));
-            this.closeWindow.ImageActive = null;
-            this.closeWindow.Location = new System.Drawing.Point(980, 2);
-            this.closeWindow.Name = "closeWindow";
-            this.closeWindow.Size = new System.Drawing.Size(26, 29);
-            this.closeWindow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.closeWindow.TabIndex = 2;
-            this.closeWindow.TabStop = false;
-            this.closeWindow.UseWaitCursor = true;
-            this.closeWindow.Zoom = 10;
-            // 
-            // minimizeWindow
-            // 
-            this.minimizeWindow.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.minimizeWindow.Image = ((System.Drawing.Image)(resources.GetObject("minimizeWindow.Image")));
-            this.minimizeWindow.ImageActive = null;
-            this.minimizeWindow.Location = new System.Drawing.Point(949, 0);
-            this.minimizeWindow.Name = "minimizeWindow";
-            this.minimizeWindow.Size = new System.Drawing.Size(25, 31);
-            this.minimizeWindow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.minimizeWindow.TabIndex = 2;
-            this.minimizeWindow.TabStop = false;
-            this.minimizeWindow.UseWaitCursor = true;
-            this.minimizeWindow.Zoom = 10;
             // 
             // label1
             // 
@@ -337,6 +307,20 @@
             this.bunifuFlatButton5.Textcolor = System.Drawing.Color.White;
             this.bunifuFlatButton5.TextFont = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             // 
+            // bunifuImageButton3
+            // 
+            this.bunifuImageButton3.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.bunifuImageButton3.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton3.Image")));
+            this.bunifuImageButton3.ImageActive = null;
+            this.bunifuImageButton3.Location = new System.Drawing.Point(847, 2);
+            this.bunifuImageButton3.Name = "bunifuImageButton3";
+            this.bunifuImageButton3.Size = new System.Drawing.Size(25, 31);
+            this.bunifuImageButton3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton3.TabIndex = 5;
+            this.bunifuImageButton3.TabStop = false;
+            this.bunifuImageButton3.WaitOnLoad = true;
+            this.bunifuImageButton3.Zoom = 10;
+            // 
             // FinanceSub
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -355,14 +339,14 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "FinanceSub";
             this.Text = "FinanceSub";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.FinanceSub_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.closeWindow)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.minimizeWindow)).EndInit();
             this.panel3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton3)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -382,11 +366,10 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label lblDate;
         private System.Windows.Forms.Label lblTime;
-        private Bunifu.Framework.UI.BunifuImageButton closeWindow;
-        private Bunifu.Framework.UI.BunifuImageButton minimizeWindow;
         private System.Windows.Forms.Label label1;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton1;
         private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton2;
         private Bunifu.Framework.UI.BunifuFlatButton bunifuFlatButton5;
+        private Bunifu.Framework.UI.BunifuImageButton bunifuImageButton3;
     }
 }

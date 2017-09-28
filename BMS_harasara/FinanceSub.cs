@@ -78,5 +78,17 @@ namespace BMS_harasara
                 AccountsUC.Instance_auc.BringToFront();
             }
         }
+
+        private void bunifuImageButton2_Click(object sender, EventArgs e)
+        {
+           /* if (this.WindowState == FormWindowState.Normal)
+            {
+                this.WindowState = FormWindowState.Maximized;
+            }
+            else
+            {
+                this.WindowState = FormWindowState.Normal;
+            }*/
+        }
     }
 }

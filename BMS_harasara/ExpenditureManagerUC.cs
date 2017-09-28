@@ -36,7 +36,7 @@ namespace BMS_harasara
 
         private void ExpenditureManagerUC_Load(object sender, EventArgs e)
         {
-
+            this.Dock = DockStyle.Fill;
         }
         public void LoadLabels()
         {
