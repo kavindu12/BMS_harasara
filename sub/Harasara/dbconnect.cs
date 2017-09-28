@@ -31,6 +31,59 @@ namespace Harasara
             con.Close();
 
         }
+        public int getValue(string query)
+        {
+             
+            con.Open();
+
+            try
+            {
+                cmd = con.CreateCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = query;
+                int x = Convert.ToInt32(cmd.ExecuteScalar());
+                con.Close();
+                return x;
+
+
+
+
+            }
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message);
+                return 0;
+            }
+        }
+
+        public string getString(string query)
+        {
+            con.Open();
+
+            try
+            {
+                cmd = con.CreateCommand();
+                cmd.CommandType = CommandType.Text;
+                cmd.CommandText = query;
+                string x = cmd.ExecuteScalar().ToString();
+                con.Close();
+                return x;
+
+
+
+
+            }
+            catch (Exception ex)
+            {
+                string charc = " ";
+                MessageBox.Show(ex.Message, "OK");
+                con.Close();
+                return charc;
+            }
+
+        }
+        
 
     }
 }

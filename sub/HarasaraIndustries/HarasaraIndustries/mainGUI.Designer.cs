@@ -204,6 +204,7 @@
             this.Production.TabIndex = 1;
             this.Production.Textcolor = System.Drawing.Color.White;
             this.Production.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Production.Click += new System.EventHandler(this.Production_Click);
             // 
             // Financial
             // 

@@ -46,7 +46,7 @@ namespace BMS_harasara
                 DateTime dt=DateTime.Now;
                 string dat = dt.ToString("yyyy-MM-dd");
                 string query = "SELECT profit,date FROM profit_loss WHERE date='"+dat+"'";
-                MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=harasaraindustries");
+                MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=harasara");
                 MySqlCommand cmnd = new MySqlCommand(query, con);
                 MySqlDataReader myReader;
                 con.Open();
@@ -74,7 +74,7 @@ namespace BMS_harasara
                 DateTime dt = DateTime.Now;
                 string dat = dt.ToString("yyyy-MM-dd");
                 string query = "SELECT SUM(Salary)+SUM(Utility)+SUM(Rent) FROM pettycash WHERE date='" + dat + "'";
-                MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=harasaraindustries");
+                MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=harasara");
                 MySqlCommand cmnd = new MySqlCommand(query, con);
                 MySqlDataReader myReader;
                 con.Open();
@@ -99,7 +99,7 @@ namespace BMS_harasara
                 DateTime dt = DateTime.Now;
                 string dat = dt.ToString("yyyy-MM-dd");
                 string query = "SELECT BALANCE FROM account WHERE accountnumber=123456789112456";
-                MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=harasaraindustries");
+                MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=harasara");
                 MySqlCommand cmnd = new MySqlCommand(query, con);
                 MySqlDataReader myReader;
                 con.Open();

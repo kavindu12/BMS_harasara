@@ -76,7 +76,9 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="mainGUI.cs" />
+    <Compile Include="mainGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="mainGUI.Designer.cs">
       <DependentUpon>mainGUI.cs</DependentUpon>
     </Compile>
@@ -176,6 +178,10 @@
     <ProjectReference Include="..\..\Harasara\Harasara.csproj">
       <Project>{99d60cf6-bc00-4bdf-a175-e6f1d2f699f0}</Project>
       <Name>Harasara</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Transport\Transport.csproj">
+      <Project>{b511d748-7feb-49dc-9823-33b8731fdaf8}</Project>
+      <Name>Transport</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

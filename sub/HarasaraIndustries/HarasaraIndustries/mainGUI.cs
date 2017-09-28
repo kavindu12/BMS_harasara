@@ -202,6 +202,15 @@ namespace HarasaraIndustries
             this.Hide();
         }
 
+        private void Production_Click(object sender, EventArgs e)
+        {
+            Harasara.login l1 = new Harasara.login();
+            l1.Show();
+            this.Hide();
+
+
+        }
+
 
     }
 }

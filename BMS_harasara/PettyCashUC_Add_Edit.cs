@@ -49,7 +49,7 @@ namespace BMS_harasara
         }
         public void EnterAllTextBoxValues(string qu,string type)
         {
-            MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=harasaraindustries");
+            MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=harasara");
             MySqlCommand cmnd = new MySqlCommand(qu, con);
             MySqlDataReader myreader;
             try
@@ -135,7 +135,7 @@ namespace BMS_harasara
             try
             {
                 string query = "UPDATE pettycash SET sales='" + Convert.ToDouble(bunifuCustomTextbox7.Text) + "',Salary='" + Convert.ToDouble(bunifuCustomTextbox2.Text) + "',Rent='" + Convert.ToDouble(bunifuCustomTextbox4.Text) + "',Other='" + Convert.ToDouble(bunifuCustomTextbox6.Text) + "',Income='" + Convert.ToDouble(bunifuCustomTextbox5.Text) + "',Utility='" + Convert.ToDouble(bunifuCustomTextbox3.Text) + "',Capital='" + Convert.ToDouble(bunifuCustomTextbox8.Text) + "' WHERE Voucher='" + Convert.ToInt32(bunifuCustomTextbox1.Text) + "'";
-                MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=harasaraindustries");
+                MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=harasara");
                 MySqlCommand cmnd = new MySqlCommand(query, con);
                 MySqlDataReader myReader;
                 con.Open();
@@ -256,7 +256,7 @@ namespace BMS_harasara
         public void LoadLabelValues()
         {
             string query = "SELECT Balance FROM account WHERE accountnumber=123456789112456";
-            MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=harasaraindustries");
+            MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=harasara");
             MySqlCommand cmnd = new MySqlCommand(query, con);
             MySqlDataReader myreader;
             try
