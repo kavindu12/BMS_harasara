@@ -28,7 +28,71 @@ namespace BMS_harasara
         public inv_AddNewItem()
         {
             InitializeComponent();
-            //fillcombo();
+            fillcombo();
+            fillcombo2();
+        }
+
+        void fillcombo()
+        {
+            string qry = "Select * from warehouse;";
+            
+
+            MySqlConnection connst = new MySqlConnection("server=localhost;user id=root;database=bms_harasaradb");
+            MySqlCommand cmd1 = new MySqlCommand(qry, connst);
+           
+
+            MySqlDataReader reader;
+            
+            try
+            {
+                connst.Open();
+                reader = cmd1.ExecuteReader();
+                while (reader.Read())
+                {
+                    string location = reader.GetString("location");
+                    comboBox2.Items.Add(location);
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("database error");
+            }          
+
+        }
+
+        void fillcombo2()
+        {
+           
+            string qry1 = "Select * from metrics;";
+            
+
+            MySqlConnection connst = new MySqlConnection("server=localhost;user id=root;database=bms_harasaradb");
+            
+            MySqlCommand cmd2 = new MySqlCommand(qry1, connst);
+            ;
+
+            
+            MySqlDataReader reader1;
+            try
+            {
+                connst.Open();
+               
+                reader1 = cmd2.ExecuteReader();
+                while (reader1.Read())
+                {
+                    string itype = reader1.GetString("type");
+                    comboBox1.Items.Add(itype);
+
+                    //string imetric = reader1.GetString("metric");
+                    //comboBox3.Items.Add(imetric);
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("database error");
+            }
         }
 
         
@@ -111,6 +175,38 @@ namespace BMS_harasara
             dbconnect conn = new dbconnect();
             conn.ExQuery(qry);
             MessageBox.Show("Entry Added Success");
+        }
+
+        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            string itype = (string)comboBox1.SelectedItem;
+            string qry1 = "Select metric from metrics where type = '"+itype+"';";
+
+
+            MySqlConnection connst = new MySqlConnection("server=localhost;user id=root;database=bms_harasaradb");
+
+            MySqlCommand cmd2 = new MySqlCommand(qry1, connst);
+            ;
+
+
+            MySqlDataReader reader1;
+            try
+            {
+                connst.Open();
+
+                reader1 = cmd2.ExecuteReader();
+                while (reader1.Read())
+                {
+
+                    string imetric = reader1.GetString("metric");
+                    comboBox3.Items.Add(imetric);
+                }
+
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("database error");
+            }
         }
         
     }
