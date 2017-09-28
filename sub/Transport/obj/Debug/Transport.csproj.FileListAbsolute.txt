@@ -95,9 +95,7 @@ C:\Users\Ender\Desktop\Harasara_T2\BMS_harasara\sub\Transport\obj\Debug\Transpor
 C:\Users\Ender\Desktop\Harasara_T2\BMS_harasara\sub\Transport\obj\Debug\Transport.csproj.GenerateResource.Cache
 C:\Users\Ender\Desktop\Harasara_T2\BMS_harasara\sub\Transport\obj\Debug\Transport.exe
 C:\Users\Ender\Desktop\Harasara_T2\BMS_harasara\sub\Transport\obj\Debug\Transport.pdb
-<<<<<<< HEAD
 C:\Users\viraj\Desktop\project\BMS_harasara\sub\Transport\obj\Debug\Transport.SMS.resources
-=======
 >>>>>>> 35fe7fdc79439f7a97294d084f4ab887f6f028aa
 C:\Users\kavindu\Desktop\Gittttt\BMS_harasara\sub\Transport\bin\Debug\Transport.exe.config
 C:\Users\kavindu\Desktop\Gittttt\BMS_harasara\sub\Transport\bin\Debug\Transport.exe
@@ -115,22 +113,4 @@ C:\Users\kavindu\Desktop\Gittttt\BMS_harasara\sub\Transport\obj\Debug\Transport.
 C:\Users\kavindu\Desktop\Gittttt\BMS_harasara\sub\Transport\obj\Debug\Transport.csproj.GenerateResource.Cache
 C:\Users\kavindu\Desktop\Gittttt\BMS_harasara\sub\Transport\obj\Debug\Transport.exe
 C:\Users\kavindu\Desktop\Gittttt\BMS_harasara\sub\Transport\obj\Debug\Transport.pdb
-<<<<<<< HEAD
-C:\Users\Ender\Desktop\Harasara_T2\BMS_harasara\sub\Transport\bin\Debug\Transport.exe.config
-C:\Users\Ender\Desktop\Harasara_T2\BMS_harasara\sub\Transport\bin\Debug\Transport.exe
-C:\Users\Ender\Desktop\Harasara_T2\BMS_harasara\sub\Transport\bin\Debug\Transport.pdb
-C:\Users\Ender\Desktop\Harasara_T2\BMS_harasara\sub\Transport\obj\Debug\Transport.orderRoute.resources
-C:\Users\Ender\Desktop\Harasara_T2\BMS_harasara\sub\Transport\obj\Debug\Transport.repair.resources
-C:\Users\Ender\Desktop\Harasara_T2\BMS_harasara\sub\Transport\obj\Debug\Transport.driver.resources
-C:\Users\Ender\Desktop\Harasara_T2\BMS_harasara\sub\Transport\obj\Debug\Transport.Main.resources
-C:\Users\Ender\Desktop\Harasara_T2\BMS_harasara\sub\Transport\obj\Debug\Transport.Properties.Resources.resources
-C:\Users\Ender\Desktop\Harasara_T2\BMS_harasara\sub\Transport\obj\Debug\Transport.report.resources
-C:\Users\Ender\Desktop\Harasara_T2\BMS_harasara\sub\Transport\obj\Debug\Transport.route.resources
-C:\Users\Ender\Desktop\Harasara_T2\BMS_harasara\sub\Transport\obj\Debug\Transport.SMS.resources
-C:\Users\Ender\Desktop\Harasara_T2\BMS_harasara\sub\Transport\obj\Debug\Transport.vehicle.resources
-C:\Users\Ender\Desktop\Harasara_T2\BMS_harasara\sub\Transport\obj\Debug\Transport.csproj.GenerateResource.Cache
-C:\Users\Ender\Desktop\Harasara_T2\BMS_harasara\sub\Transport\obj\Debug\Transport.exe
-C:\Users\Ender\Desktop\Harasara_T2\BMS_harasara\sub\Transport\obj\Debug\Transport.pdb
-=======
 >>>>>>> b0a65901fb5e25cb5a8d3aae6c1c768fbf684598
->>>>>>> 35fe7fdc79439f7a97294d084f4ab887f6f028aa

@@ -266,11 +266,9 @@ namespace Transport
 
             try
             {
-                if (Convert.ToInt32(this.bunifuCustomTextbox1.Text)>0)
-                {
-                    //update table
+                //update table
 
-                    String update = "UPDATE SET DriverName = '" + this.bunifuCustomTextbox4.Text.ToString() + "', DOB = '" + this.dateTimePicker1.Text.ToString() + "', Address = '" + this.bunifuCustomTextbox2.Text + "', ContactNo ='" + this.bunifuCustomTextbox5.Text + "' WHERE DriverID = '" + this.bunifuCustomTextbox1.Text + "'";
+                    String update = "UPDATE driverdetails SET DriverName = '" + this.bunifuCustomTextbox4.Text.ToString() + "', DOB = '" + this.dateTimePicker1.Text.ToString() + "', Address = '" + this.bunifuCustomTextbox2.Text + "', ContactNo ='" + this.bunifuCustomTextbox5.Text + "' WHERE DriverID = '" + this.bunifuCustomTextbox1.Text + "'";
                     MySqlCommand command = new MySqlCommand(update, connnection);
 
                     MySqlCommand cmnd = new MySqlCommand(update, con);
@@ -278,16 +276,9 @@ namespace Transport
                     con.Open();
                     myreader = cmnd.ExecuteReader();
                     MessageBox.Show("Updated Successfully", "Success", MessageBoxButtons.OK);
-                }
+               
 
-                else
-                {
-
-                    MessageBox.Show("Please select a row to delete", "Error", MessageBoxButtons.OK);
-
-
-
-                }
+                
             }
 
             catch (Exception ex)
