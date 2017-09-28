@@ -114,6 +114,7 @@ C:\Users\kavindu\Desktop\Gittttt\BMS_harasara\sub\Transport\obj\Debug\Transport.
 C:\Users\kavindu\Desktop\Gittttt\BMS_harasara\sub\Transport\obj\Debug\Transport.exe
 C:\Users\kavindu\Desktop\Gittttt\BMS_harasara\sub\Transport\obj\Debug\Transport.pdb
 >>>>>>> b0a65901fb5e25cb5a8d3aae6c1c768fbf684598
+<<<<<<< HEAD
 C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\Transport\bin\Debug\Transport.exe.config
 C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\Transport\bin\Debug\Transport.exe
 C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\Transport\bin\Debug\Transport.pdb
@@ -130,3 +131,5 @@ C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\Transport\obj\Debug\Transport.vehi
 C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\Transport\obj\Debug\Transport.csproj.GenerateResource.Cache
 C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\Transport\obj\Debug\Transport.exe
 C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\Transport\obj\Debug\Transport.pdb
+=======
+>>>>>>> 1c7750d4832ea8d5cfe0b53fd55063647c959d08
