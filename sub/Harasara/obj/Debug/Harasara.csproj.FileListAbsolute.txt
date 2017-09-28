@@ -40,6 +40,28 @@ C:\Users\viraj\Desktop\harasara\Harasara\obj\Debug\Harasara.search.resources
 C:\Users\viraj\Desktop\harasara\Harasara\obj\Debug\Harasara.welcome.resources
 C:\Users\viraj\Desktop\harasara\Harasara\obj\Debug\Harasara.csproj.GenerateResource.Cache
 <<<<<<< HEAD
+C:\Users\viraj\Desktop\project\BMS_harasara\sub\Harasara\bin\Debug\Harasara.exe.config
+C:\Users\viraj\Desktop\project\BMS_harasara\sub\Harasara\bin\Debug\Harasara.exe
+C:\Users\viraj\Desktop\project\BMS_harasara\sub\Harasara\bin\Debug\Harasara.pdb
+C:\Users\viraj\Desktop\project\BMS_harasara\sub\Harasara\obj\Debug\Harasara.csprojResolveAssemblyReference.cache
+C:\Users\viraj\Desktop\project\BMS_harasara\sub\Harasara\obj\Debug\Harasara.attendance.resources
+C:\Users\viraj\Desktop\project\BMS_harasara\sub\Harasara\obj\Debug\Harasara.employee.resources
+C:\Users\viraj\Desktop\project\BMS_harasara\sub\Harasara\obj\Debug\Harasara.emp_details.resources
+C:\Users\viraj\Desktop\project\BMS_harasara\sub\Harasara\obj\Debug\Harasara.Form1.resources
+C:\Users\viraj\Desktop\project\BMS_harasara\sub\Harasara\obj\Debug\Harasara.leaves.resources
+C:\Users\viraj\Desktop\project\BMS_harasara\sub\Harasara\obj\Debug\Harasara.Leave_Request.resources
+C:\Users\viraj\Desktop\project\BMS_harasara\sub\Harasara\obj\Debug\Harasara.login.resources
+C:\Users\viraj\Desktop\project\BMS_harasara\sub\Harasara\obj\Debug\Harasara.main.resources
+C:\Users\viraj\Desktop\project\BMS_harasara\sub\Harasara\obj\Debug\Harasara.notification.resources
+C:\Users\viraj\Desktop\project\BMS_harasara\sub\Harasara\obj\Debug\Harasara.payrolls.resources
+C:\Users\viraj\Desktop\project\BMS_harasara\sub\Harasara\obj\Debug\Harasara.Properties.Resources.resources
+C:\Users\viraj\Desktop\project\BMS_harasara\sub\Harasara\obj\Debug\Harasara.search.resources
+C:\Users\viraj\Desktop\project\BMS_harasara\sub\Harasara\obj\Debug\Harasara.welcome.resources
+C:\Users\viraj\Desktop\project\BMS_harasara\sub\Harasara\obj\Debug\Harasara.csproj.GenerateResource.Cache
+C:\Users\viraj\Desktop\project\BMS_harasara\sub\Harasara\obj\Debug\Harasara.exe
+C:\Users\viraj\Desktop\project\BMS_harasara\sub\Harasara\obj\Debug\Harasara.pdb
+=======
+<<<<<<< HEAD
 C:\Users\Ender\Desktop\Harasara_T2\BMS_harasara\sub\Harasara\bin\Debug\Harasara.exe.config
 C:\Users\Ender\Desktop\Harasara_T2\BMS_harasara\sub\Harasara\bin\Debug\Harasara.exe
 C:\Users\Ender\Desktop\Harasara_T2\BMS_harasara\sub\Harasara\bin\Debug\Harasara.pdb
@@ -82,3 +104,4 @@ C:\Users\kavindu\Desktop\Gittttt\BMS_harasara\sub\Harasara\obj\Debug\Harasara.cs
 C:\Users\kavindu\Desktop\Gittttt\BMS_harasara\sub\Harasara\obj\Debug\Harasara.exe
 C:\Users\kavindu\Desktop\Gittttt\BMS_harasara\sub\Harasara\obj\Debug\Harasara.pdb
 >>>>>>> 732514eb75e6ac01f858837e2cb14ae6352ef135
+>>>>>>> b0a65901fb5e25cb5a8d3aae6c1c768fbf684598

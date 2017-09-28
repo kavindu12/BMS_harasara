@@ -18,7 +18,7 @@ namespace Transport
             InitializeComponent();
         }
 
-        //MySqlConnection connnection = new MySqlConnection("server=localhost;user id=root;database=harasara");
+        MySqlConnection connnection = new MySqlConnection("server=localhost;user id=root;database=harasara");
 
         private void bunifuImageButton1_Click(object sender, EventArgs e)
         {
@@ -91,6 +91,8 @@ namespace Transport
 
         private void bunifuThinButton9_Click(object sender, EventArgs e)
         {
+
+            
             DataTable dt = new DataTable();
             dbconnect db = new dbconnect();
 
@@ -125,54 +127,64 @@ namespace Transport
 
         private void bunifuThinButton8_Click(object sender, EventArgs e)
         {
-            //Adding vehicle info
-            DataTable dt = new DataTable();
-            dbconnect db = new dbconnect();
-            /*
-            //String ID;
-            String Type;
-            String Number;
-            String Milage;
-            String Repairs;
-            String Notes;
-            String Avail;
+            if (String.IsNullOrEmpty(bunifuCustomTextbox4.Text))
+            {
+                MessageBox.Show("Enter Vehicle Number.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else if (String.IsNullOrEmpty(bunifuCustomTextbox3.Text))
+            {
+                MessageBox.Show("Enter Vehicle Type.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else if (String.IsNullOrEmpty(bunifuCustomTextbox5.Text))
+            {
+                MessageBox.Show("Enter Vehicle Milage", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else if (String.IsNullOrEmpty(bunifuCustomTextbox6.Text))
+            {
+                MessageBox.Show("Enter Number of repairs", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else if (String.IsNullOrEmpty(bunifuCustomTextbox6.Text))
+            {
+                MessageBox.Show("Enter Notes", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
+            else if (String.IsNullOrEmpty(bunifuCustomTextbox1.Text))
+            {
+                MessageBox.Show("Enter avilability", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+
+            else
+            {
+                //Adding vehicle info
+                DataTable dt = new DataTable();
+                dbconnect db = new dbconnect();
 
 
-
-
-           // Type = bunifuCustomTextbox3.Text;
-           // Number = bunifuCustomTextbox4.Text;
-           // Milage = bunifuCustomTextbox5.Text;
-           // Repairs = bunifuCustomTextbox6.Text;
-           // Notes = bunifuCustomTextbox2.Text;
-           // Avail = bunifuCustomTextbox1.Text;
-            //insert into table
-            */
-           
                 MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=harasara");
 
-                String insert = "INSERT INTO vehicles(VehicleID,VehicleNumber,VehicleType,Milage, NoOfRepairs,Availability,Notes) VALUES('" + this.bunifuCustomTextbox7 + "','" + this.bunifuCustomTextbox4 + "','" + this.bunifuCustomTextbox3 + "','" + this.bunifuCustomTextbox5 + "','" + this.bunifuCustomTextbox6 + "','" + this.bunifuCustomTextbox2 + "' ";
+                String insert = "INSERT INTO vehicles (VehicleNumber,VehicleType,Milage,NoOfRepairs,Availability,Notes) VALUES ('" + this.bunifuCustomTextbox4.Text.ToString() + "','" + this.bunifuCustomTextbox3.Text.ToString() + "','" + Convert.ToInt32(this.bunifuCustomTextbox5.Text.ToString()) + "','" + Convert.ToInt32(this.bunifuCustomTextbox6.Text.ToString()) + "','" + this.bunifuCustomTextbox2.Text.ToString() + "','" + this.bunifuCustomTextbox4.Text.ToString() + "')";
                 MySqlCommand command = new MySqlCommand(insert, con);
-                
+
                 MySqlDataReader myreader;
                 try
-             {
+                {
 
-                con.Open();
-                myreader = command.ExecuteReader();
-                MessageBox.Show("Saved Successfully");
+                    con.Open();
+                    myreader = command.ExecuteReader();
+                    MessageBox.Show("Saved Successfully");
 
+                }
+
+
+                catch (Exception ex)
+                {
+
+                    MessageBox.Show(ex.Message, "Error");
+
+                }
             }
 
-
-            catch (Exception ex)
-            {
-
-                MessageBox.Show(ex.Message, "Error");
-
-            }
         }
-
         private void bunifuThinButton6_Click(object sender, EventArgs e)
         {
             //DataTable dt = new DataTable();
@@ -283,6 +295,17 @@ namespace Transport
         {
             bunifuCustomTextbox6.MaxLength = 3;
             
+        }
+
+        private void bunifuCustomTextbox7_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+
+            if (char.IsLetterOrDigit(ch))
+            {
+                e.Handled = true;
+
+            }
         }
     }
 }
