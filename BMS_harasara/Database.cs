@@ -10,7 +10,7 @@ namespace BMS_harasara
 {
     class Database
     {
-        MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=harasaraindustries");
+        MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=harasara");
         public DataSet dbse(string qu)
         {
             if (con.State.ToString() == "Closed")
