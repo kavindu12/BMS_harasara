@@ -38,7 +38,7 @@ namespace BMS_harasara
             string qry = "Select * from warehouse;";
             
 
-            MySqlConnection connst = new MySqlConnection("server=localhost;user id=root;database=bms_harasaradb");
+            MySqlConnection connst = new MySqlConnection("server=localhost;user id=root;database=harasara");
             MySqlCommand cmd1 = new MySqlCommand(qry, connst);
            
 
@@ -66,7 +66,7 @@ namespace BMS_harasara
         {
            
             string qry1 = "Select * from metrics;";
-            MySqlConnection connst = new MySqlConnection("server=localhost;user id=root;database=bms_harasaradb");
+            MySqlConnection connst = new MySqlConnection("server=localhost;user id=root;database=harasara");
             
             MySqlCommand cmd2 = new MySqlCommand(qry1, connst);
             
@@ -97,7 +97,7 @@ namespace BMS_harasara
         void filltable()
         {
             String qry3 = "SELECT `item_id`, `name`, `last_update`, `count`, `price`, `rol`, `min`, `metric`, `type`, `location`  from inventory";
-            MySqlConnection connst = new MySqlConnection("server=localhost;user id=root;database=bms_harasaradb");
+            MySqlConnection connst = new MySqlConnection("server=localhost;user id=root;database=harasara");
             MySqlCommand cmd2 = new MySqlCommand(qry3, connst);
 
             MySqlDataAdapter sda = new MySqlDataAdapter();
@@ -198,7 +198,7 @@ namespace BMS_harasara
             string qry1 = "Select metric from metrics where type = '"+itype+"';";
 
 
-            MySqlConnection connst = new MySqlConnection("server=localhost;user id=root;database=bms_harasaradb");
+            MySqlConnection connst = new MySqlConnection("server=localhost;user id=root;database=harasara");
 
             MySqlCommand cmd2 = new MySqlCommand(qry1, connst);
             ;

@@ -12,7 +12,7 @@ namespace BMS_harasara
 {
     public class dbconnect
     {
-        MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;database=bms_harasaradb");
+        MySqlConnection conn = new MySqlConnection("server=localhost;user id=root;database=harasara");
 
         public void openconn()
         {
