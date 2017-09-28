@@ -55,7 +55,7 @@ namespace BMS_harasara
             }
             else if (x == "pro")
             {
-                Production_Sub profrm = new Production_Sub();
+                Production_Sub_Admin profrm = new Production_Sub_Admin();
                 this.Hide();
                 profrm.Show();
             }
