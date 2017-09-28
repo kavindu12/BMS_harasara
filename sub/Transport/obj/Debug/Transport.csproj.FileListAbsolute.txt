@@ -93,3 +93,4 @@ C:\Users\Ender\Desktop\Harasara_T2\BMS_harasara\sub\Transport\obj\Debug\Transpor
 C:\Users\Ender\Desktop\Harasara_T2\BMS_harasara\sub\Transport\obj\Debug\Transport.csproj.GenerateResource.Cache
 C:\Users\Ender\Desktop\Harasara_T2\BMS_harasara\sub\Transport\obj\Debug\Transport.exe
 C:\Users\Ender\Desktop\Harasara_T2\BMS_harasara\sub\Transport\obj\Debug\Transport.pdb
+C:\Users\viraj\Desktop\project\BMS_harasara\sub\Transport\obj\Debug\Transport.SMS.resources

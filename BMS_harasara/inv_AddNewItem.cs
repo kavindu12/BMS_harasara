@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.IO;
+using MySql.Data.MySqlClient;
 
 namespace BMS_harasara
 {
@@ -27,7 +28,10 @@ namespace BMS_harasara
         public inv_AddNewItem()
         {
             InitializeComponent();
+            //fillcombo();
         }
+
+        
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
