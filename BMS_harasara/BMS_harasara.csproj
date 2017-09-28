@@ -68,6 +68,12 @@
     <Compile Include="AccountsUC.Designer.cs">
       <DependentUpon>AccountsUC.cs</DependentUpon>
     </Compile>
+    <Compile Include="AddProductUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="AddProductUC.Designer.cs">
+      <DependentUpon>AddProductUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="BMS_Finance.cs" />
     <Compile Include="Database.cs" />
     <Compile Include="ExpenditureManager.cs">
@@ -173,11 +179,36 @@
     <Compile Include="PettyCashUC_Add_Summary.Designer.cs">
       <DependentUpon>PettyCashUC_Add_Summary.cs</DependentUpon>
     </Compile>
+    <Compile Include="Product.cs" />
+    <Compile Include="ProductionLineUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProductionLineUC.Designer.cs">
+      <DependentUpon>ProductionLineUC.cs</DependentUpon>
+    </Compile>
     <Compile Include="Production_Sub.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Production_Sub.Designer.cs">
       <DependentUpon>Production_Sub.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Production_Sub_Admin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Production_Sub_Admin.Designer.cs">
+      <DependentUpon>Production_Sub_Admin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Production_Sub_User.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Production_Sub_User.Designer.cs">
+      <DependentUpon>Production_Sub_User.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ProductsUC.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="ProductsUC.Designer.cs">
+      <DependentUpon>ProductsUC.cs</DependentUpon>
     </Compile>
     <Compile Include="ProfitEarnedUC.cs">
       <SubType>UserControl</SubType>
@@ -192,7 +223,19 @@
       <DependentUpon>ProfitLossUC_Main.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
+    <Compile Include="Progress.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Progress.Designer.cs">
+      <DependentUpon>Progress.cs</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Prototype.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Prototype.Designer.cs">
+      <DependentUpon>Prototype.cs</DependentUpon>
+    </Compile>
     <Compile Include="Sales_sub.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -227,6 +270,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="AccountsUC.resx">
       <DependentUpon>AccountsUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="AddProductUC.resx">
+      <DependentUpon>AddProductUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ExpenditureManager.resx">
       <DependentUpon>ExpenditureManager.cs</DependentUpon>
@@ -276,11 +322,26 @@
     <EmbeddedResource Include="PettyCashUC_Add_Summary.resx">
       <DependentUpon>PettyCashUC_Add_Summary.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="ProductionLineUC.resx">
+      <DependentUpon>ProductionLineUC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Production_Sub_Admin.resx">
+      <DependentUpon>Production_Sub_Admin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Production_Sub_User.resx">
+      <DependentUpon>Production_Sub_User.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ProductsUC.resx">
+      <DependentUpon>ProductsUC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ProfitEarnedUC.resx">
       <DependentUpon>ProfitEarnedUC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="ProfitLossUC_Main.resx">
       <DependentUpon>ProfitLossUC_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Progress.resx">
+      <DependentUpon>Progress.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -291,6 +352,9 @@
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Prototype.resx">
+      <DependentUpon>Prototype.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="weekCashFlowUC.resx">
       <DependentUpon>weekCashFlowUC.cs</DependentUpon>
     </EmbeddedResource>
@@ -308,6 +372,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\sub\HarasaraIndustries\HarasaraIndustries\HarasaraIndustries.csproj">
+      <Project>{ff7dc325-b145-4491-9a1f-b2f4d2182e76}</Project>
+      <Name>HarasaraIndustries</Name>
+    </ProjectReference>
     <ProjectReference Include="..\sub\Harasara\Harasara.csproj">
       <Project>{99d60cf6-bc00-4bdf-a175-e6f1d2f699f0}</Project>
       <Name>Harasara</Name>

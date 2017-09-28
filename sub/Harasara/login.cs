@@ -62,10 +62,10 @@ namespace Harasara
 
         private void button2_Click_1(object sender, EventArgs e)
         {
-
-             welcome back = new welcome();
-            back.Show();
-            Visible = false;
+            this.Hide();
+             //welcome back = new welcome();
+           // back.Show();
+           // Visible = false;
 
         }
     }
