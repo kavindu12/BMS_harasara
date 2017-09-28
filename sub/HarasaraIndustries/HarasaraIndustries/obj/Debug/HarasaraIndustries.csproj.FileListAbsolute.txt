@@ -78,3 +78,7 @@ C:\Users\viraj\Desktop\project\BMS_harasara\sub\HarasaraIndustries\HarasaraIndus
 C:\Users\viraj\Desktop\project\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\obj\Debug\HarasaraIndustries.csproj.GenerateResource.Cache
 C:\Users\viraj\Desktop\project\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\obj\Debug\HarasaraIndustries.exe
 C:\Users\viraj\Desktop\project\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\obj\Debug\HarasaraIndustries.pdb
+C:\Users\viraj\Desktop\project\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\bin\Debug\BMS_harasara.exe
+C:\Users\viraj\Desktop\project\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\bin\Debug\Transport.exe
+C:\Users\viraj\Desktop\project\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\bin\Debug\BMS_harasara.pdb
+C:\Users\viraj\Desktop\project\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\bin\Debug\Transport.pdb
