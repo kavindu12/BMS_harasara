@@ -185,3 +185,12 @@ C:\Users\Rochana\Desktop\githarasara\BMS_harasara\BMS_harasara\obj\Debug\BMS_har
 C:\Users\Rochana\Desktop\githarasara\BMS_harasara\BMS_harasara\obj\Debug\BMS_harasara.ProductsUC.resources
 C:\Users\Rochana\Desktop\githarasara\BMS_harasara\BMS_harasara\obj\Debug\BMS_harasara.Progress.resources
 C:\Users\Rochana\Desktop\githarasara\BMS_harasara\BMS_harasara\obj\Debug\BMS_harasara.Prototype.resources
+C:\Users\viraj\Desktop\project\BMS_harasara\BMS_harasara\bin\Debug\HarasaraIndustries.exe
+C:\Users\viraj\Desktop\project\BMS_harasara\BMS_harasara\bin\Debug\HarasaraIndustries.pdb
+C:\Users\viraj\Desktop\project\BMS_harasara\BMS_harasara\obj\Debug\BMS_harasara.AddProductUC.resources
+C:\Users\viraj\Desktop\project\BMS_harasara\BMS_harasara\obj\Debug\BMS_harasara.ProductionLineUC.resources
+C:\Users\viraj\Desktop\project\BMS_harasara\BMS_harasara\obj\Debug\BMS_harasara.Production_Sub_Admin.resources
+C:\Users\viraj\Desktop\project\BMS_harasara\BMS_harasara\obj\Debug\BMS_harasara.Production_Sub_User.resources
+C:\Users\viraj\Desktop\project\BMS_harasara\BMS_harasara\obj\Debug\BMS_harasara.ProductsUC.resources
+C:\Users\viraj\Desktop\project\BMS_harasara\BMS_harasara\obj\Debug\BMS_harasara.Progress.resources
+C:\Users\viraj\Desktop\project\BMS_harasara\BMS_harasara\obj\Debug\BMS_harasara.Prototype.resources
