@@ -161,5 +161,36 @@ namespace Transport
         {
 
         }
+
+        private void bunifuThinButton10_Click(object sender, EventArgs e)
+        {
+            MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=harasara");
+
+            try
+            {
+                //update table
+
+                String update = "UPDATE route SET RouteName = '" + this.bunifuCustomTextbox4.Text.ToString() + "' , RouteDistance = '" + this.bunifuCustomTextbox3.Text.ToString() + "', RouteDescription = '" + this.bunifuCustomTextbox2.Text.ToString()+ "')";
+                MySqlCommand command = new MySqlCommand(update, connnection);
+
+                MySqlCommand cmnd = new MySqlCommand(update, con);
+                MySqlDataReader myreader;
+                con.Open();
+                myreader = cmnd.ExecuteReader();
+                MessageBox.Show("Updated Successfully", "Success", MessageBoxButtons.OK);
+
+
+
+            }
+
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message, "Error");
+
+
+            }
+        
+        }
     }
 }

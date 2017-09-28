@@ -307,5 +307,35 @@ namespace Transport
 
             }
         }
+
+        private void bunifuThinButton10_Click(object sender, EventArgs e)
+        {
+            MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=harasara");
+
+            try
+            {
+                //update table
+
+                String update = "UPDATE vehicles SET VehicleNumber = '" + this.bunifuCustomTextbox4.Text.ToString() + "' , VehicleType = '" + this.bunifuCustomTextbox3.Text.ToString() + "', Milage = '" + Convert.ToInt32(this.bunifuCustomTextbox5.Text.ToString()) + "', NoOfRepairs = '" + Convert.ToInt32(this.bunifuCustomTextbox6.Text.ToString()) + "', Availability = '" + this.bunifuCustomTextbox2.Text.ToString() + "', Notes = '" + this.bunifuCustomTextbox4.Text.ToString() + "')";
+                MySqlCommand command = new MySqlCommand(update, connnection);
+
+                MySqlCommand cmnd = new MySqlCommand(update, con);
+                MySqlDataReader myreader;
+                con.Open();
+                myreader = cmnd.ExecuteReader();
+                MessageBox.Show("Updated Successfully", "Success", MessageBoxButtons.OK);
+
+
+
+            }
+
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message, "Error");
+
+
+            }
+        }
     }
 }

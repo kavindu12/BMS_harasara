@@ -51,7 +51,7 @@ namespace BMS_harasara
             }
             catch (Exception ex)
             {
-                MessageBox.Show("database error");   
+                MessageBox.Show(ex.Message, "database error");   
             }
         }
 
@@ -121,7 +121,7 @@ namespace BMS_harasara
                                     }
                                     catch (Exception ex)
                                     {
-                                        MessageBox.Show("Check database connection");
+                                        MessageBox.Show(ex.Message,"Check database connection");
                                     }
                     
                 }
@@ -164,7 +164,7 @@ namespace BMS_harasara
             }
             catch (Exception ex)
             {
-                MessageBox.Show("database error");
+                MessageBox.Show(ex.Message,"database error");
             }
             textBox4.AutoCompleteCustomSource=coll1;
             textBox1.AutoCompleteCustomSource = coll2;
@@ -212,7 +212,7 @@ namespace BMS_harasara
             }
             catch (Exception ex)
             {
-                MessageBox.Show("database error");
+                MessageBox.Show(ex.Message,"database error");
             }
             //textBox4.AutoCompleteCustomSource=coll1;
             //textBox1.AutoCompleteCustomSource = coll2;
@@ -244,7 +244,7 @@ namespace BMS_harasara
             }
             catch (Exception ex)
             {
-                MessageBox.Show("database error");
+                MessageBox.Show(ex.Message,"database error");
             }
         } 
     }

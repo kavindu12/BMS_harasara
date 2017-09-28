@@ -57,7 +57,7 @@ namespace BMS_harasara
             }
             catch (Exception ex)
             {
-                MessageBox.Show("database error");
+                MessageBox.Show(ex.Message,"database error");
             }          
 
         }
@@ -90,7 +90,7 @@ namespace BMS_harasara
             }
             catch (Exception ex)
             {
-                MessageBox.Show("database error");
+                MessageBox.Show(ex.Message,"database error");
             }
         }
 
@@ -220,7 +220,7 @@ namespace BMS_harasara
             }
             catch (Exception ex)
             {
-                MessageBox.Show("database error");
+                MessageBox.Show(ex.Message,"database error");
             }
         }
         

@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using MySql.Data.Common;
 using System.Net;
 using System.IO;
+using System.Diagnostics;
 
 namespace Transport
 {
@@ -94,25 +95,37 @@ namespace Transport
 
         private void bunifuImageButton3_Click(object sender, EventArgs e)
         {
+            //Set parameters
+            string username = "asviganegoda@gmail.com";
+            string password = "qda5";
+            string msgsender = "94772428281";
+            string destinationaddr = "94772428281";
+            //string msgsender = "94772428281";
+            //string destinationaddr = "94772428281";
+            string message = "Please Change the route.";
+
+            // Create ViaNettSMS object with username and password
+            ViaNettSMS s = new ViaNettSMS(username, password);
+            // Declare Result object returned by the SendSMS function
+            ViaNettSMS.Result result;
             try
             {
-
-                WebClient client = new WebClient();
-                Stream s = client.OpenRead("");
-                StreamReader reader = new StreamReader(s);
-                string result = reader.ReadToEnd();
-                MessageBox.Show(result, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
-
-
+                // Send SMS through HTTP API
+                result = s.sendSMS(msgsender, destinationaddr, message);
+                // Show Send SMS response
+                if (result.Success)
+                {
+                    Debug.WriteLine("Message successfully sent");
+                }
+                else
+                {
+                    Debug.WriteLine("Received error: " + result.ErrorCode + " " + result.ErrorMessage);
+                }
             }
-
-            catch (Exception ex)
+            catch (System.Net.WebException ex)
             {
-
-                MessageBox.Show(ex.Message,"Error");
-            
-            
-            
+                //Catch error occurred while connecting to server.
+                Debug.WriteLine(ex.Message);
             }
         }
 
