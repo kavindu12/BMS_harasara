@@ -109,7 +109,7 @@
     <Compile Include="login.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="login.Designer.cs">
+    <Compile Include="login.designer.cs">
       <DependentUpon>login.cs</DependentUpon>
     </Compile>
     <Compile Include="main.cs">
@@ -221,6 +221,12 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\HarasaraIndustries\HarasaraIndustries\HarasaraIndustries.csproj">
+      <Project>{ff7dc325-b145-4491-9a1f-b2f4d2182e76}</Project>
+      <Name>HarasaraIndustries</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

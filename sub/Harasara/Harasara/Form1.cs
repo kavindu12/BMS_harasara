@@ -41,9 +41,9 @@ namespace Harasara
         private void bunifuFlatButton2_Click(object sender, EventArgs e)
         {
 
-            login openform = new login();
-            openform.Show();
-            Visible = false;
+           // login openform = new login();
+            //openform.Show();
+            //Visible = false;
         }
 
         private void Form1_Load(object sender, EventArgs e)

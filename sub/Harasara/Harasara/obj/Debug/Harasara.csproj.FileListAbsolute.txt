@@ -28,7 +28,6 @@ C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\Harasara\Harasara\obj\Debug\Harasa
 C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\Harasara\Harasara\obj\Debug\Harasara.Form1.resources
 C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\Harasara\Harasara\obj\Debug\Harasara.leaves.resources
 C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\Harasara\Harasara\obj\Debug\Harasara.Leave_Request.resources
-C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\Harasara\Harasara\obj\Debug\Harasara.login.resources
 C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\Harasara\Harasara\obj\Debug\Harasara.main.resources
 C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\Harasara\Harasara\obj\Debug\Harasara.notification.resources
 C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\Harasara\Harasara\obj\Debug\Harasara.payrolls.resources
@@ -38,3 +37,5 @@ C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\Harasara\Harasara\obj\Debug\Harasa
 C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\Harasara\Harasara\obj\Debug\Harasara.csproj.GenerateResource.Cache
 C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\Harasara\Harasara\obj\Debug\Harasara.exe
 C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\Harasara\Harasara\obj\Debug\Harasara.pdb
+C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\Harasara\Harasara\obj\Debug\Harasara.csprojResolveAssemblyReference.cache
+C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\Harasara\Harasara\obj\Debug\Harasara.login.resources
