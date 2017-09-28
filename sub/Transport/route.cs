@@ -74,5 +74,28 @@ namespace Transport
         {
 
         }
+
+        private void bunifuCustomDataGrid1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void bunifuCustomDataGrid1_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (bunifuCustomDataGrid1.Rows.Count > -1)
+            {
+                bunifuCustomTextbox1.Text = bunifuCustomDataGrid1.Rows[e.RowIndex].Cells[0].Value.ToString();
+                bunifuCustomTextbox4.Text = bunifuCustomDataGrid1.Rows[e.RowIndex].Cells[0].Value.ToString();
+                bunifuCustomTextbox3.Text = bunifuCustomDataGrid1.Rows[e.RowIndex].Cells[2].Value.ToString();
+                bunifuCustomTextbox2.Text = bunifuCustomDataGrid1.Rows[e.RowIndex].Cells[3].Value.ToString();
+    
+
+            }
+        }
+
+        private void bunifuCustomTextbox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

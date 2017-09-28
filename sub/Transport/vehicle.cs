@@ -284,5 +284,16 @@ namespace Transport
             bunifuCustomTextbox6.MaxLength = 3;
             
         }
+
+        private void bunifuCustomTextbox7_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+
+            if (char.IsLetterOrDigit(ch))
+            {
+                e.Handled = true;
+
+            }
+        }
     }
 }

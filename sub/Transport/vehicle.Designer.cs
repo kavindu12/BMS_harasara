@@ -499,6 +499,7 @@
             this.bunifuCustomTextbox7.Size = new System.Drawing.Size(85, 22);
             this.bunifuCustomTextbox7.TabIndex = 90;
             this.bunifuCustomTextbox7.TextChanged += new System.EventHandler(this.bunifuCustomTextbox7_TextChanged);
+            this.bunifuCustomTextbox7.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.bunifuCustomTextbox7_KeyPress);
             // 
             // vehicle
             // 

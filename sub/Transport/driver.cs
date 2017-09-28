@@ -125,7 +125,7 @@ namespace Transport
                 {
 
                     //insert into table
-                    String insert = "INSERT INTO driverdetails (DriverID, DriverName,DOB, Address, ContactNo) VALUES ('" + this.bunifuCustomTextbox5.Text + "' '" + this.dateTimePicker1.Text + "' '" + this.bunifuCustomTextbox2.Text + "' '" + this.bunifuCustomTextbox5.Text + "')";
+                    String insert = "INSERT INTO driverdetails (DriverID, DriverName,DOB, Address, ContactNo) VALUES ('" + this.bunifuCustomTextbox5.Text.ToString() + "' '" + this.dateTimePicker1.Text + "' '" + this.bunifuCustomTextbox2.Text + "' '" + this.bunifuCustomTextbox5.Text + "')";
                     MySqlCommand command = new MySqlCommand(insert, connnection);
                     MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=harasara");
                     MySqlCommand cmnd = new MySqlCommand(insert, con);
@@ -266,6 +266,60 @@ namespace Transport
         private void bunifuCustomTextbox4_TextChanged(object sender, EventArgs e)
         {
 
+        }
+
+        private void bunifuThinButton9_Click(object sender, EventArgs e)
+        {
+            MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=harasara");
+
+            try
+            {
+                if (this.dataGridView1.SelectedRows.Count > 0)
+                {
+                    //insert into table
+                    String delete = "DELETE FROM driverdetails WHERE Driver ID = '" + this.dataGridView1.SelectedRows[0] + "'";
+                    MySqlCommand command = new MySqlCommand(delete, connnection);
+
+                    MySqlCommand cmnd = new MySqlCommand(delete, con);
+                    MySqlDataReader myreader;
+                    con.Open();
+                    myreader = cmnd.ExecuteReader();
+                    MessageBox.Show("Deleted Successfully", "Success", MessageBoxButtons.OK);
+                }
+
+                else
+                {
+
+                    MessageBox.Show("Please select a row to delete", "Error", MessageBoxButtons.OK);
+
+
+
+                }
+            }
+
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message, "Error");
+
+
+            }
+        }
+
+        private void bunifuCustomTextbox1_KeyUp(object sender, KeyEventArgs e)
+        {
+
+        }
+
+        private void bunifuCustomTextbox1_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            char ch = e.KeyChar;
+
+            if (char.IsLetterOrDigit(ch))
+            {
+                e.Handled = true;
+
+            }
         }
     }
 }

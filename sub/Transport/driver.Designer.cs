@@ -411,6 +411,7 @@
             this.bunifuThinButton9.Name = "bunifuThinButton9";
             this.bunifuThinButton9.Size = new System.Drawing.Size(112, 44);
             this.bunifuThinButton9.TabIndex = 63;
+            this.bunifuThinButton9.Click += new System.EventHandler(this.bunifuThinButton9_Click);
             // 
             // bunifuThinButton10
             // 
@@ -459,6 +460,8 @@
             this.bunifuCustomTextbox1.Name = "bunifuCustomTextbox1";
             this.bunifuCustomTextbox1.Size = new System.Drawing.Size(85, 22);
             this.bunifuCustomTextbox1.TabIndex = 68;
+            this.bunifuCustomTextbox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.bunifuCustomTextbox1_KeyPress);
+            this.bunifuCustomTextbox1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.bunifuCustomTextbox1_KeyUp);
             // 
             // driver
             // 
