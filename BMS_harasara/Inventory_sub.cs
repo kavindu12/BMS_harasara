@@ -81,5 +81,17 @@ namespace BMS_harasara
             this.Hide();
             mainm.Show();
         }
+
+        private void bunifuFlatButton3_Click(object sender, EventArgs e)
+        {
+            if (!panel1.Controls.Contains(inv_IssueStock.Instance))
+            {
+                panel1.Controls.Add(inv_IssueStock.Instance);
+                inv_IssueStock.Instance.Dock = DockStyle.Fill;
+                inv_IssueStock.Instance.BringToFront();
+            }
+            else
+                inv_IssueStock.Instance.BringToFront();
+        }
     }
 }
