@@ -32,6 +32,7 @@ namespace BMS_harasara
             LoadExpenditure();
             LoadBalance();
             LoadPercentage();
+            LoadExpenditureIncomeChart();
         }
 
         private void ExpenditureManagerUC_Load(object sender, EventArgs e)
@@ -46,7 +47,7 @@ namespace BMS_harasara
                 DateTime dt=DateTime.Now;
                 string dat = dt.ToString("yyyy-MM-dd");
                 string query = "SELECT profit,date FROM profit_loss WHERE date='"+dat+"'";
-                MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=harasaraindustries");
+                MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=harasara");
                 MySqlCommand cmnd = new MySqlCommand(query, con);
                 MySqlDataReader myReader;
                 con.Open();
@@ -74,7 +75,7 @@ namespace BMS_harasara
                 DateTime dt = DateTime.Now;
                 string dat = dt.ToString("yyyy-MM-dd");
                 string query = "SELECT SUM(Salary)+SUM(Utility)+SUM(Rent) FROM pettycash WHERE date='" + dat + "'";
-                MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=harasaraindustries");
+                MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=harasara");
                 MySqlCommand cmnd = new MySqlCommand(query, con);
                 MySqlDataReader myReader;
                 con.Open();
@@ -99,7 +100,7 @@ namespace BMS_harasara
                 DateTime dt = DateTime.Now;
                 string dat = dt.ToString("yyyy-MM-dd");
                 string query = "SELECT BALANCE FROM account WHERE accountnumber=123456789112456";
-                MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=harasaraindustries");
+                MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=harasara");
                 MySqlCommand cmnd = new MySqlCommand(query, con);
                 MySqlDataReader myReader;
                 con.Open();
@@ -128,6 +129,35 @@ namespace BMS_harasara
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+        public void LoadExpenditureIncomeChart()
+        {
+            try
+            {
+                DateTime dt = DateTime.Now;
+                string dat = dt.ToString("yyyy-MM-dd");
+                chart1.Series.Clear();
+                this.chart1.Series.Add("Income");
+                this.chart1.Series.Add("Expenditure");
+                MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=harasara");
+                string query = "SELECT Date,Income,SUM(Salary)+SUM(Utility)+SUM(Rent) FROM pettycash WHERE date='" + dat + "'";
+                MySqlCommand cmnd = new MySqlCommand(query, con);
+                MySqlDataReader myreader;
+                con.Open();
+                myreader = cmnd.ExecuteReader();
+                while (myreader.Read())
+                {
+                    //string inc = myreader.GetString(0);
+                    this.chart1.Series["Income"].Points.AddXY(myreader.GetString("date"), myreader.GetString("income"));
+                    this.chart1.Series["Expenditure"].Points.AddXY(myreader.GetString("date"), myreader.GetString(2));
+
+                }
+                con.Close();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
         }
     }
 }

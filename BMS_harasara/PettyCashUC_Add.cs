@@ -61,7 +61,7 @@ namespace BMS_harasara
          public void EnterTextBoxValues()
          {
              string query = "SELECT Sales FROM sales WHERE date='" +this.dateTimePicker1.Text+ "'";
-             MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=harasaraindustries");
+             MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=harasara");
              MySqlCommand cmnd = new MySqlCommand(query, con);
              MySqlDataReader myreader;
              try
@@ -84,7 +84,7 @@ namespace BMS_harasara
           {
               //DateTime date = this.dateTimePicker1.Value;
               string query = "SELECT Balance FROM account WHERE accountnumber=123456789112456";
-              MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=harasaraindustries");
+              MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=harasara");
               MySqlCommand cmnd = new MySqlCommand(query, con);
               MySqlDataReader myreader;
               try
@@ -142,7 +142,7 @@ namespace BMS_harasara
          public void UpdateAccountTable(double income)
          {
              string query = "UPDATE account SET balance='"+income+"' WHERE accountnumber=123456789112456";
-             MySqlConnection conc = new MySqlConnection("server=localhost;user id=root;database=harasaraindustries");
+             MySqlConnection conc = new MySqlConnection("server=localhost;user id=root;database=harasara");
              MySqlCommand cmmnd = new MySqlCommand(query, conc);
              MySqlDataReader myreader;
              try
@@ -159,7 +159,7 @@ namespace BMS_harasara
          {
              try
              {
-                 MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=harasaraindustries");
+                 MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=harasara");
                  MySqlDataReader myReader;
                  if (income > 0)
                  {
@@ -227,8 +227,8 @@ namespace BMS_harasara
                     double bal =Convert.ToDouble(label2.Text);
                     double nbal = (Convert.ToDouble(this.bunifuCustomTextbox5.Text) + Convert.ToDouble(this.bunifuCustomTextbox6.Text) + Convert.ToDouble(this.bunifuCustomTextbox7.Text) + Convert.ToDouble(this.bunifuCustomTextbox8.Text)) - (Convert.ToDouble(this.bunifuCustomTextbox2.Text) + Convert.ToDouble(this.bunifuCustomTextbox3.Text) + Convert.ToDouble(this.bunifuCustomTextbox4.Text));
                     double inc = bal + nbal;
-                    string query = "INSERT INTO harasaraindustries.pettycash(Date,Voucher,Salary,Utility,Rent,Sales,Other,Income,Capital,Balance) Values('" + this.dateTimePicker1.Text + "','" + Convert.ToInt32(this.bunifuCustomTextbox1.Text) + "','" + Convert.ToDouble(this.bunifuCustomTextbox2.Text) + "','" + Convert.ToDouble(this.bunifuCustomTextbox3.Text) + "','" + Convert.ToDouble(this.bunifuCustomTextbox4.Text) + "','" + Convert.ToDouble(this.bunifuCustomTextbox7.Text) + "','" + Convert.ToDouble(this.bunifuCustomTextbox6.Text) + "','" + Convert.ToDouble(this.bunifuCustomTextbox5.Text) + "','" + Convert.ToDouble(this.bunifuCustomTextbox8.Text) + "','"+inc+"')";
-                    MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=harasaraindustries");
+                    string query = "INSERT INTO pettycash(Date,Voucher,Salary,Utility,Rent,Sales,Other,Income,Capital,Balance) Values('" + this.dateTimePicker1.Text + "','" + Convert.ToInt32(this.bunifuCustomTextbox1.Text) + "','" + Convert.ToDouble(this.bunifuCustomTextbox2.Text) + "','" + Convert.ToDouble(this.bunifuCustomTextbox3.Text) + "','" + Convert.ToDouble(this.bunifuCustomTextbox4.Text) + "','" + Convert.ToDouble(this.bunifuCustomTextbox7.Text) + "','" + Convert.ToDouble(this.bunifuCustomTextbox6.Text) + "','" + Convert.ToDouble(this.bunifuCustomTextbox5.Text) + "','" + Convert.ToDouble(this.bunifuCustomTextbox8.Text) + "','"+inc+"')";
+                    MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=harasara");
                     MySqlCommand cmnd = new MySqlCommand(query, con);
                     MySqlDataReader myreader;
                     con.Open();

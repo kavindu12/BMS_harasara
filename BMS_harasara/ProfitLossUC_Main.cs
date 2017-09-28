@@ -46,7 +46,7 @@ namespace BMS_harasara
                 chart1.Series.Clear();
                 this.chart1.Series.Add("profit");
                 this.chart1.Series.Add("loss");
-                MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=harasaraindustries");
+                MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=harasara");
                 string query = "SELECT Date,Profit,Loss FROM profit_loss WHERE date <='" + this.dateTimePicker2.Text + "' AND date>='" + this.dateTimePicker1.Text + "'";
                 MySqlCommand cmnd = new MySqlCommand(query, con);
                 MySqlDataReader myreader;

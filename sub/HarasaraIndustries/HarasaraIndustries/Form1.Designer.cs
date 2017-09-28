@@ -64,12 +64,13 @@
             this.panel1.Controls.Add(this.closeWindow);
             this.panel1.Controls.Add(this.minimizeWindow);
             this.panel1.Controls.Add(this.label1);
-            this.panel1.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.panel1.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1365, 34);
             this.panel1.TabIndex = 0;
+            this.panel1.UseWaitCursor = true;
             // 
             // label4
             // 
@@ -95,6 +96,7 @@
             this.lblDate.TabIndex = 2;
             this.lblDate.Text = "August  20 2017";
             this.lblDate.UseWaitCursor = true;
+            this.lblDate.Click += new System.EventHandler(this.lblDate_Click);
             // 
             // lblTime
             // 
@@ -119,6 +121,7 @@
             this.closeWindow.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.closeWindow.TabIndex = 2;
             this.closeWindow.TabStop = false;
+            this.closeWindow.UseWaitCursor = true;
             this.closeWindow.Zoom = 10;
             this.closeWindow.Click += new System.EventHandler(this.closeWindow_Click);
             // 
@@ -161,11 +164,12 @@
             this.panel2.Controls.Add(this.label3);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.bunifuFlatButton1);
-            this.panel2.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.panel2.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.panel2.Location = new System.Drawing.Point(0, 34);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(216, 727);
             this.panel2.TabIndex = 1;
+            this.panel2.UseWaitCursor = true;
             // 
             // bunifuFlatButton5
             // 
@@ -329,7 +333,7 @@
             this.bunifuFlatButton1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.bunifuFlatButton1.BorderRadius = 0;
             this.bunifuFlatButton1.ButtonText = "Sales ";
-            this.bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.bunifuFlatButton1.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.bunifuFlatButton1.Iconcolor = System.Drawing.Color.Transparent;
             this.bunifuFlatButton1.Iconimage = ((System.Drawing.Image)(resources.GetObject("bunifuFlatButton1.Iconimage")));
             this.bunifuFlatButton1.Iconimage_right = null;
@@ -347,6 +351,7 @@
             this.bunifuFlatButton1.TabIndex = 2;
             this.bunifuFlatButton1.Textcolor = System.Drawing.Color.White;
             this.bunifuFlatButton1.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuFlatButton1.UseWaitCursor = true;
             this.bunifuFlatButton1.Click += new System.EventHandler(this.bunifuFlatButton1_Click);
             // 
             // timer
@@ -357,11 +362,12 @@
             // panel3
             // 
             this.panel3.AutoScroll = true;
-            this.panel3.Cursor = System.Windows.Forms.Cursors.Arrow;
+            this.panel3.Cursor = System.Windows.Forms.Cursors.WaitCursor;
             this.panel3.Location = new System.Drawing.Point(222, 40);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1140, 674);
             this.panel3.TabIndex = 2;
+            this.panel3.UseWaitCursor = true;
             this.panel3.Paint += new System.Windows.Forms.PaintEventHandler(this.panel3_Paint);
             // 
             // Form1

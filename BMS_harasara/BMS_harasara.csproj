@@ -143,12 +143,6 @@
     <Compile Include="Main_menu.Designer.cs">
       <DependentUpon>Main_menu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Login.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Login.Designer.cs">
-      <DependentUpon>Login.cs</DependentUpon>
-    </Compile>
     <Compile Include="PettyCashUC.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -304,9 +298,6 @@
     <EmbeddedResource Include="Main_menu.resx">
       <DependentUpon>Main_menu.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx">
-      <DependentUpon>Login.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="PettyCashUC.resx">
       <DependentUpon>PettyCashUC.cs</DependentUpon>
     </EmbeddedResource>
@@ -376,7 +367,7 @@
       <Project>{ff7dc325-b145-4491-9a1f-b2f4d2182e76}</Project>
       <Name>HarasaraIndustries</Name>
     </ProjectReference>
-    <ProjectReference Include="..\sub\Harasara\Harasara.csproj">
+    <ProjectReference Include="..\sub\Harasara\Harasara\Harasara.csproj">
       <Project>{99d60cf6-bc00-4bdf-a175-e6f1d2f699f0}</Project>
       <Name>Harasara</Name>
     </ProjectReference>

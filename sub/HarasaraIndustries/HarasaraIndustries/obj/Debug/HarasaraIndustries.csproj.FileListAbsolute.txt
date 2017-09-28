@@ -27,7 +27,6 @@ C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustr
 C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\obj\Debug\HarasaraIndustries.Bill.resources
 C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\obj\Debug\HarasaraIndustries.CustomMsgBox.resources
 C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\obj\Debug\HarasaraIndustries.Form1.resources
-C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\obj\Debug\Harasara.login.resources
 C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\obj\Debug\HarasaraIndustries.mainGUI.resources
 C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\obj\Debug\HarasaraIndustries.payments.resources
 C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\obj\Debug\HarasaraIndustries.Properties.Resources.resources
@@ -58,3 +57,39 @@ C:\Users\Rochana\Desktop\githarasara\BMS_harasara\sub\HarasaraIndustries\Harasar
 C:\Users\Rochana\Desktop\githarasara\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\obj\Debug\HarasaraIndustries.csproj.GenerateResource.Cache
 C:\Users\Rochana\Desktop\githarasara\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\obj\Debug\HarasaraIndustries.exe
 C:\Users\Rochana\Desktop\githarasara\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\obj\Debug\HarasaraIndustries.pdb
+<<<<<<< HEAD
+C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\bin\Debug\Harasara.exe
+C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\bin\Debug\Harasara.pdb
+C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\bin\Debug\Transport.exe
+C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\bin\Debug\Transport.pdb
+=======
+C:\Users\viraj\Desktop\project\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\bin\Debug\HarasaraIndustries.exe.config
+C:\Users\viraj\Desktop\project\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\bin\Debug\HarasaraIndustries.exe
+C:\Users\viraj\Desktop\project\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\bin\Debug\HarasaraIndustries.pdb
+C:\Users\viraj\Desktop\project\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\bin\Debug\Harasara.exe
+C:\Users\viraj\Desktop\project\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\bin\Debug\Harasara.pdb
+C:\Users\viraj\Desktop\project\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\obj\Debug\HarasaraIndustries.csprojResolveAssemblyReference.cache
+C:\Users\viraj\Desktop\project\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\obj\Debug\HarasaraIndustries.Bill.resources
+C:\Users\viraj\Desktop\project\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\obj\Debug\HarasaraIndustries.CustomMsgBox.resources
+C:\Users\viraj\Desktop\project\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\obj\Debug\HarasaraIndustries.Form1.resources
+C:\Users\viraj\Desktop\project\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\obj\Debug\HarasaraIndustries.mainGUI.resources
+C:\Users\viraj\Desktop\project\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\obj\Debug\HarasaraIndustries.payments.resources
+C:\Users\viraj\Desktop\project\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\obj\Debug\HarasaraIndustries.Properties.Resources.resources
+C:\Users\viraj\Desktop\project\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\obj\Debug\HarasaraIndustries.PurchaseBill.resources
+C:\Users\viraj\Desktop\project\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\obj\Debug\HarasaraIndustries.PurchasingOrders.resources
+C:\Users\viraj\Desktop\project\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\obj\Debug\HarasaraIndustries.Reports.resources
+C:\Users\viraj\Desktop\project\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\obj\Debug\HarasaraIndustries.SalesOrders.resources
+C:\Users\viraj\Desktop\project\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\obj\Debug\HarasaraIndustries.setting.resources
+C:\Users\viraj\Desktop\project\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\obj\Debug\HarasaraIndustries.csproj.GenerateResource.Cache
+C:\Users\viraj\Desktop\project\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\obj\Debug\HarasaraIndustries.exe
+C:\Users\viraj\Desktop\project\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\obj\Debug\HarasaraIndustries.pdb
+C:\Users\viraj\Desktop\project\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\bin\Debug\BMS_harasara.exe
+C:\Users\viraj\Desktop\project\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\bin\Debug\Transport.exe
+C:\Users\viraj\Desktop\project\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\bin\Debug\BMS_harasara.pdb
+C:\Users\viraj\Desktop\project\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\bin\Debug\Transport.pdb
+>>>>>>> 51f2e74ec6e9fde4be7c0782167c43e63604a896
+C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\bin\Debug\BMS_harasara.exe
+C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\bin\Debug\BMS_harasara.pdb
+C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\obj\Debug\HarasaraIndustries.AdminMain.resources
+C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\obj\Debug\Harasara.login.resources
+C:\Users\Nimesha\Desktop\BMS\BMS_harasara\sub\HarasaraIndustries\HarasaraIndustries\obj\Debug\HarasaraIndustries.promotions.resources

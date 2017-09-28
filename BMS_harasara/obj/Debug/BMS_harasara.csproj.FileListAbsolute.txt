@@ -185,7 +185,36 @@ C:\Users\Rochana\Desktop\githarasara\BMS_harasara\BMS_harasara\obj\Debug\BMS_har
 C:\Users\Rochana\Desktop\githarasara\BMS_harasara\BMS_harasara\obj\Debug\BMS_harasara.ProductsUC.resources
 C:\Users\Rochana\Desktop\githarasara\BMS_harasara\BMS_harasara\obj\Debug\BMS_harasara.Progress.resources
 C:\Users\Rochana\Desktop\githarasara\BMS_harasara\BMS_harasara\obj\Debug\BMS_harasara.Prototype.resources
+<<<<<<< HEAD
 C:\Users\Rochana\Desktop\githarasara\BMS_harasara\BMS_harasara\obj\Debug\BMS_harasara.ViewPrototype.resources
 C:\Users\Rochana\Desktop\Git\2017.09.28 10.39\BMS_harasara\BMS_harasara\bin\Debug\BMS_harasara.exe.config
 C:\Users\Rochana\Desktop\Git\2017.09.28 10.39\BMS_harasara\BMS_harasara\obj\Debug\BMS_harasara.exe
 C:\Users\Rochana\Desktop\Git\2017.09.28 10.39\BMS_harasara\BMS_harasara\obj\Debug\BMS_harasara.pdb
+=======
+C:\Users\Nimesha\Desktop\BMS\BMS_harasara\BMS_harasara\obj\Debug\BMS_harasara.AddProductUC.resources
+C:\Users\Nimesha\Desktop\BMS\BMS_harasara\BMS_harasara\obj\Debug\BMS_harasara.ProductionLineUC.resources
+C:\Users\Nimesha\Desktop\BMS\BMS_harasara\BMS_harasara\obj\Debug\BMS_harasara.Production_Sub_Admin.resources
+C:\Users\Nimesha\Desktop\BMS\BMS_harasara\BMS_harasara\obj\Debug\BMS_harasara.Production_Sub_User.resources
+C:\Users\Nimesha\Desktop\BMS\BMS_harasara\BMS_harasara\obj\Debug\BMS_harasara.ProductsUC.resources
+C:\Users\Nimesha\Desktop\BMS\BMS_harasara\BMS_harasara\obj\Debug\BMS_harasara.Progress.resources
+C:\Users\Nimesha\Desktop\BMS\BMS_harasara\BMS_harasara\obj\Debug\BMS_harasara.Prototype.resources
+C:\Users\viraj\Desktop\project\BMS_harasara\BMS_harasara\bin\Debug\HarasaraIndustries.exe
+C:\Users\viraj\Desktop\project\BMS_harasara\BMS_harasara\bin\Debug\HarasaraIndustries.pdb
+C:\Users\viraj\Desktop\project\BMS_harasara\BMS_harasara\obj\Debug\BMS_harasara.AddProductUC.resources
+C:\Users\viraj\Desktop\project\BMS_harasara\BMS_harasara\obj\Debug\BMS_harasara.ProductionLineUC.resources
+C:\Users\viraj\Desktop\project\BMS_harasara\BMS_harasara\obj\Debug\BMS_harasara.Production_Sub_Admin.resources
+C:\Users\viraj\Desktop\project\BMS_harasara\BMS_harasara\obj\Debug\BMS_harasara.Production_Sub_User.resources
+C:\Users\viraj\Desktop\project\BMS_harasara\BMS_harasara\obj\Debug\BMS_harasara.ProductsUC.resources
+C:\Users\viraj\Desktop\project\BMS_harasara\BMS_harasara\obj\Debug\BMS_harasara.Progress.resources
+C:\Users\viraj\Desktop\project\BMS_harasara\BMS_harasara\obj\Debug\BMS_harasara.Prototype.resources
+C:\Users\Ender\Desktop\Harasara_T2\BMS_harasara\BMS_harasara\bin\Debug\HarasaraIndustries.exe
+C:\Users\Ender\Desktop\Harasara_T2\BMS_harasara\BMS_harasara\bin\Debug\HarasaraIndustries.pdb
+C:\Users\Ender\Desktop\Harasara_T2\BMS_harasara\BMS_harasara\obj\Debug\BMS_harasara.AddProductUC.resources
+C:\Users\Ender\Desktop\Harasara_T2\BMS_harasara\BMS_harasara\obj\Debug\BMS_harasara.ProductionLineUC.resources
+C:\Users\Ender\Desktop\Harasara_T2\BMS_harasara\BMS_harasara\obj\Debug\BMS_harasara.Production_Sub_Admin.resources
+C:\Users\Ender\Desktop\Harasara_T2\BMS_harasara\BMS_harasara\obj\Debug\BMS_harasara.Production_Sub_User.resources
+C:\Users\Ender\Desktop\Harasara_T2\BMS_harasara\BMS_harasara\obj\Debug\BMS_harasara.ProductsUC.resources
+C:\Users\Ender\Desktop\Harasara_T2\BMS_harasara\BMS_harasara\obj\Debug\BMS_harasara.Progress.resources
+C:\Users\Ender\Desktop\Harasara_T2\BMS_harasara\BMS_harasara\obj\Debug\BMS_harasara.Prototype.resources
+>>>>>>> 51f2e74ec6e9fde4be7c0782167c43e63604a896
+>>>>>>> 534ad3c0864da374e20a1c4b30ac8f76147b18ec

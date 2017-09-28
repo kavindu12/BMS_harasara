@@ -60,6 +60,7 @@
             this.bunifuCustomLabel7 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomTextbox7 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.bunifuThinButton10 = new WindowsFormsControlLibrary1.BunifuThinButton();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
@@ -296,7 +297,7 @@
             this.bunifuThinButton7.IconVisible = false;
             this.bunifuThinButton7.IconZoom = 90D;
             this.bunifuThinButton7.ImageIconOverlay = false;
-            this.bunifuThinButton7.Location = new System.Drawing.Point(344, 553);
+            this.bunifuThinButton7.Location = new System.Drawing.Point(469, 553);
             this.bunifuThinButton7.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.bunifuThinButton7.Name = "bunifuThinButton7";
             this.bunifuThinButton7.Size = new System.Drawing.Size(105, 35);
@@ -493,12 +494,33 @@
             this.pictureBox1.TabIndex = 70;
             this.pictureBox1.TabStop = false;
             // 
+            // bunifuThinButton10
+            // 
+            this.bunifuThinButton10.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("bunifuThinButton10.BackgroundImage")));
+            this.bunifuThinButton10.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.bunifuThinButton10.ButtonText = "Update Vehicle";
+            this.bunifuThinButton10.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.bunifuThinButton10.Font = new System.Drawing.Font("MS Reference Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuThinButton10.ForeColor = System.Drawing.Color.Honeydew;
+            this.bunifuThinButton10.ForeColorHoverState = System.Drawing.Color.SpringGreen;
+            this.bunifuThinButton10.Iconimage = null;
+            this.bunifuThinButton10.IconVisible = false;
+            this.bunifuThinButton10.IconZoom = 90D;
+            this.bunifuThinButton10.ImageIconOverlay = false;
+            this.bunifuThinButton10.Location = new System.Drawing.Point(333, 553);
+            this.bunifuThinButton10.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.bunifuThinButton10.Name = "bunifuThinButton10";
+            this.bunifuThinButton10.Size = new System.Drawing.Size(112, 35);
+            this.bunifuThinButton10.TabIndex = 91;
+            this.bunifuThinButton10.Click += new System.EventHandler(this.bunifuThinButton10_Click);
+            // 
             // vehicle
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.ClientSize = new System.Drawing.Size(985, 618);
+            this.Controls.Add(this.bunifuThinButton10);
             this.Controls.Add(this.bunifuCustomTextbox7);
             this.Controls.Add(this.bunifuCustomLabel7);
             this.Controls.Add(this.bunifuCustomTextbox1);
@@ -572,6 +594,7 @@
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel7;
         private WindowsFormsControlLibrary1.BunifuCustomTextbox bunifuCustomTextbox7;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private WindowsFormsControlLibrary1.BunifuThinButton bunifuThinButton10;
 
     }
 }

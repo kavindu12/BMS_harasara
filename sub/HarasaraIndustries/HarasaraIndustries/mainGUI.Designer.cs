@@ -124,6 +124,7 @@
             this.Employees.TabIndex = 1;
             this.Employees.Textcolor = System.Drawing.Color.White;
             this.Employees.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Employees.Click += new System.EventHandler(this.Employees_Click);
             // 
             // Inventory
             // 
@@ -150,6 +151,7 @@
             this.Inventory.TabIndex = 1;
             this.Inventory.Textcolor = System.Drawing.Color.White;
             this.Inventory.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Inventory.Click += new System.EventHandler(this.Inventory_Click);
             // 
             // Machines
             // 
@@ -157,7 +159,7 @@
             this.Machines.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.Machines.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.Machines.BorderRadius = 8;
-            this.Machines.ButtonText = "Machines";
+            this.Machines.ButtonText = "Leave Request";
             this.Machines.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Machines.Iconcolor = System.Drawing.Color.Transparent;
             this.Machines.Iconimage = ((System.Drawing.Image)(resources.GetObject("Machines.Iconimage")));
@@ -202,6 +204,7 @@
             this.Production.TabIndex = 1;
             this.Production.Textcolor = System.Drawing.Color.White;
             this.Production.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Production.Click += new System.EventHandler(this.Production_Click);
             // 
             // Financial
             // 
@@ -228,6 +231,7 @@
             this.Financial.TabIndex = 1;
             this.Financial.Textcolor = System.Drawing.Color.White;
             this.Financial.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Financial.Click += new System.EventHandler(this.Financial_Click);
             // 
             // bunifuFlatButton6
             // 
@@ -281,6 +285,7 @@
             this.bunifuFlatButton7.TabIndex = 1;
             this.bunifuFlatButton7.Textcolor = System.Drawing.Color.White;
             this.bunifuFlatButton7.TextFont = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bunifuFlatButton7.Click += new System.EventHandler(this.bunifuFlatButton7_Click);
             // 
             // Sales
             // 
