@@ -7,6 +7,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using MySql.Data.Common;
+using System.Net;
+using System.IO;
 
 namespace Transport
 {
@@ -76,6 +79,40 @@ namespace Transport
                 textBox1.Text = dataGridView1.Rows[e.RowIndex].Cells[2].Value.ToString();
                
 
+            }
+        }
+
+        private void bunifuImageButton1_Click(object sender, EventArgs e)
+        {
+            Environment.Exit(0);
+        }
+
+        private void bunifuImageButton2_Click(object sender, EventArgs e)
+        {
+            this.WindowState = FormWindowState.Minimized;
+        }
+
+        private void bunifuImageButton3_Click(object sender, EventArgs e)
+        {
+            try
+            {
+
+                WebClient client = new WebClient();
+                Stream s = client.OpenRead("");
+                StreamReader reader = new StreamReader(s);
+                string result = reader.ReadToEnd();
+                MessageBox.Show(result, "Message", MessageBoxButtons.OK, MessageBoxIcon.Error);
+
+
+            }
+
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message,"Error");
+            
+            
+            
             }
         }
     }

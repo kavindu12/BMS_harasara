@@ -267,6 +267,8 @@
             this.bunifuCustomTextbox4.Name = "bunifuCustomTextbox4";
             this.bunifuCustomTextbox4.Size = new System.Drawing.Size(160, 22);
             this.bunifuCustomTextbox4.TabIndex = 54;
+            this.bunifuCustomTextbox4.TextChanged += new System.EventHandler(this.bunifuCustomTextbox4_TextChanged);
+            this.bunifuCustomTextbox4.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.bunifuCustomTextbox4_KeyPress);
             // 
             // bunifuCustomTextbox2
             // 
@@ -362,6 +364,7 @@
             this.bunifuCustomTextbox5.Size = new System.Drawing.Size(121, 22);
             this.bunifuCustomTextbox5.TabIndex = 55;
             this.bunifuCustomTextbox5.TextChanged += new System.EventHandler(this.bunifuCustomTextbox5_TextChanged);
+            this.bunifuCustomTextbox5.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.bunifuCustomTextbox5_KeyPress);
             // 
             // dateTimePicker1
             // 
@@ -408,6 +411,7 @@
             this.bunifuThinButton9.Name = "bunifuThinButton9";
             this.bunifuThinButton9.Size = new System.Drawing.Size(112, 44);
             this.bunifuThinButton9.TabIndex = 63;
+            this.bunifuThinButton9.Click += new System.EventHandler(this.bunifuThinButton9_Click);
             // 
             // bunifuThinButton10
             // 
@@ -456,6 +460,8 @@
             this.bunifuCustomTextbox1.Name = "bunifuCustomTextbox1";
             this.bunifuCustomTextbox1.Size = new System.Drawing.Size(85, 22);
             this.bunifuCustomTextbox1.TabIndex = 68;
+            this.bunifuCustomTextbox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.bunifuCustomTextbox1_KeyPress);
+            this.bunifuCustomTextbox1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.bunifuCustomTextbox1_KeyUp);
             // 
             // driver
             // 

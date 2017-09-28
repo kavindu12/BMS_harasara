@@ -221,7 +221,7 @@
             this.bunifuImageButton1.BackColor = System.Drawing.Color.Goldenrod;
             this.bunifuImageButton1.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton1.Image")));
             this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(590, 2);
+            this.bunifuImageButton1.Location = new System.Drawing.Point(1022, 2);
             this.bunifuImageButton1.Name = "bunifuImageButton1";
             this.bunifuImageButton1.Size = new System.Drawing.Size(25, 21);
             this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -235,7 +235,7 @@
             this.bunifuImageButton2.BackColor = System.Drawing.Color.Goldenrod;
             this.bunifuImageButton2.Image = ((System.Drawing.Image)(resources.GetObject("bunifuImageButton2.Image")));
             this.bunifuImageButton2.ImageActive = null;
-            this.bunifuImageButton2.Location = new System.Drawing.Point(559, 2);
+            this.bunifuImageButton2.Location = new System.Drawing.Point(991, 2);
             this.bunifuImageButton2.Name = "bunifuImageButton2";
             this.bunifuImageButton2.Size = new System.Drawing.Size(25, 21);
             this.bunifuImageButton2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -251,7 +251,7 @@
             this.panel2.Controls.Add(this.bunifuImageButton1);
             this.panel2.Location = new System.Drawing.Point(0, 0);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(968, 26);
+            this.panel2.Size = new System.Drawing.Size(1061, 26);
             this.panel2.TabIndex = 5;
             // 
             // bunifuFlatButton2
@@ -286,7 +286,7 @@
             // 
             this.panel3.BackColor = System.Drawing.Color.Honeydew;
             this.panel3.Controls.Add(this.bunifuFlatButton1);
-            this.panel3.Location = new System.Drawing.Point(194, 81);
+            this.panel3.Location = new System.Drawing.Point(425, 72);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(429, 63);
             this.panel3.TabIndex = 8;
@@ -323,7 +323,7 @@
             // 
             this.panel4.BackColor = System.Drawing.Color.Honeydew;
             this.panel4.Controls.Add(this.bunifuFlatButton2);
-            this.panel4.Location = new System.Drawing.Point(194, 160);
+            this.panel4.Location = new System.Drawing.Point(425, 151);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(429, 63);
             this.panel4.TabIndex = 9;
@@ -332,7 +332,7 @@
             // 
             this.panel5.BackColor = System.Drawing.Color.Honeydew;
             this.panel5.Controls.Add(this.bunifuFlatButton3);
-            this.panel5.Location = new System.Drawing.Point(194, 238);
+            this.panel5.Location = new System.Drawing.Point(425, 229);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(429, 63);
             this.panel5.TabIndex = 10;
@@ -341,7 +341,7 @@
             // 
             this.panel6.BackColor = System.Drawing.Color.Honeydew;
             this.panel6.Controls.Add(this.bunifuFlatButton4);
-            this.panel6.Location = new System.Drawing.Point(194, 322);
+            this.panel6.Location = new System.Drawing.Point(425, 313);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(429, 63);
             this.panel6.TabIndex = 10;
@@ -379,7 +379,7 @@
             // 
             this.panel7.BackColor = System.Drawing.Color.Honeydew;
             this.panel7.Controls.Add(this.bunifuFlatButton5);
-            this.panel7.Location = new System.Drawing.Point(194, 401);
+            this.panel7.Location = new System.Drawing.Point(425, 392);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(429, 63);
             this.panel7.TabIndex = 11;
@@ -389,7 +389,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.ClientSize = new System.Drawing.Size(641, 480);
+            this.ClientSize = new System.Drawing.Size(1060, 480);
             this.Controls.Add(this.panel7);
             this.Controls.Add(this.panel6);
             this.Controls.Add(this.panel5);
