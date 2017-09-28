@@ -100,5 +100,10 @@ namespace BMS_harasara
             m1.Show();
             this.Hide();
         }
+
+        private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+
+        }
     }
 }

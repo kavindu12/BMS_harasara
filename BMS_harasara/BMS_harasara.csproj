@@ -31,6 +31,10 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>
+    </StartupObject>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="Bunifu_UI_v1.4">
       <HintPath>F:\New folder (2)\Bunifu_UI_v1.4\Bunifu_UI_v1.4.dll</HintPath>
@@ -131,6 +135,8 @@
     <Compile Include="inv_IssueStock.Designer.cs">
       <DependentUpon>inv_IssueStock.cs</DependentUpon>
     </Compile>
+    <Compile Include="Login.cs" />
+    <Compile Include="Login.Designer.cs" />
     <Compile Include="Machine_sub.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -295,6 +301,7 @@
     <EmbeddedResource Include="inv_IssueStock.resx">
       <DependentUpon>inv_IssueStock.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx" />
     <EmbeddedResource Include="Main_menu.resx">
       <DependentUpon>Main_menu.cs</DependentUpon>
     </EmbeddedResource>

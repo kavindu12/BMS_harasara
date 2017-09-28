@@ -82,15 +82,14 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-<<<<<<< HEAD
-=======
+
     <Compile Include="machine.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Machines.cs">
       <SubType>UserControl</SubType>
     </Compile>
->>>>>>> d3c4b4974704c5801354294ca041c6097e10e717
+
     <Compile Include="mainGUI.cs">
       <SubType>Form</SubType>
     </Compile>

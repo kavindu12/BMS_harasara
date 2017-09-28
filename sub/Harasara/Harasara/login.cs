@@ -45,14 +45,14 @@ namespace Harasara
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Hara
+            //Hara
 
-            string p = dba.getValue("select Password From harasara.admins where  Username ='" + textBox1.Text + "' ");
+            //string p = dba.getValue("select Password From harasara.admins where  Username ='" + textBox1.Text + "' ");
            // string n = dba.getValue("select Username From harasara.admins where  Position ='" + d + "' ");
-            string pos = dba.getValue("SELECT Position FROM harasara.admins WHERE Username = '" + textBox1.Text + "'");
+            //string pos = dba.getValue("SELECT Position FROM harasara.admins WHERE Username = '" + textBox1.Text + "'");
             //MessageBox.Show(p);
       
-            if (p == textBox3.Text && textBox1.Text != "" && textBox3.Text != "")
+            //if (p == textBox3.Text && textBox1.Text != "" && textBox3.Text != "")
             {
                
 
