@@ -16,7 +16,11 @@ namespace BMS_harasara
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
+<<<<<<< HEAD
             Application.Run(new BMS_harasara.FinanceSub());
+=======
+            Application.Run(new inv_sub());
+>>>>>>> 51f2e74ec6e9fde4be7c0782167c43e63604a896
         }
     }
 }

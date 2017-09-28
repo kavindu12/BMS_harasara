@@ -175,6 +175,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\..\..\BMS_harasara\BMS_harasara.csproj">
+      <Project>{d4834a5a-add2-4508-91f5-db5fe955e8ad}</Project>
+      <Name>BMS_harasara</Name>
+    </ProjectReference>
     <ProjectReference Include="..\..\Harasara\Harasara.csproj">
       <Project>{99d60cf6-bc00-4bdf-a175-e6f1d2f699f0}</Project>
       <Name>Harasara</Name>

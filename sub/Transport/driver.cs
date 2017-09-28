@@ -80,7 +80,7 @@ namespace Transport
 
         private void bunifuCustomTextbox5_TextChanged(object sender, EventArgs e)
         {
-            bunifuCustomTextbox5.MaxLength = 10;
+            bunifuCustomTextbox5.MaxLength = 11;
             
         }
 
@@ -188,31 +188,23 @@ namespace Transport
 
             MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=harasara");
             
-            try
-            {
-                if (this.dataGridView1.SelectedRows.Count > 0)
-                {
-                    //insert into table
-                    //String delete = "DELETE FROM driverdetails WHERE Driver ID = '" + this.dataGridView1.Rows[]"'";
-                    //dataGridView1.Rows[e.RowIndex].Cells[0].Value.ToString();
-                   // MySqlCommand command = new MySqlCommand(delete, connnection);
+            try{
+            
+                    //delete from table
+                    String delete = " DELETE FROM driverdetails WHERE DriverID = '" + Convert.ToInt32(this.bunifuCustomTextbox1.Text)+"' ";
+                    
+                   MySqlCommand command = new MySqlCommand(delete, connnection);
                   
-                    //MySqlCommand cmnd = new MySqlCommand(delete, con);
-                   // MySqlDataReader myreader;
-                   // con.Open();
-                    //myreader = cmnd.ExecuteReader();
-                    //MessageBox.Show("Deleted Successfully", "Success", MessageBoxButtons.OK);
-                }
-
-                else
-                {
-
-                    MessageBox.Show("Please select a row to delete", "Error", MessageBoxButtons.OK);
-                
+                    MySqlCommand cmnd = new MySqlCommand(delete, con);
+                    MySqlDataReader myreader;
+                   con.Open();
+                    myreader = cmnd.ExecuteReader();
+                    MessageBox.Show("Deleted Successfully", "Success", MessageBoxButtons.OK);
+                               
                 
                 
                 }
-            }
+            
 
             catch (Exception ex)
             {
