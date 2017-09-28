@@ -261,7 +261,7 @@
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(35, 340);
             this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.Size = new System.Drawing.Size(744, 150);
+            this.dataGridView1.Size = new System.Drawing.Size(1043, 274);
             this.dataGridView1.TabIndex = 18;
             // 
             // inv_AddNewItem
@@ -288,7 +288,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.groupBox1);
             this.Name = "inv_AddNewItem";
-            this.Size = new System.Drawing.Size(1033, 516);
+            this.Size = new System.Drawing.Size(1264, 645);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

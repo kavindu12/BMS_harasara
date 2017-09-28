@@ -166,6 +166,23 @@ namespace BMS_harasara
             }
             textBox4.AutoCompleteCustomSource=coll1;
             textBox1.AutoCompleteCustomSource = coll2;
+            connst.Close();
+
+            String loc = (String)comboBox1.SelectedItem;
+            connst.Open();
+            String qry3 = "SELECT * from inv_trans where location='"+loc+"' and type='Issue' ";
+            //MySqlConnection connst = new MySqlConnection("server=localhost;user id=root;database=bms_harasaradb");
+            MySqlCommand cmd2 = new MySqlCommand(qry3, connst);
+
+            MySqlDataAdapter sda = new MySqlDataAdapter();
+            sda.SelectCommand = cmd2;
+            DataTable dbdataset = new DataTable();
+            sda.Fill(dbdataset);
+            BindingSource bsource = new BindingSource();
+
+            bsource.DataSource = dbdataset;
+            dataGridView2.DataSource = bsource;
+            sda.Update(dbdataset);
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
