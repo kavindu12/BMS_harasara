@@ -16,7 +16,7 @@ namespace BMS_harasara
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new inv_sub()); //change this
+            Application.Run(new main_menu()); //change this
          
 
         }

@@ -95,6 +95,11 @@ namespace BMS_harasara
                         this.Hide();
                         trafrm.Show();
                     }
+                    else
+                    {
+                        MessageBox.Show("Invalid Credentials")
+                    }
+
                 }
             }catch(Exception ex){
                 MessageBox.Show(ex.Message, "Invalid Credentials");

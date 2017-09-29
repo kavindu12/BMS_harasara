@@ -223,6 +223,11 @@ namespace BMS_harasara
                 MessageBox.Show(ex.Message,"database error");
             }
         }
+
+        private void label3_Click(object sender, EventArgs e)
+        {
+
+        }
         
     }
 }
