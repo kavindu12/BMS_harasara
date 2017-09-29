@@ -56,6 +56,9 @@
             this.bunifuThinButton10 = new WindowsFormsControlLibrary1.BunifuThinButton();
             this.bunifuCustomLabel1 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.bunifuCustomTextbox1 = new WindowsFormsControlLibrary1.BunifuCustomTextbox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
@@ -264,7 +267,7 @@
             this.bunifuCustomTextbox2.BorderColor = System.Drawing.Color.SeaGreen;
             this.bunifuCustomTextbox2.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.bunifuCustomTextbox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.bunifuCustomTextbox2.Location = new System.Drawing.Point(621, 357);
+            this.bunifuCustomTextbox2.Location = new System.Drawing.Point(679, 357);
             this.bunifuCustomTextbox2.Multiline = true;
             this.bunifuCustomTextbox2.Name = "bunifuCustomTextbox2";
             this.bunifuCustomTextbox2.Size = new System.Drawing.Size(325, 65);
@@ -275,7 +278,7 @@
             this.bunifuCustomLabel5.AutoSize = true;
             this.bunifuCustomLabel5.Font = new System.Drawing.Font("Times New Roman", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.bunifuCustomLabel5.ForeColor = System.Drawing.Color.Transparent;
-            this.bunifuCustomLabel5.Location = new System.Drawing.Point(551, 354);
+            this.bunifuCustomLabel5.Location = new System.Drawing.Point(609, 354);
             this.bunifuCustomLabel5.Name = "bunifuCustomLabel5";
             this.bunifuCustomLabel5.Size = new System.Drawing.Size(64, 19);
             this.bunifuCustomLabel5.TabIndex = 50;
@@ -444,12 +447,45 @@
             this.bunifuCustomTextbox1.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.bunifuCustomTextbox1_KeyPress);
             this.bunifuCustomTextbox1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.bunifuCustomTextbox1_KeyUp);
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.Red;
+            this.label1.Location = new System.Drawing.Point(472, 441);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(0, 15);
+            this.label1.TabIndex = 69;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.Red;
+            this.label2.Location = new System.Drawing.Point(510, 401);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(0, 15);
+            this.label2.TabIndex = 70;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.Red;
+            this.label3.Location = new System.Drawing.Point(682, 428);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(0, 15);
+            this.label3.TabIndex = 71;
+            // 
             // driver
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.ClientSize = new System.Drawing.Size(951, 602);
+            this.ClientSize = new System.Drawing.Size(1009, 602);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.bunifuCustomTextbox1);
             this.Controls.Add(this.bunifuCustomLabel1);
             this.Controls.Add(this.bunifuThinButton10);
@@ -515,6 +551,9 @@
         private Bunifu.Framework.UI.BunifuCustomLabel bunifuCustomLabel1;
         private WindowsFormsControlLibrary1.BunifuCustomTextbox bunifuCustomTextbox1;
         private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
 
     }
 }

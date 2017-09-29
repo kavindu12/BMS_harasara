@@ -132,11 +132,17 @@ namespace Transport
         {
             if (String.IsNullOrEmpty(bunifuCustomTextbox5.Text))
             {
-                MessageBox.Show("Enter Estimation.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                String error = "Enter Estimation";
+                label1.Text = error.ToString();
+                
+                // MessageBox.Show("Enter Estimation.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else if (String.IsNullOrEmpty(bunifuCustomTextbox2.Text))
             {
-                MessageBox.Show("Enter Some notes for the repair.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                String error = "Enter Some notes for the repair";
+                label2.Text = error.ToString();
+                
+                //MessageBox.Show("Enter Some notes for the repair.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
 
@@ -227,6 +233,28 @@ namespace Transport
 
                 MessageBox.Show(ex.Message, "Error");
 
+
+            }
+        }
+
+        private void bunifuThinButton10_Click(object sender, EventArgs e)
+        {
+
+            DataTable dt = new DataTable();
+            dbconnect db = new dbconnect();
+
+            try
+            {
+
+                dt = db.ReadValue("Select * From repair");
+                dataGridView1.DataSource = dt;
+
+            }
+
+            catch (Exception ex)
+            {
+
+                MessageBox.Show(ex.Message, "Error");
 
             }
         }

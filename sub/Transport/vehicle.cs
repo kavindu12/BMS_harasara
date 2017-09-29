@@ -122,35 +122,35 @@ namespace Transport
             bunifuCustomTextbox4.Clear();
             bunifuCustomTextbox5.Clear();
             bunifuCustomTextbox6.Clear();
+            bunifuCustomTextbox7.Clear();
+            label1.Text = "";
+            label2.Text = "";
+            label3.Text = "";
             
         }
 
         private void bunifuThinButton8_Click(object sender, EventArgs e)
         {
+            string len = bunifuCustomTextbox5.Text;
+
             if (String.IsNullOrEmpty(bunifuCustomTextbox4.Text))
             {
-                MessageBox.Show("Enter Vehicle Number.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                String error = "Enter Vehicle Number";
+                label1.Text = error.ToString();
+                //MessageBox.Show("Enter Driver Name.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else if (String.IsNullOrEmpty(bunifuCustomTextbox3.Text))
             {
-                MessageBox.Show("Enter Vehicle Type.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-            else if (String.IsNullOrEmpty(bunifuCustomTextbox5.Text))
-            {
-                MessageBox.Show("Enter Vehicle Milage", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-            else if (String.IsNullOrEmpty(bunifuCustomTextbox6.Text))
-            {
-                MessageBox.Show("Enter Number of repairs", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-            else if (String.IsNullOrEmpty(bunifuCustomTextbox6.Text))
-            {
-                MessageBox.Show("Enter Notes", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                String error = "Enter Vehicle Type";
+                label2.Text = error.ToString();
+                //MessageBox.Show("Enter Contact Number.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
             else if (String.IsNullOrEmpty(bunifuCustomTextbox1.Text))
             {
-                MessageBox.Show("Enter avilability", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                String error = "Enter Availability";
+                label3.Text = error.ToString();
+                //MessageBox.Show("Enter Address.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
             else
@@ -310,31 +310,57 @@ namespace Transport
 
         private void bunifuThinButton10_Click(object sender, EventArgs e)
         {
-            MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=harasara");
+            string len = bunifuCustomTextbox5.Text;
 
-            try
+            if (String.IsNullOrEmpty(bunifuCustomTextbox4.Text))
             {
-                //update table
-
-                String update = "UPDATE vehicles SET VehicleNumber = '" + this.bunifuCustomTextbox4.Text.ToString() + "' , VehicleType = '" + this.bunifuCustomTextbox3.Text.ToString() + "', Milage = '" + Convert.ToInt32(this.bunifuCustomTextbox5.Text.ToString()) + "', NoOfRepairs = '" + Convert.ToInt32(this.bunifuCustomTextbox6.Text.ToString()) + "', Availability = '" + this.bunifuCustomTextbox2.Text.ToString() + "', Notes = '" + this.bunifuCustomTextbox4.Text.ToString() + "')";
-                MySqlCommand command = new MySqlCommand(update, connnection);
-
-                MySqlCommand cmnd = new MySqlCommand(update, con);
-                MySqlDataReader myreader;
-                con.Open();
-                myreader = cmnd.ExecuteReader();
-                MessageBox.Show("Updated Successfully", "Success", MessageBoxButtons.OK);
-
-
-
+                String error = "Enter Vehicle Number";
+                label1.Text = error.ToString();
+                //MessageBox.Show("Enter Driver Name.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else if (String.IsNullOrEmpty(bunifuCustomTextbox3.Text))
+            {
+                String error = "Enter Vehicle Type";
+                label2.Text = error.ToString();
+                //MessageBox.Show("Enter Contact Number.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
-            catch (Exception ex)
+            else if (String.IsNullOrEmpty(bunifuCustomTextbox1.Text))
             {
+                String error = "Enter Availability";
+                label3.Text = error.ToString();
+                //MessageBox.Show("Enter Address.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
 
-                MessageBox.Show(ex.Message, "Error");
+            else
+            {
+                
+                MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=harasara");
+
+                try
+                {
+                    //update table
+
+                    String update = "UPDATE vehicles SET VehicleNumber = '" + this.bunifuCustomTextbox4.Text.ToString() + "' , VehicleType = '" + this.bunifuCustomTextbox3.Text.ToString() + "', Milage = '" + Convert.ToInt32(this.bunifuCustomTextbox5.Text.ToString()) + "', NoOfRepairs = '" + Convert.ToInt32(this.bunifuCustomTextbox6.Text.ToString()) + "', Availability = '" + this.bunifuCustomTextbox2.Text.ToString() + "', Notes = '" + this.bunifuCustomTextbox4.Text.ToString() + "')";
+                    MySqlCommand command = new MySqlCommand(update, connnection);
+
+                    MySqlCommand cmnd = new MySqlCommand(update, con);
+                    MySqlDataReader myreader;
+                    con.Open();
+                    myreader = cmnd.ExecuteReader();
+                    MessageBox.Show("Updated Successfully", "Success", MessageBoxButtons.OK);
 
 
+
+                }
+
+                catch (Exception ex)
+                {
+
+                    MessageBox.Show(ex.Message, "Error");
+
+
+                }
             }
         }
     }

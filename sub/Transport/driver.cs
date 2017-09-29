@@ -100,23 +100,32 @@ namespace Transport
         private void bunifuThinButton8_Click(object sender, EventArgs e)
         {
 
+            string len = bunifuCustomTextbox5.Text;
+
             if (String.IsNullOrEmpty(bunifuCustomTextbox4.Text))
             {
-                MessageBox.Show("Enter Driver Name.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                String error = "Enter Driver Name";
+                label2.Text = error.ToString();
+                //MessageBox.Show("Enter Driver Name.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else if (String.IsNullOrEmpty(bunifuCustomTextbox5.Text))
             {
-                MessageBox.Show("Enter Contact Number.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                String error = "Enter Contact Number";
+                label1.Text = error.ToString();
+                //MessageBox.Show("Enter Contact Number.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else if (bunifuCustomTextbox5.Text.Length != 11)
+            {
+                String error = "Contact No should consists of 11 characaters";
+                label1.Text = error.ToString();
+                //MessageBox.Show("Enter the correct Contact Number including 94 in the front.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else if (String.IsNullOrEmpty(bunifuCustomTextbox2.Text))
             {
-                MessageBox.Show("Enter Address.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                String error = "Enter Driver Address";
+                label3.Text = error.ToString();
+                //MessageBox.Show("Enter Address.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
-            /*else if (Int32.Parse(bunifuCustomTextbox5.Text) < 10)
-            { 
-                MessageBox.Show("Enter a number with 10 digits.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
-            }
-           */ 
             
             else
             {
@@ -181,40 +190,46 @@ namespace Transport
             bunifuCustomTextbox4.Clear();
             bunifuCustomTextbox2.Clear();
             bunifuCustomTextbox5.Clear();
+            bunifuCustomTextbox1.Clear();
+            label1.Text = "";
+            label2.Text = "";
+            label3.Text = "";
         }
 
         private void bunifuThinButton6_Click(object sender, EventArgs e)
         {
+            
+                MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=harasara");
 
-            MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=harasara");
-            
-            try{
-            
+                try
+                {
+
                     //delete from table
-                    String delete = " DELETE FROM driverdetails WHERE DriverID = '" + Convert.ToInt32(this.bunifuCustomTextbox1.Text)+"' ";
-                    
-                   MySqlCommand command = new MySqlCommand(delete, connnection);
-                  
+                    String delete = " DELETE FROM driverdetails WHERE DriverID = '" + Convert.ToInt32(this.bunifuCustomTextbox1.Text) + "' ";
+
+                    MySqlCommand command = new MySqlCommand(delete, connnection);
+
                     MySqlCommand cmnd = new MySqlCommand(delete, con);
                     MySqlDataReader myreader;
-                   con.Open();
+                    con.Open();
                     myreader = cmnd.ExecuteReader();
                     MessageBox.Show("Deleted Successfully", "Success", MessageBoxButtons.OK);
-                               
-                
-                
+
+
+
                 }
-            
-
-            catch (Exception ex)
-            {
-
-                MessageBox.Show(ex.Message, "Error");
 
 
+                catch (Exception ex)
+                {
+
+                    MessageBox.Show(ex.Message, "Error");
+
+
+                }
             }
-        }
 
+        
 
         private void bunifuThinButton10_Click(object sender, EventArgs e)
         {
@@ -254,11 +269,40 @@ namespace Transport
 
         private void bunifuThinButton9_Click(object sender, EventArgs e)
         {
-            MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=harasara");
+            string len = bunifuCustomTextbox5.Text;
 
-            try
+            if (String.IsNullOrEmpty(bunifuCustomTextbox4.Text))
             {
-                //update table
+                String error = "Enter Driver Name";
+                label2.Text = error.ToString();
+                //MessageBox.Show("Enter Driver Name.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else if (String.IsNullOrEmpty(bunifuCustomTextbox5.Text))
+            {
+                String error = "Enter Contact Number";
+                label1.Text = error.ToString();
+                //MessageBox.Show("Enter Contact Number.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else if (bunifuCustomTextbox5.Text.Length != 11)
+            {
+                String error = "Contact No should consists of 11 characaters";
+                label1.Text = error.ToString();
+                //MessageBox.Show("Enter the correct Contact Number including 94 in the front.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else if (String.IsNullOrEmpty(bunifuCustomTextbox2.Text))
+            {
+                String error = "Enter Driver Address";
+                label3.Text = error.ToString();
+                //MessageBox.Show("Enter Address.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+            }
+            else
+            {
+
+                MySqlConnection con = new MySqlConnection("server=localhost;user id=root;database=harasara");
+
+                try
+                {
+                    //update table
 
                     String update = "UPDATE driverdetails SET DriverName = '" + this.bunifuCustomTextbox4.Text.ToString() + "', DOB = '" + this.dateTimePicker1.Text.ToString() + "', Address = '" + this.bunifuCustomTextbox2.Text + "', ContactNo ='" + this.bunifuCustomTextbox5.Text + "' WHERE DriverID = '" + this.bunifuCustomTextbox1.Text + "'";
                     MySqlCommand command = new MySqlCommand(update, connnection);
@@ -268,20 +312,20 @@ namespace Transport
                     con.Open();
                     myreader = cmnd.ExecuteReader();
                     MessageBox.Show("Updated Successfully", "Success", MessageBoxButtons.OK);
-               
-
-                
-            }
-
-            catch (Exception ex)
-            {
-
-                MessageBox.Show(ex.Message, "Error");
 
 
+
+                }
+
+                catch (Exception ex)
+                {
+
+                    MessageBox.Show(ex.Message, "Error");
+
+
+                }
             }
         }
-
         private void bunifuCustomTextbox1_KeyUp(object sender, KeyEventArgs e)
         {
 

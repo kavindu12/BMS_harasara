@@ -73,15 +73,23 @@ namespace Transport
         {
             if (String.IsNullOrEmpty(bunifuCustomTextbox3.Text))
             {
-                MessageBox.Show("Enter Distance.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                String error = "Enter Distance.";
+                label3.Text = error.ToString();
+                
+                //MessageBox.Show("Enter Distance.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else if (String.IsNullOrEmpty(bunifuCustomTextbox4.Text))
             {
-                MessageBox.Show("Enter Route Name.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                String error = "Enter Route Name.";
+                label4.Text = error.ToString();
+                //MessageBox.Show("Enter Route Name.", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
             else if (String.IsNullOrEmpty(bunifuCustomTextbox2.Text))
             {
-                MessageBox.Show("Enter Route Description", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                String error = "Enter Route Description";
+                label5.Text = error.ToString();
+
+                //MessageBox.Show("Enter Route Description", "Error", MessageBoxButtons.OK, MessageBoxIcon.Warning);
             }
 
             else
@@ -191,6 +199,11 @@ namespace Transport
 
             }
         
+        }
+
+        private void bunifuThinButton7_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -59,6 +59,9 @@
             this.bunifuCustomLabel7 = new Bunifu.Framework.UI.BunifuCustomLabel();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.bunifuThinButton10 = new WindowsFormsControlLibrary1.BunifuThinButton();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
@@ -363,6 +366,7 @@
             this.bunifuThinButton7.Name = "bunifuThinButton7";
             this.bunifuThinButton7.Size = new System.Drawing.Size(105, 35);
             this.bunifuThinButton7.TabIndex = 67;
+            this.bunifuThinButton7.Click += new System.EventHandler(this.bunifuThinButton7_Click);
             // 
             // bunifuThinButton8
             // 
@@ -472,12 +476,42 @@
             this.bunifuThinButton10.TabIndex = 92;
             this.bunifuThinButton10.Click += new System.EventHandler(this.bunifuThinButton10_Click);
             // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.Color.Red;
+            this.label3.Location = new System.Drawing.Point(343, 451);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(0, 13);
+            this.label3.TabIndex = 93;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.Color.Red;
+            this.label4.Location = new System.Drawing.Point(769, 385);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(0, 13);
+            this.label4.TabIndex = 94;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.Color.Red;
+            this.label5.Location = new System.Drawing.Point(609, 502);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(0, 13);
+            this.label5.TabIndex = 95;
+            // 
             // route
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.ClientSize = new System.Drawing.Size(907, 573);
+            this.ClientSize = new System.Drawing.Size(919, 573);
+            this.Controls.Add(this.label5);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.bunifuThinButton10);
             this.Controls.Add(this.dataGridView1);
             this.Controls.Add(this.bunifuCustomLabel7);
@@ -550,5 +584,8 @@
         private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.PictureBox pictureBox1;
         private WindowsFormsControlLibrary1.BunifuThinButton bunifuThinButton10;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
     }
 }

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using BMS_harasara;
 
 namespace Transport
 {
@@ -44,6 +45,17 @@ namespace Transport
             Main m1 = new Main();
             m1.ShowDialog();
             this.Close();
+        }
+
+        private void bunifuThinButton3_Click(object sender, EventArgs e)
+        {
+           /* 
+            this.Hide();
+            BMS_harasara.Main_menu
+            m1.ShowDialog();
+            this.Close();
+            
+            */
         }
     }
 }
