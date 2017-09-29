@@ -93,5 +93,30 @@ namespace BMS_harasara
             else
                 inv_IssueStock.Instance.BringToFront();
         }
+
+        private void bunifuFlatButton4_Click(object sender, EventArgs e)
+        {
+            if (!panel1.Controls.Contains(inv_CheckLevel.Instance))
+            {
+                panel1.Controls.Add(inv_CheckLevel.Instance);
+                inv_CheckLevel.Instance.Dock = DockStyle.Fill;
+                inv_CheckLevel.Instance.BringToFront();
+            }
+            else
+                inv_CheckLevel.Instance.BringToFront();
+        }
+
+        private void bunifuFlatButton6_Click(object sender, EventArgs e)
+        {
+            if (!panel1.Controls.Contains(inv_FinishStock.Instance))
+            {
+                panel1.Controls.Add(inv_FinishStock.Instance);
+                inv_FinishStock.Instance.Dock = DockStyle.Fill;
+                inv_FinishStock.Instance.BringToFront();
+            }
+            else
+                inv_FinishStock.Instance.BringToFront();
+        
+        }
     }
 }

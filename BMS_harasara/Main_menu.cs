@@ -43,7 +43,7 @@ namespace BMS_harasara
             //Machines
             string x = "Adminstration";
             login logfrm = new login(x);
-            this.Hide();
+            //this.Hide();
             logfrm.Show();
         }
 
@@ -52,7 +52,7 @@ namespace BMS_harasara
             //Employees
             string x = "Employee";
             login logfrm = new login(x);
-            this.Hide();
+            //this.Hide();
             logfrm.Show();
             
         }
@@ -62,7 +62,7 @@ namespace BMS_harasara
             //Inventory
             string x = "Inventory";
             login logfrm = new login(x);
-            this.Hide();
+            //this.Hide();
             logfrm.Show();
         }
 
@@ -71,7 +71,7 @@ namespace BMS_harasara
             //Production
             string x = "Products";
             login logfrm = new login(x);
-            this.Hide();
+            //this.Hide();
             logfrm.Show();
         }
 
@@ -80,7 +80,7 @@ namespace BMS_harasara
             //Financial
             string x = "Finance";
             login logfrm = new login(x);
-            this.Hide();
+            //this.Hide();
             logfrm.Show();
         }
 
@@ -89,7 +89,7 @@ namespace BMS_harasara
             //Transport
             string x = "Transport";
             login logfrm = new login(x);
-            this.Hide();
+            //this.Hide();
             logfrm.Show();
         }
 
@@ -98,7 +98,7 @@ namespace BMS_harasara
             //Sales and purchases
             string x = "Sales";
             login logfrm = new login(x);
-            this.Hide();
+            //this.Hide();
             logfrm.Show();
         }
 
@@ -107,7 +107,7 @@ namespace BMS_harasara
             //System Admin
             string x = "Adminstration";
             login logfrm = new login(x);
-            this.Hide();
+            //this.Hide();
             logfrm.Show();
         }
 

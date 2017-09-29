@@ -124,5 +124,16 @@ namespace Transport
             v1.ShowDialog();
             this.Close();
         }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void bunifuThinButton3_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+        }
     }
 }

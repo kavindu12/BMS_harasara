@@ -217,3 +217,5 @@ C:\Users\Ender\Desktop\Harasara_T2\BMS_harasara\BMS_harasara\obj\Debug\BMS_haras
 >>>>>>> 51f2e74ec6e9fde4be7c0782167c43e63604a896
 >>>>>>> 534ad3c0864da374e20a1c4b30ac8f76147b18ec
 C:\Users\viraj\Desktop\project\BMS_harasara\BMS_harasara\obj\Debug\BMS_harasara.ViewPrototype.resources
+C:\Users\viraj\Desktop\project\BMS_harasara\BMS_harasara\obj\Debug\BMS_harasara.inv_CheckLevel.resources
+C:\Users\viraj\Desktop\project\BMS_harasara\BMS_harasara\obj\Debug\BMS_harasara.inv_FinishStock.resources

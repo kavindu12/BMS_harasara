@@ -129,6 +129,18 @@
     <Compile Include="inv_AddStock.Designer.cs">
       <DependentUpon>inv_AddStock.cs</DependentUpon>
     </Compile>
+    <Compile Include="inv_CheckLevel.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="inv_CheckLevel.Designer.cs">
+      <DependentUpon>inv_CheckLevel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="inv_FinishStock.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="inv_FinishStock.Designer.cs">
+      <DependentUpon>inv_FinishStock.cs</DependentUpon>
+    </Compile>
     <Compile Include="inv_IssueStock.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -299,6 +311,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="inv_AddStock.resx">
       <DependentUpon>inv_AddStock.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inv_CheckLevel.resx">
+      <DependentUpon>inv_CheckLevel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="inv_FinishStock.resx">
+      <DependentUpon>inv_FinishStock.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="inv_IssueStock.resx">
       <DependentUpon>inv_IssueStock.cs</DependentUpon>

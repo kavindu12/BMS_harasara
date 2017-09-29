@@ -96,14 +96,21 @@ namespace BMS_harasara
 
         private void linkLabel1_MouseClick(object sender, MouseEventArgs e)
         {
-            HarasaraIndustries.mainGUI m1 = new HarasaraIndustries.mainGUI();
-            m1.Show();
-            this.Hide();
+            //HarasaraIndustries.mainGUI m1 = new HarasaraIndustries.mainGUI();
+            //m1.Show();
+            //this.Hide();
         }
 
         private void linkLabel1_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
         {
 
+        }
+
+        private void bunifuFlatButton2_Click_1(object sender, EventArgs e)
+        {
+            main_menu mainm = new main_menu();
+            mainm.Show();
+            this.Hide();
         }
     }
 }
