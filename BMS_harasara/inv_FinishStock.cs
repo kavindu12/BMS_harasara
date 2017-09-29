@@ -94,6 +94,21 @@ namespace BMS_harasara
             
             textBox1.AutoCompleteCustomSource = coll2;
             connst.Close();
+
+            connst.Open();
+            String qry3 = "SELECT * from fd_trans where location='" + loc + "' and type='Receipt' ";
+            //MySqlConnection connst = new MySqlConnection("server=localhost;user id=root;database=bms_harasaradb");
+            MySqlCommand cmd2 = new MySqlCommand(qry3, connst);
+
+            MySqlDataAdapter sda = new MySqlDataAdapter();
+            sda.SelectCommand = cmd2;
+            DataTable dbdataset = new DataTable();
+            sda.Fill(dbdataset);
+            BindingSource bsource = new BindingSource();
+
+            bsource.DataSource = dbdataset;
+            dataGridView1.DataSource = bsource;
+            sda.Update(dbdataset);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -215,6 +230,21 @@ namespace BMS_harasara
 
             textBox3.AutoCompleteCustomSource = coll3;
             connst.Close();
+
+            connst.Open();
+            String qry3 = "SELECT * from fd_trans where location='" + loc + "' and type='Issue' ";
+            //MySqlConnection connst = new MySqlConnection("server=localhost;user id=root;database=bms_harasaradb");
+            MySqlCommand cmd2 = new MySqlCommand(qry3, connst);
+
+            MySqlDataAdapter sda = new MySqlDataAdapter();
+            sda.SelectCommand = cmd2;
+            DataTable dbdataset = new DataTable();
+            sda.Fill(dbdataset);
+            BindingSource bsource = new BindingSource();
+
+            bsource.DataSource = dbdataset;
+            dataGridView2.DataSource = bsource;
+            sda.Update(dbdataset);
         }
     }
 }

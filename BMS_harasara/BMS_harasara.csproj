@@ -151,6 +151,11 @@
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Login.Designer.cs" />
+    <Compile Include="Login1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Login.resx</DependentUpon>
+    </Compile>
     <Compile Include="Machine_sub.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -321,7 +326,10 @@
     <EmbeddedResource Include="inv_IssueStock.resx">
       <DependentUpon>inv_IssueStock.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Login.resx" />
+    <EmbeddedResource Include="Login.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Login1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <EmbeddedResource Include="Main_menu.resx">
       <DependentUpon>Main_menu.cs</DependentUpon>
     </EmbeddedResource>

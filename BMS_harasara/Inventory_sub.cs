@@ -118,5 +118,10 @@ namespace BMS_harasara
                 inv_FinishStock.Instance.BringToFront();
         
         }
+
+        private void inv_sub_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
